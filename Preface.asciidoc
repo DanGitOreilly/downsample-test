@@ -1,0 +1,335 @@
+[[preface]] 
+[preface]
+== Preface
+
+So, how much electronics do you need to know to be able to create something
+interesting, or creatively modify something that already exists? Well, that
+depends on where you start in the creative process. It also depends on your
+willingness to seek out new knowledge and acquire new skills as you go along.
+
+The primary purpose of this book is to give you a reference for some of
+the more arcane (and possibly mundane) but essential aspects of
+electronics. These include things you would typically learn
+on the job and from years of experience, such as how to read the datasheet for an electronic component, determining how many things can be
+connected to an interface pin on a pass:[<span class="keep-together">microcontroller</span>], how to assemble
+various types of connectors, how to minimize noise and interference
+on a signal interface circuit, how to determine the resolution of an
+analog-to-digital converter, how various types of serial and network
+interfaces work, and how to use open source tools for schematic capture
+and PCB layout. And, of course, we will also cover
+the tools used in electronics work and how they are used, and we'll
+examine what's available in terms of test equipment beyond the
+garden-variety digital multimeter.
+
+We'll start off with an introduction to the underlying physics of
+electricity that dispenses with the water-flowing-in-a-pipe analogy and
+gets right to the heart of the matter with a look at how atoms pass
+electrons around. We'll then examine the basic concepts of voltage and
+current. For those readers who might need or want a more detailed
+discussion of basic electrical theory, it can be found in <<Appendix_A>>.
+
+I should point out that this book is not intended to be an in-depth tutorial
+on electronics theory. There are already many excellent books on that topic,
+and to repeat that here would just be a pointless exercise in killing trees.
+So, while there is some introductory material to set the stage, so to speak,
+the primary intent of this book is to provide you with a reference for topics
+that aren't usually covered in an electronics text or a step-by-step project
+book.
+
+With this book, perhaps one or two of the suggested reference works in
+<<Appendix_D>>, and your own enthusiasm and ambition, you should be able to
+create that gadget or system you've been wanting to build and have it work
+as you intended. And remember, it's not the end of the world if you
+accidentally convert an electronic component into charcoal. It happens all
+the time; it's called pass:[<span class="keep-together"><em>learning</em></span>].
+
+=== Who This Book Is For
+
+This book is for anyone with a desire to build an electronic device of some sort, but,
+to the maximum extent possible, I have made no assumptions about your skill level. What I _have_ assumed is that you might not be familiar with the hardware,
+components, tools, and techniques that are used in electronics, or perhaps you
+already know something about electronics but could use some help with some of the more
+arcane aspects of the craft.
+
+With this book as a workbench reference and guide to more detailed sources of information,
+you should be able to get started on building a nifty gadget and avoid some (hopefully,
+most) of the pitfalls that await the unwary. I've made the assumption that you will
+follow the pointers given to learn more about the various topics this book covers, and it
+covers a lot. It's simply not possible to cover all the topics presented in this book at
+more than just a surface level; the resulting tome would be huge. In lieu of a lot
+of details, I've tried to provide enough information to give you a basic understanding
+of the topics and a foundation to build upon.
+
+So, if you've been thinking about something you'd like to build but aren't sure how to
+go about it, or you already know a fair amount about electronics but perhaps
+need some help putting it all together, then this book is for you.
+
+=== How This Book Is Organized
+
+Each chapter is devoted to a specific topic, ranging from hardware (screws,
+nuts, and bolts) to tools, and from switches, relays, and passive components
+to active solid-state parts. Each chapter is designed to allow you
+to easily find a specific subject and get quick answers to your questions:
+
+
+<<Chapter_1, Chapter 1: Electrons in Motion>>::
+  The first chapter provides a high-level "top-of-the-waves" look at electronics,
+using the notion of electrons in motion as the key to concepts such as voltage,
+current, and power.
+
+<<Chapter_2, Chapter 2: Fasteners and Adhesives>>::
+  Often overlooked or taken for granted, fasteners and fastening methods
+are essential to a successful project. The choice of fasteners can
+also have a major effect on the aesthetics of a project, so getting the
+right parts for the job can make the difference between elegant and
+clunky.
+
+<<Chapter_3, Chapter 3: Tools>>::
+  This chapter describes the basic tools needed to work with electronics (diagonal
+cutters, flush cutters, pliers, screwdrivers, etc.), along with some tools
+not commonly discussed in other texts, including things like crimp
+tools, rotary tools, step drills, professional grade soldering
+stations, and magnifiers and microscopes for surface-mount work.
+
+<<Chapter_4, Chapter 4: Tool Techniques>>::
+  Short sections for each tool discuss its uses and applications, including
+the correct use of sockets, wrenches, and screwdrivers; how to solder various
+pass:[<span class="keep-together">component</span>] types, including surface-mounted components; and how
+to correctly size the holes needed to mount components like switches, lamps,
+or printed circuit boards in a chassis or panel.
+
+<<Chapter_5, Chapter 5: Power Sources>>::
+  An overview of power supplies for both DC and AC
+current, ranging from batteries to Variac-type devices, this chapter gives
+special attention to inexpensive DC power supplies in the form of plug-in
+modules (so-called _wall warts_). It also presents a discussion of fuses
+and circuit breakers and offers guidance on how to select an appropriate rating
+for these essential protection devices.
+
+<<Chapter_6, Chapter 6: Switches>>::
+  This chapter is a survey of the types of switches available and where they
+are typically used. This covers conventional switches, such as toggles and
+panel-mount pushbuttons, along with other types, such as PCB-mounted pushbuttons
+and membrane-type switches.
+
+<<Chapter_7, Chapter 7: Connectors and Wiring>>::
+  In electronics, almost everything connects to something, somewhere. This chapter
+describes the various types of connectors available, where they are commonly
+used, and how to assemble some of the more common types, such as DB-9, DB-25,
+high-density terminal blocks, and the 0.1-inch grid pin connectors found on
+Arduino, Raspberry Pi, and BeagleBone boards. It also covers related topics,
+such as soldering, crimping, and insulation displacement (IDC) techniques for
+connector assembly. This chapter deals mostly with those connectors that a
+typical human being can easily assemble without resorting to a microscope and
+tweezers, or a special tool that costs hundreds of dollars.
+
+<<Chapter_8, Chapter 8: Passive Components>>::
+  Passive components are the framework on which circuits are built. This
+chapter describes commonly encountered passive components such as resistors,
+capacitors, and inductors, including both through-hole and surface-mounted
+types. It also describes how to read component markings and how to understand
+component ratings for power, temperature, and tolerance.
+
+<<Chapter_9, Chapter 9: Active Components>>::
+  This chapter covers various types of active components, from diodes to ICs,
+with photos and package outline drawings to illustrate the various types. It also discusses key points to bear
+in mind when working with active components, such as static sensitivity, heat
+damage from soldering, and some of the package types available for surface-mount
+components.
+
+<<Chapter_10, Chapter 10: Relays>>::
+  Relays might be an old technology, but they are still essential in electronics.
+This chapter covers the various types of relays available and their typical
+applications. It describes types ranging from low-current, TTL-compatible
+reed relays to high-power types used to control AC current. It also covers
+techniques for controlling a relay from a low-voltage circuit.
+
+<<Chapter_11, Chapter 11: Logic>>::
+  Along with a condensed description of basic logic components (OR, NOR, AND, NAND, etc.),
+logic families (TTL, CMOS), and some examples of combinatorial logic circuits, this chapter
+also presents an introduction to microprocessors and microcontrollers, in terms
+of what is currently available and what you might need or encounter in your
+own activities.
+
+<<Chapter_12, Chapter 12: Discrete Control Interfaces>>::
+  This chapter covers the basics of using a discrete signal (a single logic I/O
+port) to control things in the physical world. It also includes a discussion on the
+use of buffers, using both individual transistors and ICs, along with
+a discussion of current sink and sourcing considerations.
+
+<<Chapter_13, Chapter 13: Analog Interfaces>>::
+  This chapter describes the basics of analog interfaces, both input and output,
+and includes discussions on resolution, speed, and the effects of quantization.
+It also covers aspects of analog I/O, such as voltage range, buffering, and circuit
+design considerations to reduce noise and improve performance.
+
+<<Chapter_14, Chapter 14: Data Communication Interfaces>>::
+  Topics include common interfaces, from board-level SPI and I^2^C to RS-232, RS-485,
+USB, and Ethernet. This chapter also covers wireless interfaces, such as generic 2.45 GHz
+devices, 802.11 wireless networking, ZigBee, and Bluetooth. Serial and parallel, the two
+primary interface families, are introduced, followed by a discussion of synchronous and
+asynchronous modes of operation. The remainder of the chapter is organized into sections
+that cover each topic with a high-level technical discussion, and representative component
+part numbers are provided where applicable.
+
+<<Chapter_15, Chapter 15: Printed Circuit Boards>>::
+This chapter is an overview of PCB design and layout, with a focus on technique rather than specific
+tools. The chapter starts off with an introduction to PCB technology and concepts, including
+circuit board substrate materials and circuit trace (or track, if you will) pattern etching
+and plating techniques. An example from a real project is used to demonstrate the basic steps
+involved in creating a double-sided PCB layout. The chapter wraps up with a collection of
+general guidelines and tips.
+
+<<Chapter_16, Chapter 16: Packaging>>::
+  A guide to the various options available for physically housing electronics, this chapter
+includes a discussion of plastic versus metal, sources for chassis components, and the use
+of unconventional enclosures to create unique packaging prototypes. Examples are given for
+commercial off-the-shelf packages in the form of small plastic enclosures, metal enclosures
+using both aluminum and steel sheet metal, extruded aluminum packages, and heavy-gauge kits
+for more demanding applications.
+
+<<Chapter_17, Chapter 17: Test Equipment>>::
+  A short tour of inexpensive test equipment, this chapter starts with the ubiquitous digital
+multimeter and moves on to oscilloscopes, signal generators, and logic analyzers. The examples include readily available, low-cost devices such as single- and dual-channel pocket digital
+oscilloscopes from China, and a multi-waveform signal generator module for the Arduino. The
+intent is to give you some suggestions that don’t involve breaking the bank to purchase
+high-end test equipment (not that there’s anything wrong with high-end gear--it’s generally
+excellent; it just happens to be rather expensive).
+
+<<Appendix_A, Appendix A: Essential Electronics and AC Circuits>>::
+  For anyone interested, or anyone who could benefit from it for their projects,
+this appendix presents a terse, high-level overview of basic electronics theory
+beyond what <<Chapter_1>> provides. Topics covered include capacitance, series and
+parallel resistor and capacitor circuits, basic AC circuit theory, inductance,
+noise, impedance, and grounding pass:[<span class="keep-together">techniques.</span>]
+
+<<Appendix_B, Appendix B: Schematics>>::
+  This appendix defines the basics of schematic drawings, with examples of commonly
+encountered symbols. Light on text but heavy on graphics, this pass:[<span class="keep-together">appendix</span>]
+is intended to be a place where you can quickly find the definition for a particular
+symbol. It also describes some available open source tools for
+creating schematic diagrams.
+
+<<Appendix_C, Glossary>>::
+  The glossary provides definitions of many key terms and acronyms used in this book.
+
+<<Appendix_D, Appendix C: Bibliography>>::
+This appendix provides a bibliography of the suggested reference texts presented
+throughout the book, organized by topic.
+
+<<Appendix_E, Appendix D: Resources>>::
+  This appendix includes URLs for electronics distributors, sources for mechanical
+components, and vendors of surplus components of various types, as well as a brief discussion of buying electronics components and other
+items from vendors on eBay, with some guidance and caveats.
+
+<<Appendix_F, Appendix E: Components Lists>>::
+ This appendix lists most all of the IC components and modules mentioned in this book.
+While this collection is by no means comprehensive, it does contain enough representative
+parts from each category to provide a solid starting point for a new design.
+
+=== Conventions Used in This Book
+
+The following typographical conventions are used in this book:
+
+_Italic_:: Indicates new terms, URLs, email addresses, filenames, and
+file pass:[<span class="keep-together">extensions</span>].
+
++Constant width+:: Used for program listings, as well as within
+paragraphs to refer to program elements such as variable or function
+names, databases, data types, pass:[<span class="keep-together">environment</span>] variables, statements, and
+pass:[<span class="keep-together">keywords.</span>]
+
+**`Constant width bold`**:: Shows commands or other text that should
+  be typed literally by the user.
+
+_++Constant width italic++_:: Shows text that should be replaced with
+user-supplied values or by values determined by context.
+
+
+[TIP]
+====
+This element signifies a tip or suggestion.
+====
+
+[WARNING]
+====
+This element indicates a warning or pass:[<span class="keep-together">caution</span>].
+====
+
+++++
+<section data-type="sect1" id="_safari_books_online">
+<h1>Safari® Books Online</h1>
+<div class="safarienabled">
+<p><a xmlns="http://www.w3.org/1999/xhtml" href="http://safaribooksonline.com" class="orm:hideurl:ital"><em class="hyperlink">Safari Books Online</em></a> is an on-demand digital library that delivers expert <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.safaribooksonline.com/explore/" class="orm:hideurl">content</a> in both book and video form from the world&#8217;s leading authors in technology and business.</p>
+</div>
+<p>Technology professionals, software developers, web designers, and business and creative professionals use Safari Books Online as their primary resource for research, problem solving, learning, and certification training.</p>
+<p>Safari Books Online offers a range of <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.safaribooksonline.com/pricing/" class="orm:hideurl">plans and pricing</a> for <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.safaribooksonline.com/enterprise/" class="orm:hideurl">enterprise</a>, <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.safaribooksonline.com/government/" class="orm:hideurl">government</a>, <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.safaribooksonline.com/academic-public-library/" class="orm:hideurl">education</a>, and individuals.</p>
+<p>Members have access to thousands of books, training videos, and prepublication manuscripts in one fully searchable database from publishers like O&#8217;Reilly Media, Prentice Hall Professional, Addison-Wesley Professional, Microsoft Press, Sams, Que, Peachpit Press, Focal Press, Cisco Press, John Wiley &amp; Sons, Syngress, Morgan Kaufmann, IBM Redbooks, Packt, Adobe Press, FT Press, Apress, Manning, New Riders, McGraw-Hill, Jones &amp; Bartlett, Course Technology, and hundreds <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.safaribooksonline.com/our-library/" class="orm:hideurl">more</a>. For more information about Safari Books Online, please visit us <a xmlns="http://www.w3.org/1999/xhtml" href="http://safaribooksonline.com/" class="orm:hideurl">online</a>.</p>
+</section>
+++++
+
+=== How to Contact Us
+
+Please address comments and questions concerning this book to the publisher:
+
+
+O’Reilly Media, Inc.
+1005 Gravenstein Highway North
+Sebastopol, CA 95472
+800-998-9938 (in the United States or Canada)
+707-829-0515 (international or local)
+707-829-0104 (fax)
+
+We have a web page for this book, where we list errata, examples, and
+any additional information. You can access this page at
+link:$$http://bit.ly/practical-electronics$$[].
+
+[role="no-justify"]
+To comment or ask technical questions about this book, send email to:
+pass:[<span class="keep-together"><a xmlns="http://www.w3.org/1999/xhtml" class="email" href="mailto:bookquestions@oreilly.com"><em>bookquestions@oreilly.com</em></a></span>].
+
+For more information about our books, courses, conferences, and news,
+see our website at link:$$http://www.oreilly.com$$[].
+
+[role="no-justify"]
+Find us on Facebook: pass:[<span class="keep-together"><a href="http://facebook.com/oreilly"><em>http://facebook.com/oreilly</em></a></span>]
+
+[role="no-justify"]
+Follow us on Twitter: pass:[<span class="keep-together"><a href="http://twitter.com/oreillymedia"><em>http://twitter.com/oreillymedia</em></a></span>]
+
+[role="no-justify"]
+Watch us on YouTube: pass:[<span class="keep-together"><a href="http://www.youtube.com/oreillymedia"><em>http://www.youtube.com/oreillymedia</em></a></span>]
+
+=== Endorsements
+
+There aren't any endorsements in this book, at least not intentionally. I've made reference
+to many different component manufacturers, suppliers, and authors, but I've tried to
+be evenhanded about it. Any trademarks mentioned are the property of their respective owners
+and appear here solely for reference. As for the photography, I tried to use my own tools
+and other items as much as possible, and although an image may show a particular brand or
+model, that doesn't mean it's the only type available. It just happens to be the one that
+I own and use in my own shop. In some cases, I've used images with permission or from sources
+such as the Library of Congress, and this is noted as appropriate.
+
+=== Acknowledgments
+
+This book would not have been possible without the enduring patience and support of my
+family. In particular, I would like to acknowledge the photography and organizational
+assistance of my daughter, Seren, who put up with my fussiness and took yet another
+picture of something or other in the light tent for me when I didn't like the pose or
+lighting of the first (or second, or third) attempt. And, of course, my lovely wife, Carol,
+who would bring me things to eat in my shop and fret about me losing sleep.
+
+Special thanks to Mike Westerfield for his technical review and input. It's always good to
+have more than one pair of eyes on the details, and Mike pointed out some rough spots that
+needed some editing and clarification. The end result is a better book, and it just goes
+to show why review is a crucial part of any development process.
+
+The feedback from readers of the early release has been invaluable. Special thanks to those
+who suggested additions for the bibliography in Appendix D (you know who you are) and for
+the many helpful comments and constructive criticisms.
+
+I would also like to thank the editorial staff at O'Reilly for the opportunity to work
+with them once again, especially Brian Sawyer for his willingness to put up with me in
+general, Mike Loukides for giving me this opportunity to write another book for O'Reilly,
+and the Atlas team for responding to my technical issues in a timely and helpful manner.

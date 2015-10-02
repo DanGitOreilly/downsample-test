@@ -1,0 +1,115 @@
+[[Appendix_D]]
+[appendix] 
+== Bibliography
+
+There are many excellent books available that cover all aspects of electronics,
+ranging from hands-on projects to advanced theory. This is a short list of some
+of them. I own copies of all of these, and over the years some of them have
+become a bit worn. Nonetheless, I don't think I could pick a list of favorites,
+since I consider all of them to be valuable references and good sources of
+inspiration. If you want to acquire any of these for yourself, be sure to check
+and see if there is a more recent edition available, although you can save some
+money by opting for an older used book.
+
+And, yes, there is indeed a shameless plug in here for my own book on instrumentation.
+Since I drew from it for writing this book, I felt it was proper to acknowledge it.
+
+[bibliography]
+===== Electronics Theory
+- Ed. Walter Kester. 'Data Conversion Handbook'.
+  Newnes. 2004. ISBN 978-0750678414.
+- William Kleitz. 'Digital Electronics: A practical approach'.
+  Regents/Prentice Hall. 1993. ISBN 0-13-210287-0.
+- Paul Horowitz and Winfield Hill. 'The Art of Electronics, 2nd Edition'.
+  Cambridge University Press. 1989. ISBN 978-0521370950.
+- Richard Dorf (ed.). 'The Electrical Engineering Handbook'.
+  CRC Press LLC. 1997. ISBN 0-8493-8574-1.
+- Allan Hambley. 'Electronics, 2nd ed.'
+  Prentice Hall, 1999. ISBN 978-0136919827.
+- Randy Katz. 'Comtemporary Logic Design, 2nd Edition'.
+  Prentice Hall. 2004. ISBN 978-0201308570.
+- Arthur Williams and Fred Taylor. 'Electronic Filter Design Handbook, 4th Edition'.
+  McGraw-Hill. 2006. ISBN 978-0071471718.
+
+[bibliography]
+===== Engineering and Design Topics
+- John Catsoulis. 'Designing Embedded Hardware'
+  O'Reilly. 2002. ISBN 978-0-596-00755-3.
+- Walter G. Jung. 'IC Op-Amp Cookbook'.
+  Howard W. Sams. 1986. ISBN 0-672-22453-4.
+- Don Lancaster. 'The CMOS Cookbook'.
+  Newnes. 1997. ISBN 978-0750699433.
+
+[bibliography]
+===== Interfaces
+- Jan Axelson. 'Serial Port Complete'.
+  Lakeview Research LLC. 2007. ISBN 978-1931448-06-2.
+- Jan Axelson. 'Parallel Port Complete'.
+  Lakeview Research LLC. 2000. ISBN 978-0-9650819-1-7.
+- Jan Axelson. 'USB Complete'.
+  Lakeview Research LLC. 2007. ISBN 978-1931448086.
+- Benjamin Lunt. 'USB: The Universal Serial Bus'.
+  CreateSpace. 2012. ISBN 978-1468151985.
+- Nick Hunn. 'Essentials of Short-Range Wireless'.
+  Cambridge University Press. 2010. ISBN 978-0521760690.
+- Charles E. Spurgeon and Joann Zimmerman. 'Ethernet: The Definitive Guide, 2nd Edition'
+  O'Reilly Media, Inc. 2014. ISBN 978-1-4493-6184-6.
+
+[bibliography]
+===== Construction Techniques and Projects
+- ARRL. 'ARRL Handbook'.
+  American Radio Relay League. 2013. ISBN 978-1625950017.
+- William I. Orr. 'Radio Handbook'.
+  Howard W Sams. 1979. ISBN 978-0672240348.
+- John H. Moore, Christopher C. Davis, Michael A. Coplan, and Sandra C. Greer. 'Building Scientific Apparatus'.
+  Cambridge University Press, 2009. ISBN 978-0521878586.
+- Erik Oberg (ed.). _Machinery's Handbook, 29th Edition_.
+  Industrial Press. 2012. ISBN 78-0831129002.
+- Christopher McCauley. _Shop Reference for Students & Apprentices_.
+  Industrial Press. 2001. ISBN 978-0831130794.
+
+[bibliography]
+===== Hands-On Learning
+- Howard Berlin. '555 Timer Applications Source Book'.
+  Howard W. Sams. 1979. ISBN 978-0672215384.
+- Charles Platt. 'Make: Electronics'.
+  Maker Media, Inc. 2009. ISBN 978-0-596-15374-8.
+- Forrest M. Mims III. 'Engineer's Mini-Notebook Series, Volume 1 (MINI-1)'.
+  Master Publishing. 2007.
+- Forrest M. Mims III. 'Engineer's Mini-Notebook Series, Volume 2 (MINI-2)'.
+  Master Publishing. 2007.
+- Forrest M. Mims III. 'Engineer's Mini-Notebook Series, Volume 3 (MINI-3)'.
+  Master Publishing. 2007.
+- Forrest M. Mims III. 'Engineer's Mini-Notebook Series, Volume 4 (MINI-4)'.
+  Master Publishing. 2007.
+- Mike Westerfield. 'Building iPhone and iPad Electronic Projects'.
+  O'Reilly Media, Inc. 2013. ISBN 978-1-449-36350-5.
+
+[bibliography]
+===== Instrumentation
+- J. M. Hughes. 'Real-World Instrumention with Python'.
+  O'Reilly Media, Inc. 2010. ISBN 978-0596809560.
+
+[bibliography]
+===== Microcontrollers
+- Massimo Banzi and Michael Shiloh. 'Getting Started with Arduino'.
+  O'Reilly Media, Inc. 2014. ISBN 978-1-4493-6333-8.
+- Emily Gertz and Patrick Di Justo. 'Environmental Monitoring with Arduino'.
+  O'Reilly Media, Inc. 2012. ISBN 978-1-449-31056-1.
+- Lucio Di Jasio. 'Programming 16-Bit PIC Microcontrollers in C, Second Edition'.
+  Newnes. 2011. ISBN 978-1856178709.
+- Lucio Di Jasio. 'Programming 32-bit Microcontrollers in C'.
+  Newnes. 2008. ISBN 978-0750687096.
+- Patrick Di Justo and Emily Gertz. 'Atmospheric Monitoring with Arduino'.
+  O'Reilly Media, Inc. 2013. ISBN 978-1-449-33814-5.
+- Jonathan Oxer and Hugh Blemings. 'Practical Arduino'.
+  Apress. 2009. ISBN 978-1-4302-2477-8.
+- Matt Richardson. 'Getting Started with Raspberry Pi'.
+  Maker Media, Inc. 2012. ISBN 978-1449344214.
+
+[bibliography]
+===== Printed Circuit Boards
+- Jan Axelson. 'Making Printed Circuit Boards'.
+  Tab Books, Inc. 1993. ISBN 978-0830639519.
+- Matthew Scarpino. 'Designing Circuit Boards with EAGLE'.
+  Prentice Hall. 2014. ISBN 978-0133819991.

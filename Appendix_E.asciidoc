@@ -1,0 +1,390 @@
+[[Appendix_E]]
+[appendix] 
+== Resources
+
+This appendix contains a collection of URLs for((("resources", id="ix_resources", range="startofrange"))) electronics distributors, sources
+for mechanical components, and vendors of surplus components of various types. It
+also includes a brief discussion of buying electronics components and other items
+from vendors on eBay, with some guidance and caveats.
+
+This is not a comprehensive list, just the companies I am familiar with. This
+is not an endorsement for any particular company or product line.
+
+Note that many of the sources listed here carry more than just what the list heading
+might imply, and some sources appear in more than one category to reflect the diversity
+of things they offer. Major distributors, for example, carry everything from passive
+components to hand tools and test equipment. Other companies, such as Adafruit and
+SparkFun, are more focused on the maker and hobbyist markets, but they too carry a
+wide range of products.
+
+[role="wide-tables"]
+=== Software
+
+==== Open Source Schematic Capture Tools
+
+[role="wide"]
+[width="100%",cols="<1,<2"]
+|============================================
+|Itecad                       | http://www.itecad.it/
+|Oregano                      | https://github.com/marc-lorber/oregano
+|Open Schematic Capture (OSC) | http://openschcapt.sourceforge.net/
+|TinyCAD                      | http://bit.ly/tinyCAD
+|XCircuit                     | http://opencircuitdesign.com/xcircuit/
+|============================================
+
+[role="pagebreak-before"]
+==== CAE Software Tools
+
+[role="wide"]
+[width="100%",cols="<1,<1,<2"]
+|============================================
+|DesignSpark | Free, not open source  | http://bit.ly/designspark
+|Eagle       | Free, not open source  | http://www.cadsoftusa.com
+|Fritzing    | Free CAE tool          | http://fritzing.org/home/
+|gEDA        | Open source CAE tools  | http://www.geda-project.org/
+|KiCad       | Open source CAE tool   | http://www.kicad-pcb.org/
+|============================================
+
+==== PCB Layout Tools
+
+[role="wide"]
+[width="100%",cols="<1,<1,<2"]
+|============================================
+|FreePCB     | Windows-only PCB layout | http://www.freepcb.com/
+|FreeRouting | Web-based PCB autorouter  | http://www.freerouting.net/
+|PCB         | Linux open source layout  | http://sourceforge.net/projects/pcb/
+|============================================
+
+[role="wide-tables"]
+=== Hardware, Components, and Tools
+
+==== Electronic Component Manufacturers
+
+[role="wide"]
+[width="100%",cols="<1,<2"]
+|============================================
+|Allegro            | http://www.allegromicro.com/
+|Analog Devices     | http://www.analog.com
+|ASIX               | http://www.asix.com.tw/
+|Atmel              | http://www.atmel.com/
+|Bluegiga           | http://www.bluegiga.com/
+|Cypress            | http://www.cypress.com/
+|Digi International | http://www.digi.com/
+|Fairchild          | http://www.fairchildsemi.com/
+|Freescale          | http://www.freescale.com/
+|FTDI               | http://www.ftdichip.com/
+|Linear Technology  | http://www.linear.com/
+|Maxim              | http://www.maximintegrated.com
+|Micrel             | http://www.micrel.com/
+|Microchip          | http://www.microchip.com/
+|NXP                | http://www.nxp.com
+|ON Semiconductor   | http://www.onsemi.com/
+|Panasonic          | http://www.panasonic.com/
+|Silicon Labs       | http://www.silabs.com/
+|STMicrotechnology  | http://www.st.com/
+|Texas Instruments  | http://www.ti.com/
+|WIZnet             | http://www.wiznet.co.kr
+|Zilog              | http://www.zilog.com/
+|============================================
+
+==== Electronics Distributors (USA)
+
+[role="wide"]
+[width="100%",cols="<1,<2"]
+|============================================
+| Allied  | http://www.alliedelec.com/
+| Digikey | http://www.digikey.com/
+| Jameco  | http://www.jameco.com
+| Mouser  | http://www.mouser.com/
+| Newark  | http://www.newark.com/
+| State   | http://www.potentiometer.com/
+|============================================
+
+==== Discount and Surplus Electronics
+
+[role="wide"]
+[width="100%",cols="<1,<2"]
+|============================================
+| All Electronics              | http://www.allelectronics.com/
+| Alltronics                   | http://www.alltronics.com/
+| American Science and Surplus | http://www.sciplus.com/
+| BG Micro                     | http://www.bgmicro.com/
+| Electronic Surplus           | http://www.electronicsurplus.com
+| Electronic Goldmine          | http://www.goldmine-elec-products.com/
+|============================================
+
+==== Mechanical Parts and Hardware (Screws, Nuts, Bolts)
+
+[role="wide"]
+[width="100%",cols="<1,<2"]
+|============================================
+| All Electronics   | http://www.allelectronics.com/
+| Alltronics        | http://www.alltronics.com/
+| AmazonSupply      | http://www.amazonsupply.com/
+| Bolt Depot        | http://www.boltdepot.com/
+| Fastenal          | http://www.fastenal.com/
+| McMaster-Carr     | http://www.mcmaster.com
+| Micro Fasteners   | http://www.microfasteners.com/
+| SDP/SI            | http://www.sdp-si.com
+| W.M. Berg Co.     | http://www.wmberg.com/
+|============================================
+
+==== Microcontrollers, Kits, Parts, and Supplies
+
+[role="wide"]
+[width="100%",cols="<1,<2"]
+|============================================
+|Adafruit            | http://www.adafruit.com/
+|circuits@home       | http://www.circuitsathome.com/
+|CuteDigi            | http://www.cutedigi.com/
+|DFRobot             | http://www.dfrobot.com/
+|Electronic Goldmine | http://www.goldmine-elec-products.com/
+|Evil Mad Scientist Laboratories | http://shop.evilmadscientist.com/
+|JPM Supply          | http://www.jpmsupply.com/
+|MCM Electronics     | http://www.mcmelectronics.com/
+|Nightfire           | http://www.vakits.com/
+|Parts Express       | http://www.parts-express.com/
+|SainSmart           | http://www.sainsmart.com
+|SparkFun            | http://www.sparkfun.com/
+|Vetco Electronics   | http://www.vetco.net
+|Velleman            | http://www.vellemanusa.com
+|============================================
+
+==== Electronic Enclosures and Chassis
+
+[role="wide"]
+[width="100%",cols="<1,<2"]
+|============================================
+|Bud Industries          | http://www.budind.com/
+|Context Engineering     | http://contextengineering.com/index.html
+|ELMA                    | http://www.elma.com/
+|Hammond Manufacturing   | http://www.hammondmfg.com/index.htm
+|iProjectBox             | http://www.iprojectbox.com/
+|LMB/Heeger              | http://www.lmbheeger.com/
+|METCASE/OKW Enclosures  | http://www.metcaseusa.com/
+|Polycase                | http://www.polycase.com/
+|Serpac                  | http://www.serpac.com/
+|TEKO                    | http://www.tekoenclosures.com/en/home
+|============================================
+
+==== Tools
+
+[role="wide"]
+[width="100%",cols="<1,<2"]
+|============================================
+|Adafruit            | http://www.adafruit.com/
+|Apex Tool Group     | http://www.apexhandtools.com
+|CBK Products        | http://www.ckbproducts.com
+|Circuit Specialists | http://www.circuitspecialists.com
+|Electronic Goldmine | http://www.goldmine-elec-products.com/
+|Harbor Freight      | http://www.harborfreight.com/
+|Maker Shed          | http://www.makershed.com
+|MCM Electronics     | http://www.mcmelectronics.com/
+|SparkFun            | http://www.sparkfun.com/
+|Stanley             | http://www.stanleysupplyservices.com/
+|Velleman            | http://www.vellemanusa.com
+|============================================
+
+==== Test Equipment
+
+[role="wide"]
+[width="100%",cols="<1,<2"]
+|============================================
+|Adafruit            | http://www.adafruit.com/
+|Electronic Goldmine | http://www.goldmine-elec-products.com/
+|MCM Electronics     | http://www.mcmelectronics.com/
+|SparkFun            | http://www.sparkfun.com/
+|Surplus Shed        | http://www.surplusshed.com
+|Velleman            | http://www.vellemanusa.com
+|============================================
+
+[role="wide-tables"]
+=== Printed Circuit Board Supplies and Fabricators
+
+Most major electronics distributors sell things like etchant and single- and
+double-side clad PCB blanks with photo-resist applied. If you aren't
+comfortable with the chemicals and the procedures, consider using a commercial
+prototype PCB house.
+
+[role="pagebreak-before"]
+==== Prototype and Fast-Turnaround Fabricators
+
+[role="wide"]
+[width="100%",cols="<1,<2"]
+|============================================
+|Advanced Circuits    | http://www.4pcb.com/
+|ExpressPCB           | http://www.expresspcb.com/
+|Gold Phoenix PCB Co. | http://www.goldphoenixpcb.com/
+|Sunstone Circuits    | http://www.sunstone.com/
+|Sierra Circuits      | https://www.protoexpress.com/
+|============================================
+
+==== PCB Kit Sources
+
+[role="wide"]
+[width="100%",cols="<1,<1,<2"]
+|============================================
+|AngloEast            | http://www.angloeast.net/ |  Laser printer-based decal transfer technique
+|Jameco Electronics   | http://www.jameco.com/    |  Conventional acid etch and supplies
+|Think & Tinker, Ltd. | http://www.thinktink.com/ |  Various supplies for making PCBs
+|Vetco Electronics    | http://www.vetco.net      |  Conventional acid etch kit
+|============================================
+
+=== eBay
+
+It is possible to find some amazing deals on eBay, but it pays to be careful
+about what you buy and from whom you buy it. Overall, eBay does a pretty good
+job of making sure that sellers aren't scammers in disguise, and PayPal makes
+payments safe and painless. I have also had good results purchasing items from various vendors in China through both eBay and Amazon. I've been able to find amazingly cheap things and I've never had
+any hassle with a Chinese seller. In fact, they go out of their way to make sure
+you get what you ordered and you like what you received. As a bonus, the shipping
+is usually free for small items (although it can take a while to get to you).
+
+Shipping cost is probably the main drawback to buying anything on eBay. Most sellers
+are honest about the shipping, but there have been a few times when someone
+tacked on a "shipping and handling" charge that far exceeded what the shipping
+label stated for the cost. After experiencing this a few times, I started to
+pay close attention to the shipping costs stated in the item posting, and
+now I simply look elsewhere if it seems to be out of line. But sometimes the cost
+is just what it is. For heavy or bulky items, the pass:[<span class="keep-together">shipping</span>] can be steep, particularly
+if the seller decides to use a pricey service rather than the cheapest method. If
+what you are bidding on or buying is something you just have to have, then that is
+what it will cost unless you can convince the seller to use the standard service
+instead of the express delivery option. It pays sometimes to look around locally
+before jumping on what seems like a good deal only to be shocked when the total
+with shipping comes due.
+
+Lastly, beware of sellers who state "all sales final, no returns" in the item
+listing. This is a big red flag. If sellers aren't willing to stand behind what
+they're selling, you should probably think twice about giving them your
+hard-earned money.
+
+=== Other Sources
+
+If you have a local electronics supply outlet, I suggest visiting it to
+see what it has. In addition to parts and supplies, some have a section set
+aside for surplus test equipment. Occasionally, you can get a good deal or even
+haggle to get a better price. In the retail realm, there is Radio Shack,
+and most stores have a fairly decent selection of components, kits, and tools.
+
+If there is a used tool store in your area, it might be worth your time to go
+and check it out. Where I live, we have several, and I've found some really
+great deals on interesting stuff, most of which only needed some cleaning and
+adjustment to make it work like new (it doesn't look like new, but that's not
+really important, at least not to me).
+
+Some large manufacturing companies and universities have surplus property sales
+from time to time. These can be great places to find everything from old
+computer gear to office furniture. The downside is that they are sometimes
+overrun with people thinking they are going to get a great deal on something
+good, and willing to pay far more than what it is really worth. The truth is
+that the stuff at these sales is usually there because it is too worn out, too
+broken down, or too obsolete to be of any practical use any more. You can get
+great deals if you're looking for parts to salvage, or if you have the time and
+skills necessary to fix broken things, but otherwise, it might not be worth the
+effort.
+
+Lastly, if you are fortunate enough to live in an area with an electronics
+surplus outlet, then by all means, go and check it out. These places can be a
+fascinating experience, and generally they are willing to negotiate the price,
+particularly for older items. When I was a teen, one of my first surplus acquisitions
+was an almost complete set of 19-inch rack-mount chassis for a sounding rocket
+launch control system. I never launched any rockets with it, but it was awesome
+anyway, and I learned an immense amount just taking it all apart and figuring
+out some of the circuits by following the traces on the PCBs. After all these
+years, I think I still have the red _Launch_ button around somewhere in a box.
+
+=== Datasheets, Application Notes, and Manuals
+
+Almost every electronic component has a datasheet available for it. These are
+essential documents that describe the functional, electrical, and physical
+characteristis of a device. Even resistors have datasheets.
+
+Application notes are intended to provide inspiration and guidance, and also
+to illuminate dark corners that a datasheet might not cover explicitly. Many
+successful product designs started from circuits described in an application
+note.
+
+User manuals, sometimes running upward of 500 pages, are readily available
+for complex parts like microcontrollers and microprocessors, and manufacturers
+usually make them available for free. With a little effort, you can also find
+manuals for old test equipment and service manuals for consumer electronics.
+There are individuals and companies that specialize in locating and selling
+manuals for all types of electronic devices.
+
+[NOTE]
+====
+Never pay for a component datasheet or application note, if you can avoid it.
+The only time you might encounter a situation where you can't get the technical
+information any other way is when dealing with an old part that has been out of
+production for many years. Otherwise, you are paying for something you can get
+for free by downloading it yourself.
+====
+
+==== Datasheets
+
+The history of datasheets goes way back to the dawn of the electronic age, when
+manufacturers realized that, if they wanted people to use their parts in a new
+design, they needed to be able to communicate essential characteristics to
+engineers so they could use the part correctly. As electronic components have
+become more complex, this has become an essential activity in the electronics
+component industry, and whole divisions of a large semiconductor company might be
+dedicated to doing nothing but testing, characterizing, and generally experimenting
+with the component products. For those with an inclination to poke and tinker, and
+a good background in math and semiconductor theory, this could be a dream job.
+
+It's always a good idea to have the datasheets for the parts you are working
+with. There's no need to guess; the information is readily available in PDF
+form from the websites of companies like Atmel, Fairchild, Maxim, NXP, Silicon
+Labs, Texas Instruments, and many more. See <<Chapter_9>> for a walk-through
+example of deciphering a datasheet.
+
+==== Application Notes
+
+Semiconductor manufacturers have a long history of providing documents called
+_application notes_ (or _app notes_) that describe how their products work, how they
+can be used in various applications, and how to interpret datasheet parameters.
+In the past, before the Internet and PDF files, it was common to see a row of
+bookshelves in an electronics engineering lab filled with printed paperback
+volumes of datasheets and application notes. The application notes were
+particularly popular, and it wasn't unusual to see books with some heavy wear
+and tear.
+
+Today, you can download and print these documents for yourself as you need them.
+Personally, I like to keep printed app notes in three-ring binders so I can quickly
+find them when I need them, tag the pages, or even write in my own notes (using
+a pencil, of course!).
+
+==== Manuals
+
+User manuals (also called _user's guides_) for components such as microcontrollers
+and microprocessors are readily available for free as PDF downloads from the
+manufacturer. These documents are typically written in a terse, cut-to-the-chase
+style, and they focus on the specific functional and operational characteristics of
+a particular device or family of devices. They aren't tutorials, by any stretch
+(although some manufacturers do have tutorials available for download as well).
+Still, when you need to know what a special function register does, or how to
+use the PWM (pulse width modulation) function of a device, the technical data
+in a user manual is invaluable.
+
+If you need a manual for something like an old signal generator, or a consumer
+device like a video camera or a radio, you will need to do some hunting. If
+a user or service manual for something once existed, chances are, someone has
+a copy of it that she will sell for the right price. You have to decide if it's
+the right price, of course, but most of the time the cost isn't unreasonable. eBay
+is a good place to start, as many vendors offer copies of old technical documents,
+either as originals or as duplicates.
+
+Caveat emptor: if you are buying a copy of an old manual, the odds are good
+that it is an unauthorized copy. In most cases, the original manufacturer might not
+really care, since the product has long been out of production and it gives them
+some free market exposure. That's assuming that they are still in business. But
+then again, they might care, and you might be in violation of their copyright. If
+in doubt, drop the manufacturer a quick note and ask how they feel about it.
+
+You should also be prepared to inspect the document the minute it arrives, because some
+of the people who sell old manuals aren't always as careful when copying things as
+they should be. If you get something that isn't readable or is missing pages, return
+it, and check the listing on eBay before bidding or buying to make sure you can
+return it. As noted earlier, don't deal with someone who flatly states "all sales are final, no returns."
+((("resources", range="endofrange", startref ="ix_resources")))

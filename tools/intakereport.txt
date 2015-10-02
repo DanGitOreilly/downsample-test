@@ -1,0 +1,94 @@
+Practical Electronics: Components and Techniques, 1E / 9781449373078
+RT # 183999
+
+Stylesheet: reillymedia/oreilly_diy2column_theme
+Toolchain: Atlas2/htmltopdf
+
+Atlas URL: http://atlas.oreilly.com/oreillymedia/practical-electronics-components-and-techniques
+
+Incoming format: Asciidoc
+Outgoing format: Asciidoc
+
+Preliminary pagecount: TOTAL  514 with figs
+  
+Is this book in Early Release? yes
+
+Resources
+=========
+
+** Figs: Illustrations is still working on the figs.
+   527 total. (0 are informal; 4 are inline.)
+
+   Once the figs are processed on /work, you'll need to add them to the book's repo in Git.
+
+** Intake Report:
+   (Git repo) tools/intakereport.txt
+
+** MS Snapshot:
+    To view the submitted files, you'll need to checkout the git tag named 'manuscript_to_prod' 
+    by running the following command in your checkout:
+    
+    $ git checkout manuscript_to_prod
+    
+    This will temporarily switch the files in your repo to the state they were in when the manuscript_to_prod tag 
+    was created. 
+    To switch the files back to the current state, run:
+    
+    $ git checkout master
+  
+  
+Notes from Tools:
+=================
+
+** xrefstyle doesn't work yet in HTMLBOOK (to get xref output like "Chapter 1: Electrons in Motion"), so I've left the preface with xrefs that have hardcoded xref markup (something like: <<Chapter_1, Chapter 1: Electrons in Motion>>). LEAVING TO PROD to decide what to do with these.
+
+** There are many CSS issues throughout the book. I have submitted a Stylesheet ticket: https://intranet.oreilly.com/jira/browse/STYL-138
+
+** I converted the instances of docbook passthroughs for math equations (like seen below) to HTMLbook. Docbook passthroughs needed some handling fixes (waiting to be deployed), but HTMLbook passthroughs work just fine!
+
+** 0 out of 5 code listing with syntax highlighting.
+
+** Please let Tools know ASAP if there are any other global problems for which we can help automate a fix.
+
+
+Notes from Dan:
+==================
+
+Ready for intake. Please move to Atlas 2, but leave as asciidoc and apply oreilly_diy2column_theme. [DONE --TOOLS]
+
+Prod: this is the first time this theme will be used. Expect to find elements that need CSS tweaking and please report them to Ron. Look 
+critically at the output and don't assume that everything is working as it should. There will be problems.
+
+The Preface includes hard-coded crossrefs in How This Book Is Organized. [LEAVING TO PROD --TOOLS]
+
+Please use the new boilerplate copyright text on the copyright page. [DONE --TOOLS]
+
+The author used nonstandard markup for equations. Here's an example from Chapter 1: [SEE NOTES --TOOLS]
+
+++++
+<simplelist>
+<member>E = IR</member>
+</simplelist>
+++++
+
+Prod: there's a good deal of math in this book. Please watch for equations that are set in latex but are simple enough to be set with just 
+text. Also watch for sentence such as the following, which include variables in plain text but that should be italic. Please ask the 
+copyeditor to watch for these and to work with the author to make it clear how these terms should be set. Here's an example sentence:
+
+Where E is voltage (in Volts), I is current (in Amperes), and R is resistance
+(in Ohms).
+
+Appendix C is a Glossary. Please apply standard formatting to the glossary terms and definitions.
+
+Illustrations:
+[from Brian Sawyer]: There are many, many illustrations that will need to be redrawn. They look good, but they'll need our house style 
+and special touch. Please let the author know if you need original versions of them to help the process.
+
+
+==================
+
+Please let me know about any other issues.
+
+Thanks,
+Chris
+

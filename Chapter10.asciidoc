@@ -1,0 +1,473 @@
+[[Chapter_10]] 
+== Relays
+
+Relays may be an old technology,((("relays", id="ix_relays", range="startofrange"))) but they are still essential in electronics. A relay
+is basically just an electrically operated switch. Some are tiny and handle only small
+amounts of current at low voltages, ((("contactors")))whereas other types, called _contactors_, are huge
+(the size of a small refrigerator) and can safely deal with hundreds of amperes and
+thousands of volts. But regardless of size and power capacity, all relays and their
+close cousins the contactors use the same basic principle of operation.
+
+This chapter describes various types ranging from low-current TTL-compatible reed relays
+to high-power types used to control AC. Techniques for
+controlling a relay from a low-voltage circuit are also covered, as well as some examples of how relays can be
+used in control and logic circuits.
+
+=== Relay Background
+
+Relays have been around since about 1830.((("relays", "background"))) In fact, they are probably one of the oldest
+types of electrical components (other than perhaps switches). Relay-based switching
+systems replaced human telephone switchboard operators in mid–20th century, and some
+early computers were built using relays, such as the Zuse Z3 (1941), the Atanasoff-Berry
+Computer (1942), and the IBM ASCC/Harvard Mark I (1944). Although they haven't
+changed much in terms of operation, they have evolved into a myriad of types over the
+past 180 years.
+
+Regardless of the actual internal physical arrangement, all electromechanical relays
+operate on the principle of electromagnetism as the force driving a mechanism of some
+sort. The mechanism might be an armature, metal reeds, or a contactor bus bar type of
+arrangement.
+
+==== Armature Relays
+
+An armature relay has an internal((("armature relays")))((("relays", "armature relays"))) mechanism that transfers the motion induced by a
+solenoid coil (an electromagnet) into physical motion, usually by means of some sort
+of lever action. The motion of the armature can be used to control multiple sets of
+contacts, and in some designs, a small pushbutton is brought out through the shell of
+the relay to allow manual operation. <<relay_diagram>> is a simplified illustration
+of a basic ((("SPST (single-pole single-throw) relays")))SPST type of relay.
+
+[[relay_diagram]]
+[role="wide"]
+.A basic electromagnetic relay
+image::images/pect_1001.png[align="center"]
+
+Armature type relays can have one or more sets of ((("SPDT (single-pole double-throw) relays")))((("DPST (double-pole single-throw) relays")))((("DPDT (double-pole double-throw) relays")))contacts (SPST, SPDT, DPST, DPDT,
+3PDT, and so on), with the multiple contacts all mechanically connected to the same
+armature lever. Since they are basically electromechanical switches, the same general
+contact descriptions apply. But relays have the advantage of an electromagnet, which
+can exert considerable force. Relays with 10 or even 20 sets of contacts are sometimes
+found in applications such as elevator controls and old-style telephone switching
+systems. If you look ahead to <<octal_socket>>, you can see three sets of SPDT contacts
+through the clear plastic shell of the relay.
+
+==== Reed Relays
+
+Some types of relays use a set of thin ((("reed relays")))metal strips called _reeds_ for((("reeds"))) the contacts. These
+are sealed into a small glass tube, and a coil wound around the tube provides the
+electromagnetic force that causes the reeds to bend and make contact. <<reed_relay>>
+shows how this type of device works.
+
+[[reed_relay]]
+[role="float-bottom wide"]
+.Reed relay operation
+image::images/pect_1002.png[align="center"]
+
+Any suitable magnetic field will cause the reeds to flex and make contact. In fact, the
+sensors used in security systems to detect an open door or window are often nothing more
+than the reed in its glass tube without a coil. A permanent magnet in the window or door
+frame closes the contacts when it's close to the sensor. <<bare_reed_relay>> shows
+a bare reed sensor module suitable for use with something like an Arduino or BeagleBone
+single-board computer.
+
+==== Contactor
+
+In a high-current, high-voltage type of relay known as a ((("contactors")))((("relays", "contactors")))contactor, a solenoid coil is
+used to pull in a bar or frame that holds the contacts, as shown in <<contactor_operation>>.
+The result is rather like a piston, with the bus bar making a shorting connection between
+the input and output terminals of the device.
+
+Large contactors can be startling when they are energized, producing a loud bang as the
+bus bar is pulled in by the solenoid.
+
+[[bare_reed_relay]]
+.Reed contacts without a coil
+image::images/pect_1003.png[align="center"]
+
+=== Relay Packages
+
+Some relays are minuscule, while others are huge.((("relays", "packages"))) Relays come in printed circuit board form
+factors with both through-hole and surface-mount packages. They can be found in packages that
+use a socket, making them easily replaceable. Other types have lug terminals for use in
+industrial and automotive applications, and still others have large bus-bar connections for
+applications such as high-power motor controllers. It all depends on how much current they
+are designed to handle at a given voltage and how much voltage and current is necessary to
+drive the relay mechanism.
+
+[[contactor_operation]]
+[role="float-top wide"]
+.Operation of a heavy-duty contactor
+image::images/pect_1004.png[align="center"]
+
+
+==== PCB Relays
+
+Small relays for PCB applications ((("printed circuit boards (PCBs)", "relays")))((("relays", "PCB (printed circuit board)")))are available in types that range from reed
+relays to compact armature devices that are capable of handling up to 120 VAC
+at 10A or so. The previous section showed what a reed relay looks like (in <<bare_reed_relay>>). 
+<<PCB_relay>> shows a compact relay designed to be mounted to a PCB.
+
+The contact ratings for a relay of this type can be substantial, even through
+the relay coil itself requires only 70–85 mA at 5V DC to operate. The actual
+coil current depends on the resistance of the coil, and this can vary between
+models and manufacturers. Note, however, that even 70 mA is way beyond the
+output capability of most ICs, so some type of relay driver IC or a transistor
+is needed to operate the relay, as described in <<relay_drivers>>. You can find
+relays of this type controlling things like lighting, heater elements, small
+electric motors, and as _drivers_ for((("driver relays"))) larger heavy-duty relays and contactors.
+
+Reed relays are also available in packages that look like a typical 14-pin IC,
+as well as packages that have bare wire leads for the contacts and the coil. A
+reed relay might have a coil with a high enough resistance to allow it to be
+driven directly from a microcontroller or logic IC, but a reed relay usually
+won't carry as much current through its contacts (the reeds) as an armature
+type of relay.
+
+[[PCB_relay]]
+.A PCB-mounted low-voltage relay
+image::images/pect_1005_mod.png[width="350",align="center"]
+
+Both miniature armature and reed relays are available in through-hole and
+surface-mount packages.((("surface mounted components", "relays"))) The surface-mount relay shown in <<smt_relay>> is an
+example (all dimensions are in millimeters).
+
+[[smt_relay]]
+.Surface-mount, low-voltage relay
+image::images/pect_1006_mod.png[width="350",align="center"]
+
+This happens to be the package drawing for a Panasonic TQ series relay, but similar
+parts are available from Omron, NEC, and other manufacturers. The TQ2SA-5V has a
+5V DC coil at 178 ohms with a nominal power consumption of 140 mW, and nominal
+contact ratings of 0.5 A at 125V AC.
+
+==== Lug-Terminal Relays
+
+Relays with terminals specifically designed to accept ((("lug-terminal relays")))((("relays", "lug-terminal relays")))lug connectors, such as
+those used in automotive and industrial applications, are available in both
+vertical and horizontal mounting styles. Coil voltage ratings are available in both DC and AC values covering the range from 5V DC to 110V AC, or more. <<lug_terminal_relay>>
+shows an example of an automotive lug-terminal relay with right-angle mounting
+brackets. The coil operates at 12V DC, and the SPDT contacts are rated for 12V DC
+at 40 A.
+
+[[lug_terminal_relay]]
+.Right-angle-mounted lug-terminal armature relay
+image::images/pect_1007.png[align="center"]
+
+This type of relay uses the crimped lug connectors discussed in <<Chapter_7>>
+and the crimping tool shown in <<Chapter_3>>. Although it is possible to solder
+to the terminals, this is generally not a good idea. Long ago, when the base
+of the relay assembly was made of Bakelite, it wasn't as big of a problem, because
+Bakelite can tolerate the heat of soldering. Modern relays are made using
+plastics with much lower melting temperatures, and it is possible to deform
+the base and cause the terminal to shift during soldering.
+
+==== Socketed Relays
+
+Many early relays used solder terminals for connections, so replacing one was
+an exercise in desoldering and resoldering the wiring.((("relays", "socketed")))((("socketed relays"))) As this was a tedious
+and error-prone process, clever engineers devised a means of using sockets
+for relays, along the same lines as the sockets used for vacuum tubes. Some
+socketed relays use round sockets with eight contact positions,((("octal sockets, relays"))) like the one
+shown in <<octal_socket>>, while others use a rectangular socket with the holes
+arranged in a grid pattern. Both types typically bring out the relay connections
+to screw terminals, and either spade or ring lugs are used to connect the wiring.
+
+[[octal_socket]]
+.A typical octal (eight-pin) relay socket with screw terminals
+image::images/pect_1008.png[width="400",align="center"]
+
+These types of relays are mostly used in industrial applications that involve
+switching high voltages and large amounts of current. They are also available
+in an 11-pin form.
+
+[NOTE]
+====
+Although octal sockets might seem like a throwback to the days of vacuum tubes,
+they are still quite common and readily available. It is also possible to purchase
+just the octal plug and put your own electronics into it. This is useful for
+applications where you might want a sealed module (like, say, a sensor data
+collector for a remote environmental monitor) that can quickly and easily be
+replaced if necessary.
+====
+
+=== Selecting a Relay
+
+Relays have two sets of primary((("relays", "selecting"))) specifications: coil and contacts. The coil will have a
+nominal operating voltage and resistance, although sometimes the manufacturer will give
+a power value instead of a resistance. If the current isn't specified, a quick application
+of Ohm's law will tell us how much current we can expect the relay coil to draw, and we
+can use the power specification to figure out the coil resistance (see <<Chapter_1>>).
+
+The contacts should be rated to handle the load they will be controlling and then some.
+To be safe, it's a good idea to derate the contacts by 50%, meaning that if you want to
+control a 240V, 40 A contactor with a 24V AC coil that draws 36 mA with a _driver_ relay,((("driver relays")))
+the smaller relay will need to have contacts that can handle 72 mA at 48V AC (twice
+the current and voltage actually required). A smaller relay is used in this case because
+the contactor uses AC for its coil, not DC. This makes it more challenging to control
+with just a solid-state driver circuit, although it is possible (and not uncommon). Using
+a small intermedite relay to handle the AC for the contactor's coil keeps things simple.
+
+A small relay rated for 100 mA contact current should do fine for this application. ((("microcontrollers", "relay module for use with")))It
+also implies that, for a situation like this, you could use a miniature PCB-mount relay,
+like the units shown in <<relay_module>> (this is a bank of four, with built-in drivers).
+
+[[relay_module]]
+.Relay module for use with a microcontroller
+image::images/pect_1009.png[width="300",align="center"]
+
+However, a small relay might require anywhere from 20 to 50 mA for its coil, which means
+it can't be controlled directly from a standard logic IC or microcontroller. In this case,
+either a driver IC or a transistor driver (as described in <<relay_drivers>>)
+will be needed. The board shown in <<relay_module>> doesn't have this problem, because the
+drivers are already on the PCB.
+
+A cascade of relays is not an uncommon situation. <<relay_chain>> shows how a sequence of((("relays", "chain of")))((("chain of relays")))
+relay driver, small relay, and contactor can be connected to control a high-current,
+high-power system. Conceptually, this can be extended as far as necessary, so that, in theory,
+a 5V logic signal could control hundreds of amperes of current.
+
+[[relay_chain]]
+.Using a small relay to control a larger relay
+image::images/pect_1010_mod.png[align="center"]
+
+=== Relay Reliability Issues
+
+Modern relays are fairly reliable, with claims for some small low-current
+types of over 10,000,000 mechanical ((("relays", "reliability issues")))cycles with no load. But relays are
+mechanical devices, and that implies wear and tear on the operating parts.
+
+In a relay, a failure occurs when either the contacts can no longer pass
+current effectively or the relay's coil will no longer operate the
+contact mechanism. Two major sources of relay failure are _contact arcing_
+and _coil overheating_.
+
+==== Contact Arcing
+
+Of course, the more load (power) a relay carries,((("arcing", "contact arcing in relays")))((("relays", "reliability issues", "contact arcing")))((("contact arcing, relays"))) the more the contacts will wear
+due to arcing. At some point, a loaded relay might actually burn the contacts to the
+point where they no longer make good contact. In other words, the contacts start
+to become resistors, or even open circuits. This can be a major problem when a relay
+is controlling an inductive load, such as a motor or another relay.
+
+You can reduce arcing using a resistor-capacitor (RC) _snubbing_ circuit to help((("snubber, relay contact")))((("resistor-capacitor (RC) snubbing circuit")))
+damp out the arc at the contacts. <<snubber>> shows one way to do this. This technique
+works for both DC and AC circuits, and it can help extend the life of a relay's
+contacts considerably.
+
+[[snubber]]
+.Relay contact snubber
+image::images/pect_1011_mod.png[width="400",align="center"]
+
+[NOTE]
+====
+Remember, if you need some assistance with the schematic symbols or electrical concepts
+presented in this section, refer to <<Appendix_A>> or <<Appendix_B>>.
+====
+
+The idea behind a snubber is that the combination of R and C will reduce the effect
+of spikes experienced by the relay contacts when power is removed from an inductive load,
+in this case a motor (M). When current flow through an inductive load stops, the magnetic
+field around the windings in the load will collapse, generating a large voltage spike.
+The RC circuit acts to stretch the spike so that by the time it reaches its maximum
+voltage, the relay contacts are far enough apart that an arc can't form between them.
+<<Appendix_A>> includes the equations for calculating values for an RC circuit.
+
+In some high-power contactors, the contacts are made from a silver alloy. Since
+there will always be some arcing in high-current/high-voltage applications,
+the contacts will start to oxidize. But with silver contacts, the result is
+silver oxide, which is itself a decent pass:[<span class="keep-together">conductor.</span>]
+
+==== Coil Overheating
+
+Coil overheating will cause the coil((("relays", "reliability issues", "coil overheating")))((("coil overheating in relays"))) to deteriorate as the insulation becomes
+brittle and breaks down. This will eventually result in shorts in the windings,
+which will cause it to draw more current and get even hotter. It is not
+unheard of for a relay to burst into flames when the coil severely overheats,
+due to progressive shorts in the windings. The easiest way to avoid this
+situation is to ensure that the relay isn't being driven with more than its
+rated voltage. If possible, the circuit should be designed so that the default
+state of the relay is off, not on. Putting a fuse in series with the coil of
+a relay is another way to help prevent a catastrophic failure.
+
+==== Relay Bounce
+
+Just like a mechanical switch, the contacts of a relay have a tendency to bounce
+when the relay closes.((("contact bounce", "in relays")))((("relays", "reliability issues", "contact bounce"))) The resulting output from the relay looks something like
+<<relay_bounce>>.
+
+[[relay_bounce]]
+.Relay contact bounce
+image::images/pect_1012.png[align="center"]
+
+If a relay is connected to another relay, or to something like a lamp, LED, or
+a motor, the contact bounce isn't a real big issue, except that it does prolong
+contact arcing and subsequent wear (each bounce is an arc, even if tiny). The arc
+suppression techniques mentioned earlier can help reduce the effects of contact bounce
+on the relay contacts.
+
+If a relay is connected to a digital circuit of some type (as an input, for
+example), bounce can be a big problem. In a situation like this, the
+input will need to be _debounced_, either((("debouncing, relay input"))) by logic hardware or by software.
+Relay bounce can also sometimes be heard if a relay is switching an audio
+signal. It's the "crunchy" blip or pop that occurs when the audio input is
+switched from one source to another using a set of relays.
+
+=== Relay Applications
+
+Relays are useful for routing signals, switching current, or as a form of logic
+for some applications.((("relays", "applications"))) While is it possible to use a solid-state component to
+do switching and routing chores, the relay offers the advantage of low closed-circuit resistance, immunity to reverse current flow from inductive loads, and
+the ability to act as an isolated control transition between low- and high-voltage pass:[<span class="keep-together">circuits.</span>]
+
+[[relay_drivers]]
+==== Controlling Relays with Low-Voltage Logic
+
+A relay uses a coil to move the contacts,((("coils", "use by relays")))((("relays", "applications", "controlling relays with low-voltage logic"))) so it's an inductive load to whatever
+is driving that coil.((("inductors"))) An inductor will produce a current in the reverse direction
+when the energizing current ceases to flow and the magnetic field collapses, and
+the resulting voltage spike can be quite large. A relay coil can also draw a
+considerable amount of current, much more than most ICs can safely handle.
+
+Some relays are made specifically for use with logic circuits, which means they will have a low coil-current (high resistance) and a built-in protection diode.
+However, the coil-current general-purpose relays with 5V DC coils can range
+anywhere from 20 to 80 mA, so this type of device should not be connected directly
+to something like a TTL logic chip or a microcontroller without some kind of interface
+circuit. The current through the coil will overwhelm the IC and probably damage it.
+<<relay_driver_circuit>> shows one way to deal with this situation with an NPN transistor (a 2N2222A), a couple of resistors,((("transistors", "one-transistor relay driver")))((("integrated circuits (ICs)", "relay driver ICs"))) and a diode.
+
+[[relay_driver_circuit]]
+.Simple one-transistor relay driver
+image::images/pect_1013_mod.png[width="400",align="center"]
+
+This circuit is simple and effective, but relay driver ICs are also available
+that package from one to eight relay driver circuits into a single chip.((("relay driver ICs"))) The single-channel
+devices might be an option if you need to drive only one relay. <<relay_driver_ics>>
+lists some of the available relay driver ICs.
+
+[[relay_driver_ics]]
+.Relay driver ICs
+[width="70%",cols="<1,<1,<1,<2",frame="topbot",options="header"]
+|============================================
+|Part number  | Manufacturer       | Internal logic   | Drive current
+|CS1107       | On Semiconductor   | Single driver    | 350 mA
+|MAX4896      | Maxim              | 8-channel driver | 410 mA single, 200 mA all
+|SN75451B     | Texas Instruments  | Dual AND driver  | 300 mA
+|SN75452B     | Texas Instruments  | Dual NAND driver | 300 mA
+|SN75453B     | Texas Instruments  | Dual OR driver   | 300 mA
+|SN75454B     | Texas Instruments  | Dual NOR driver  | 300 mA
+|TDE1747      | STMicroelectronics | Single driver    | 1A
+|UDN2981A     | Allegro            | 8-channel driver | 500 mA max, 120 mA/channel
+|============================================
+
+Note that the parts in <<relay_driver_ics>> can be used to drive things other than a
+relay, such as lamps, valves, actuator solenoids, high-current LED displays, and so on.
+Also, many of the parts listed here will work with CMOS as well as TTL logic levels.
+Check the datasheets from the manufacturers for details.
+
+==== Signal Switching
+
+<<signal_router>> shows a ((("relays", "applications", "signal switching")))((("signal switching", "using relays")))device (an HP 3488A switch/controller) that is
+typically used to route signals between different types of measurement
+equipment and devices or circuits under test. The switching is done by banks
+of relays mounted on PCBs that plug into the rear of the unit. The 3488A can
+be programmed to perform switching actions at specific times, but it can also
+be controlled using a GPIB/IEEE-488 control interface to a PC or other control
+device providing the commands to route signals through the relay banks.
+
+[[signal_router]]
+.The HP 3488A switch/controller unit
+image::images/pect_1014.png[width="400",align="center"]
+
+Small relays can be used to switch standard video signals or select inputs for
+a measurement device. They were commonly used in the past to route telephone
+circuits, although that function has been largely replaced by solid-state
+components. For signal switching, reed relays are often used.
+
+==== Power Switching
+
+An example of using relays for((("relays", "applications", "power switching")))((("power switching", "using relays"))) power switching might be a situation where there
+is a need to control things like pumps, valves, and heaters for a marine specimen
+holding tank. Relays are a good choice for this, because a relay can operate a
+120V AC pump as easily as a 12V DC pump. The main consideration would be the voltage
+and current ratings for the contacts.
+
+Air conditioning units employ heavy-duty contactors((("contactors", "heavy-duty, in air conditioners"))) to control various fans and
+compressors. The input to the contactors is often a low voltage like 24 VAC that
+is controlled by a thermostat. A conventional mechanical thermostat can be replaced
+with a microcontroller and a relay to create a custom programmable controller
+without the need to worry about creating a suitable circuit to interface directly
+with the existing A/C control voltage.
+
+==== Relay Logic
+
+As mentioned earlier, some of the first computer-like systems were based on
+relays.((("logic circuits", "using relays")))((("relays", "applications", "relay logic"))) It was a natural choice, given that the telephone switching networks were
+starting to use relays for dynamic circuit routing. The rotary dial on old-style
+telephones wasn't an aesthetic design decision; it was like that because each
+pulse produced by the dial as it spun back to the start position drove a rotary
+relay at a switching office somewhere. The caller effectively modified the
+network wiring between her phone and whomever she was calling every time she
+dialed a number. Multiple banks of rotary relays allowed simultaneous calls to go
+through the system, and huge windowless buildings once held thousands or even tens
+of thousands of relays, all chattering away at the same time.
+
+[[relay_latching]]
+[role="float-top wide"]
+.Latching relay circuits with manual reset
+image::images/pect_1015.png[align="center"]
+
+Creating a latching circuit is((("latching relay circuits"))) straightforward, as shown in <<relay_latching>>.
+In the simple design shown in circuit A, the relay is held closed by a second set
+of contacts. Once the relay is energized, the current flow through the contacts
+will keep it energized until the connection to ground is opened by the normally
+closed switch. Note that this circuit will work for both AC and DC, up
+to the maximum voltage that the switches and relay contacts can tolerate.
+
+[role="pagebreak-before"]
+The circuit in part B of <<relay_latching>> is intended for use with 5VDC only,
+and it's basically just a variation on the driver circuit shown in <<relay_driver_circuit>>.
+The main difference is that, when RY1 is energized, it will supply 5V back into
+the transistor via the 1,000 (1k) ohm resistor, thus keeping it in an on state. When
+the pushbutton switch is pressed, the base of the transistor will be grounded,
+current flow through RY1 will stop, and the relay will open, thus breaking the
+lock.
+
+It's easy to ((("OR and AND relay logic circuits")))((("AND and OR relay logic circuits")))construct OR and AND logic using relays (see <<Chapter_11>> for more
+about logic devices), as shown in <<relay_logic>>. There are other ways to get
+the same results, using relays, but the idea here is to show how the standard
+truth tables for OR and AND can be satisfied with just a couple of SPDT relays.
+You can construct logic circuits for NOR, NAND, and XOR functions as well.
+
+[[relay_logic]]
+[role="float-top wide"]
+.Simple OR and AND relay logic circuits
+image::images/pect_1016.png[align="center"]
+
+This isn't as esoteric as you might think, and relay logic appears in various
+guises in circuits found in industrial controls, home appliances, automobiles, and
+even in some avionics. Eventually, however, even these applications will become
+the domain of solid-state controls and switches. But for now, relays are still very
+much alive and well, and when you're dealing with the interfaces between systems operating
+at vastly different voltage and current levels, a relay may be the easiest and
+cheapest way to get the job done.
+
+
+[[summary_ch10]]
+=== Summary
+
+This chapter identified the three major types of relay mechanisms: armature,
+reed, and contactor solenoid. It also covered some of the available package types,
+including PCB, lug terminals, and sockets.
+
+We also briefly examined some of the ways that relays can fail, and some of the
+pass:[<span class="keep-together">techniques</span>] available to reduce the likelihood of failure. Lastly, we wrapped up
+with a look a relay latching and relay logic.
+
+You should come away from this chapter with a sense of what types of relays are
+available and some of the ways they can be used. While it is beyond the scope of
+this book to delve into the theory behind things like one-shot debounce timers and
+complex relay logic, <<Appendix_D>> lists some excellent references if you
+want to explore the topic pass:[<span class="keep-together">further.</span>]
+((("relays", range="endofrange", startref="ix_relays")))
+
+

@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+@import "DYNAMIC CSS PLACEHOLDER";
+
+/*--------Put Your Custom CSS Rules Below--------*/
+
+/*-- Styling specific to list of tables in frontmatter --*/
+
+@page listoftables:first { /* first page */
+  @bottom-right {
+    content: counter(page, lower-roman);
+    font-family: "MyriadPro-SemiboldCond";
+    font-weight: 600;
+    font-size: 9pt;
+    color: cmyk(0%,0%,0%,100%);
+  }
+}
+
+@page listoftables:left { /* left page */
+@bottom-left { /* verso run foot */
+    content: counter(page, lower-roman)"\2003\007C\2003""List of Tables";
+    font-family: "MyriadPro-SemiboldCond";
+    font-weight: 600;
+    font-size: 9pt;
+    vertical-align: top;
+    padding-top: 0.05in;
+    color: cmyk(0%,0%,0%,100%);
+  }
+}
+
+@page listoftables:right { /* right page */
+@bottom-right { /* recto run foot */
+    content: "List of Tables""\2003\007C\2003"counter(page, lower-roman);
+    font-family: "MyriadPro-SemiboldCond";
+    font-weight: 600;
+    font-size: 9pt;
+    vertical-align: top;
+    padding-top: 0.05in;
+    color: cmyk(0%,0%,0%,100%);
+  }
+}
+
+@page listoftables:blank {
+  border-bottom: none;
+  @bottom-right {
+    content: none;
+  }
+  @bottom-left {
+    content: none;
+  }
+}
+
+div.list-of-tables {
+  page: listoftables;
+  page-break-before: right;
+  hyphens: none;
+  text-align: left;
+  font-variant: tabular-nums;
+  -ah-kerning-mode: pair;
+}
+
+div.list-of-tables ul li:before {
+  content: "Table ";
+}
+
+div.list-of-tables div.toc-title {
+  bookmark-level: 1;
+  bookmark-state: closed;
+}
+
+/*-- Styling specific to list of figures in frontmatter --*/
+
+@page listoffigures:first { /* first page */
+  @bottom-right {
+    content: counter(page, lower-roman);
+    font-family: "MyriadPro-SemiboldCond";
+    font-weight: 600;
+    font-size: 9pt;
+    color: cmyk(0%,0%,0%,100%);
+  }
+}
+
+@page listoffigures:left { /* left page */
+@bottom-left { /* verso run foot */
+    content: counter(page, lower-roman)"\2003\007C\2003""List of Figures";
+    font-family: "MyriadPro-SemiboldCond";
+    font-weight: 600;
+    font-size: 9pt;
+    vertical-align: top;
+    padding-top: 0.05in;
+    color: cmyk(0%,0%,0%,100%);
+  }
+}
+
+@page listoffigures:right { /* right page */
+@bottom-right { /* recto run foot */
+    content: "List of Figures""\2003\007C\2003"counter(page, lower-roman);
+    font-family: "MyriadPro-SemiboldCond";
+    font-weight: 600;
+    font-size: 9pt;
+    vertical-align: top;
+    padding-top: 0.05in;
+    color: cmyk(0%,0%,0%,100%);
+  }
+}
+
+@page listoffigures:blank {
+  border-bottom: none;
+  @bottom-right {
+    content: none;
+  }
+  @bottom-left {
+    content: none;
+  }
+}
+
+div.list-of-figures {
+  page: listoffigures;
+  page-break-before: right;
+  hyphens: none;
+  text-align: left;
+  font-variant: tabular-nums;
+  -ah-kerning-mode: pair;
+}
+
+div.list-of-figures ul li:before {
+  content: "Figure ";
+}
+
+div.list-of-figures div.toc-title {
+  bookmark-level: 1;
+  bookmark-state: closed;
+}
+
+
+/*-- Styling for both lists --*/
+
+div.list-of-tables ul, div.list-of-figures ul {
+  margin: 0;
+  padding: 0;
+  widows: 4;
+}
+
+div.list-of-tables a, div.list-of-figures a { 
+    color: cmyk(0%,0%,0%,100%);
+}
+
+div.list-of-tables a:after, div.list-of-figures a:after { 
+  content: leader(dotted) "     " target-counter(attr(href, url), page);
+  margin-right: -0.5in; 
+}
+
+div.list-of-tables ul li, div.list-of-figures ul li {
+  display: block;
+  color: cmyk(0%,0%,0%,100%);
+  font-family: "MinionPro";
+  font-size: 10.5pt;
+  /*font-weight: 600;*/
+  margin-left: 0;
+  margin-top: 0.05in;
+  padding-right: 0.5in; 
+  /*text-indent: -0.12in;*/
+}

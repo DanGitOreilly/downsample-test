@@ -1,0 +1,826 @@
+[[Appendix_C]]
+== Glossary
+
+The terms and abbreviations defined in this glossary are representative of what you will typically encounter
+when working with electronics. This collection does not include specialized terms such as
+_charge carrier_, _band-gap_, or _stripline_, as these don't often come up unless you are working
+with semiconductor design or high-frequency microwave circuits, and those topics are well
+outside the scope of this book.
+
+In some cases, when a term might be open to more than one interpretation, 
+abbreviations in parentheses indicate the primary subject reference. For example, _annular ring_ refers to a
+feature found in a PCB layout, not to the foam ring found in a high-end loudspeaker within
+a stereo system. The definition includes _PCB_ in parentheses to indicate this distinction. If the abbreviation _SMD_
+appears, this means the definition refers to a _surface-mount device_. In other cases, the
+abbreviation commonly used with a particular term being defined is shown in parentheses, such as in the
+definition of _liquid crystal display (LCD)_.
+
+[glossary]
+A/D converter::  See _analog-to-digital converter_.
+
+
+AC::  See _alternating current_.
+
+
+accelerometer::  A sensor (or transducer) for detecting and measuring acceleration.
+
+
+ADC::  See _analog-to-digital converter_.
+
+additive process::  A PCB fabrication process wherein the circuit pattern is produced by the addition of metal to a specially treated substrate. It is the opposite of the etching method used in a _subtractive process_.
+
+Ah::  See _ampere-hour_.
+
+alternating current (AC)::  A signal or power source that switches polarity periodically over time. See also _sine wave_.
+
+alternator::  An electromechanical device that converts rotary mechanical power into AC electrical power.
+
+AM::  See _amplitude modulation_.
+
+American Wire Gauge (AWG)::  A standard measure of wire diameter.
+
+ammeter::  An instrument used to measure current.
+
+amp::  Shorthand way of saying _ampere_. May also refer to an _amplifier_.
+
+ampacity::  The current carrying capacity of a conductor specified in amperes.
+
+ampere (A)::  The unit of measurement for electrical current, abbreviated as A. The symbol I is used for current in equations.
+
+ampere-hour (Ah)::  Unit of measurement for cell or battery capacity. It is based on the current that can be delivered for one hour.
+
+amplifier::  A circuit or device that produces an output that is a replica of the input with an applied increase in signal level (amplitude).
+
+amplitude modulation (AM)::  A modulation method in which the carrier amplitude changes in accordance with the input signal amplitude.
+
+analog::  A continuously variable value (usually voltage or current) that represents something changing in the physical world.
+
+analog-to-digital converter::  A circuit or device used to convert an analog input (typically a voltage) to a binary digital output (a number).
+
+AND::  A logic function that will return true if and only if all its inputs are true.
+
+annular ring::  (PCB) A ring of conductive material surrounding a hole drilled in a PCB used for pads, vias, mounting holes, and so on.
+
+ANSI::  American National Standards Institute.
+
+apparent power::  In a reactive circuit, the apparent power is the product of voltage times current and is measured in volt-amps.
+
+armature::  The rotating part of a motor or generator.
+
+ASCII::  American Standard Codes for Information Interchange.
+
+ASIC::  Application-specific integrated circuit.
+
+auto-router::  (PCB) A computer program that automatically determines the routing of traces in a PCB design based on component placement.
+
+AWG::  See American Wire Gauge.
+
+battery::  A DC power source consisting of one or more cells, typically electrochemical in nature.
+
+BCD::  See _binary-coded decimal_.
+
+bias::  A fixed voltage present at a node in a circuit, either intentionally or unintentionally. An intentional bias is used in many transistor circuits, whereas an unintentional bias can occur due to stray induced current.
+
+bidirectional::  Describes a device that can accommodate signals traveling in either direction, or a communications circuit that supports data moving in both directions though a single channel.
+
+bill of materials (BOM)::  An inventory of the components used in an electronic circuit design. Also known as a _parts list_. Many schematic capture tools will generate a BOM automatically on demand.
+
+binary::  In digital electronics, the application of the base-2 number system, resulting in values consisting of 1s and 0s. Also refers to a system, signal, or device that has only two possible states.
+
+binary-coded decimal (BCD)::  A binary representation of a decimal number in which each decimal digit (0–9) is encoded in binary using four bits per decimal digit. Thus, the BCD value 0100 1001 is 49 in pass:[<span class="keep-together">decimal.</span>]
+
+bipolar input::  An input that can accommodate a voltage ranging from negative to positive.
+
+bipolar junction transistor (BJT)::  A solid-state device in which the current flow between the collector and emitter terminals is controlled by the amount of current that flows through the base terminal. A transistor has two P-N junctions and is configured as either NPN or PNP.
+
+bipolar output::  An output that can produce a voltage ranging from negative to positive.
+
+bit::  A single binary digit. In a logic circuit, it can have a value of either 0 or 1.
+
+bit banging::  A software technique that employs a general-purpose port of a microcontroller to emulate a serial interface by writing out bits one at a time.
+
+BJT::  See _bipolar junction transistor_.
+
+BOM::  See _bill of materials_.
+
+Boolean::  Named after George Boole. In Boolean logic, a variable can have only one of two values: true or false.
+
+break-before-make::  A switch or relay that is designed to break (open) one set of contacts before engaging (closing) another set. This prevents the momentary connection of the old and new signal paths.
+
+bridge::  See _diode bridge_. For measurements, see _Wheatstone bridge_.
+
+brownout::  A condition where the voltage supplied to a system falls below the nominal operating range, but remains above 0V.
+
+bus::  Data path that connects to a number of devices. A typical example is the bus of a computer's circuit board or backplane. Memory, processor, and I/O devices might all share the bus to send data from one to another. A bus acts as a shared highway and is in lieu of the many devoted connections it would take to hook every device to every other device. Often misspelled "buss."
+
+byte::  A group of eight binary bits used to represent digital data with a value from 0 to 255, or –128 to 127.
+
+cable::  A group of individual conductors insulated from one another. Also refers to large-gauge, single conductor wires.
+
+capacitance \(C)::  The ability of two conductors separated by an insulator to store an electrical charge. Capacitance is measured in farads (F).
+
+capacitive reactance (XC)::  The opposition of a capacitor to alternating current.
+
+capacitor::  A passive electronic component that consists of two conductive plates separated by an insulating dielectric. See also _capacitance_.
+
+CDIP::  See _ceramic dual inline package_.
+
+central processing unit (CPU)::  The part of a computer system that performs arithmetic, logic, and control functions.
+
+ceramic dual inline package (DIP)::  A DIP IC package with a ceramic body.
+
+ceramic pin grid array (CPGA)::  An IC packet with a grid of pins and a ceramic body.
+
+chamfer::  A corner that has been rounded to eliminate a sharp angle.
+
+chip::  A reference to the small sections cut from a large wafer of semiconductor material (typically silicon), each containing various solid-state and passive components, that are encapsulated in a package of some type.
+
+circuit::  A collection of circuit devices and components connected in such a way so as to perform a specific function.
+
+circuit breaker::  A circuit protection device that automatically disconnects a circuit from a power source when an overload or short circuit occurs.
+
+cm::  Centimeter: 1/100 of a meter, aproximately 0.39 inches.
+
+CMOS::  See _complementary metal-oxide semiconductor_.
+
+coil::  Multiple turns of wire used to introduce inductance into a circuit, generate a magnetic field, or sense a changing external magnetic field.
+
+comparator::  A solid-state device that compares the values of two analog inputs and generates an output wherein the value depends on which input is higher than the other.
+
+complementary metal-oxide semiconductor (CMOS)::  A semiconductor fabrication technology in which p- and n-channel MOS-type transistors are used in tandem.
+
+component side::  The side of the PCB on which most of the components will be mounted. Also referred to as the _top_ or _silkscreen side_.
+
+conductance (G)::  The reciprocal of _resistance_, measured in Siemens, it is the ability of a conductor to allow the flow of electrons.
+
+conductor::  A wire, PCB trace, or mechanical component that provides a path for current in a circuit.
+
+conductor::  (PCB) A conductive copper path on the surface on a PCB substrate that includes traces, pads, and vias. Can also refer to large areas used for ground planes or heatsinks.
+
+conductor width::  The physical width of a conductor on the printed circuit board. See also _trace width_.
+
+contact bounce::  Occurs when the contacts of a switch or relay make and break repeatedly (i.e, bounce) for a brief time after contact closure. See also _debounce_.
+
+coulomb::  Named for the French physicist Charles Coulomb, a coulomb is the base unit of electrical charge and is equal to 6.25 &#x00D7; 10^18^ electrons.
+
+CPGA::  See _ceramic pin grid array_.
+
+CRC::  See _cyclic redundancy check_.
+
+CTS::  RS-232 signal: Clear To Send.
+
+current::  This term can refer to either the flow of electrical charge in a circuit, or the rate of flow of electrical charge past a particular point measured in amperes.
+
+cycle::  One complete waveform (o to 360 degrees) of alternating voltage or current.
+
+cyclic redundancy check (CRC)::  A check value calculated from the data that is capable of catching most errors. The CRC calculated by a sender is compared to a CRC calculated by a receiver, and if the two values match, then no error has occurred.
+
+D/A converter::  See _digital-to-analog converter_.
+
+DAC::  See _digital-to-analog converter_.
+
+data acquisition system::  A system for acquiring data in analog or discrete forms, or both, and either storing the data for later recall or transmitting it to another system for processing.
+
+data sink::  In serial communications, a sink defines a place where data is received.
+
+data source::  A source of data in serial communications (i.e., a sender).
+
+DC::  See _direct current_.
+
+DCD::  RS-232 signal: Data Carrier Detect.
+
+DCE::  Data Communications Equipment (used with RS-232/EIA-232 communications equipment)
+
+debounce::  The removal of the results of the phenomena that occurs when a switch or a relay makes and breaks contact several times when the contacts are closed, literally bouncing briefly.
+
+descriptor::  (USB) A data structure within a device that allows it to identify itself to a host.
+
+device::  (USB) A USB peripheral or function. Also used as _peripheral device_. See _function_.
+
+DIAC::  A _diode for alternating current_ is a type of diode that conducts current in both directions. A DIAC will pass an AC signal after the voltage level has reached the breakover voltage, V~BO~, either positive or negative. DIACs are commonly used as triggers for TRIAC devices.
+
+dielectric::  An insulator that is capable of concentrating and holding electric fields without conducting. A primary part of a capacitor used to separate two metallic plates.
+
+differential signaling::  A method for connecting two components, subsystems, or devices that employs two wires. One wire is always the inverse of the other, and a receiver need only look at the difference between the two and ignores any voltage common to both.
+
+digital::  Can refer to a measurement or signal that has only two possible values: 1 or 0, on or off. In electronics, digital devices are those components designed specifically to work with binary values.
+
+digital multimeter (DMM)::  A device for measuring voltage, current, resistance, and perhaps other parameters, that employs an internal ADC and a numeric display.
+
+digital-to-analog converter (DAC)::  A circuit that converts a binary signal to an equivalent analog form. A DAC cannot generate a truly continuously variable output, due to the nature of the binary input, but rather generates output in discrete steps. Sometimes referred to as a _D/A_ or a _DAC_.
+
+DIO::  In electronics and embedded computers, DIO typically refers to _digital_ or _discrete input/output_.
+
+diode::  A two-terminal semiconductor device with a single junction that allows current to pass in only one direction. Diodes can also be constructed using a vacuum tube, point-contact, metal-semiconductor junction (Schottky) or selenium-wafer technologies.
+
+diode bridge::  An arrangement of four diodes (or rectifiers) that always produces the same output polarity regardless of the input polarity. Typically employed for full-wave rectification or as input power protection.
+
+DIP::  See _dual inline package_.
+
+direct current (DC)::  Electrical current that flows in only one direction when active.
+
+discrete::  Something with two or more specific values, not a continuous range of values (i.e., analog). A term commonly used with programmable logic controller (PLC) device, but can refer to any binary input or output signal.
+
+DMM::  See _digital multimeter_.
+
+double-sided board::  A PCB wherein both sides of the substrate have a layer of copper laminate applied to produce traces.
+
+downstream::  (USB) Looking out from the host to hubs or devices connected outwards on a USB pass:[<span class="keep-together">network.</span>]
+
+DPDT::  Double-pole/double-throw. A switch or relay with two conductors (poles) and two possible positions for each (throw).
+
+DPST::  Double-pole/single-throw. A switch or relay with two conductors (poles) and only one possible position for each (throw).
+
+drain::  One of the three terminals of a FET device. A voltage on the gate is used to control the current flow between the source and drain.
+
+DRAM::  Dynamic random-access memory (RAM). A form of random-access memory that uses a continuous clock signal to refresh stored data. If the clock signal stops, the data is lost. See also _SRAM_.
+
+DSR::  RS-232 signal: Data Set Ready.
+
+DTE::  Data Terminal Equipment (used with RS-232/EIA-232 communications equipment). The device that serves as the input/output terminal for communications pass:[<span class="keep-together">channel.</span>]
+
+DTR::  RS-232 signal: Data Terminal Ready
+
+dual inline package (DIP)::  A type of IC package with two rows of pins. The spacing between the rows (the width) and the distance between the pins (the pitch) are defined by industry standards. DIP IC packages come in pin counts of 4, 6, 8, 14, 16, 18, 20, 22, 24, 28, 32, 40, and (rarely) 64.
+
+duty cycle::  The ratio of pulse width to period, indicating the percentage of time that a pulse is present during a cycle. A square wave a special case of a pulse with a duty cycle of 50%.
+
+EDA::  See _electronic design automation_.
+
+EEPROM::  Electrically erasable programmable read-only memory. A type of read-only memory that can be erased with an electrical pulse or specific voltage level. See also _EPROM_, _PROM_, and _ROM_.
+
+EIA::  Electronic Industries Alliance.
+
+EIA-JEDEC::  Electronic Industries Association/Joint Electron Device Engineering Council.
+
+electric power (P)::  The rate at which energy is consumed in a circuit or load and dissipated as heat or mechanical motion. Electrical power is typically measured in watts (W) but can also be expressed in Joules or some other unit of measurement.
+
+electricity::  The physical phenomena arising from electrons moving from a higher potential to a lower potential level through a conducting medium.
+
+electrolyte::  A chemical solution used as an electrically conductive medium in battery cells and some types of capacitors.
+
+electrolytic capacitor::  A type of capacitor in which the dielectric is formed through the reaction of an electrolyte and the electrodes.
+
+electromagnet::  A device that produces a magnetic field as the result of current flow through a coil of wire.
+
+electromotive force (EMF)::  The voltage developed by any source of electrical energy such as a battery, generator, or solar (photovoltaic) cell. Force, in this case, does not mean mechanical force, but rather potential.
+
+electronic design automation (EDA)::  Refers to the use of software tools to help automate the process of designing, simulating, and fabricating electronic circuits and systems.
+
+electrostatic discharge (ESD)::  Usually refers to the sudden brief release of stored static electricity. An ESD might measure many thousands of volts, and although very brief, there is sufficient energy to damage or destroy sensitive semiconductor pass:[<span class="keep-together">devices.</span>]
+
+EMF::  See _electromotive force_.
+
+EMI::  Electromagnetic interference. Unwanted noise arising from electromagnetic radiation that interferes with the correct operation of other devices.
+
+endpoint::  (USB) An endpoint exists within a device, typically in the form of a FIFO buffer. Endpoints can be either data sinks (receiving) or data sources (sending).
+
+enumeration::  (USB) When a USB device is initially connected to host, the host gets a connection notice and proceeds to determine the type and capabilities of the device.
+
+EPROM::  Erasable programmable read-only memory. A form of read-only memory that can be erased using high-intensity UV light through a clear window built into the device package.
+
+ESD::  See _electrostatic discharge_.
+
+etch::  The use of an acid to remove unwanted copper from a PCB substrate, leaving just the conductors of the circuit pattern. See _subtractive process_.
+
+F::  See _Farad_.
+
+Farad (F)::  The unit of measurement for capacitance. Commonly used in smaller units, such as microfarad, or nanofarad.
+
+FET::  See _field-effect transistor_.
+
+fiducial::  On a PCB, an etched feature or drilled hole used for alignment during assembly operations. Fiducials are particularly important when working with multi-layer PCBs.
+
+field-effect transistor (FET)::  A type of transistor in which the voltage applied to a control terminal (the gate) creates a field within the device that modulates conduction between a source and drain terminal. See also _JFET_ and _MOSFET_.
+
+filter::  A circuit designed to pass a specific range of frequencies while suppressing all others. A filter can be either passive or active.
+
+firmware::  Software that is loaded into the nonvolatile memory of a device that defines the functionality of the device.
+
+floating::  A signal line is said to be _floating_ if it is not connected to a ground, ground-referenced signal source, or Vcc.
+
+flyback diode::  Refers to the diode commonly used to reduce voltage spikes seen across inductive loads when power is removed and the magnetic field collapses.
+
+FM::  See _frequency modulation_.
+
+footprint::  In PCB layouts, the physical area used by a component, including the pad pattern. Can also refer to the area covered by any component, such as a transformer or an entire PCB.
+
+forward bias::  The voltage potential applied to a solid-state P-N junction that will result in current flow through the junction when the junction has become saturated.
+
+FPGA::  Field-programmable gate array. A family of general-purpose logic devices that can be configured dynamically via a programming interface to perform complex logic functions. It is often used for prototyping production ICs or ASIC devices.
+
+frequency::  The number of complete cycles per second of a periodic waveform. Measured in hertz (Hz).
+
+frequency fodulation (FM)::  A modulation method in which the carrier frequency varies in proportion to changes in input signal amplitude.
+
+full-duplex::  A communications channel providing simultaneous data transfer in both directions. See also _half-duplex_.
+
+function::  (USB) A USB device, also referred to as a _USB peripheral_ or just _device_. USB functions are _downstream_ from the host.
+
+fuse::  A protective device designed to mechanically fail and interrupt current flow through a circuit when the current exceeds the rated value of the device.
+
+G::  Gram(s).
+
+gain::  The amount of amplification accomplished by a circuit. For example, a gain of three means the output is scaled up to three times the amplitude of the input.
+
+gate::  A logic circuit for performing a specific logic function. See _AND_, _OR_, _NAND_, _OR_, and _NOT_.
+
+gauss::  A unit of measurement of the intensity of a magnetic field.
+
+generator::  A device that converts rotational mechanical energy to DC electrical energy. See also pass:[<span class="keep-together"><em>alternator</em>.</span>]
+
+Gerber file::  (PCB) A type of data file used to control a photo plotter or similar device, usually as part of a set of related data files. Named after the Gerber Scientific Co., the manufacturer of the original vector photo plotter. Gerber files define the top, bottom, and inner layers; the silkscreen; the solder masks; and a drill list used to make a PCB.
+
+GHz::  Gigahertz.
+
+gigabit::  1 billion bits per second, abbreviated Gb/s.
+
+glitch::  Generally used to refer to an undesirable behavior, a momentary pulse, or an unexpected input or output.
+
+ground::  Can refer to the reference point in an electrical circuit from which other voltages are measured, a common return path for electric current back to a power source, or a direct physical connection to the earth. Generally assumed to be at zero potential with respect to the earth.
+
+ground plane::  (PCB) A conductor layer, or portion of a conductor layer, used as a common reference point for circuit returns, shielding, or heat sinking.
+
+H::  The unit of inductance. See _henry_.
+
+half-duplex::  Data transmission over a single communications channel in either direction, but not simultaneously. Each end of the channel takes turns being either a receiver or a pass:[<span class="keep-together">transmitter.</span>]
+
+heat sink::  A mechanical device or a physical surface attached to a component to aid in the dissipation of heat by conducting thermal energy away from the device and dissipating it.
+
+henry (H)::  The unit of inductance named for Joseph Henry, an American physicist. See also _inductance_.
+
+hertz (Hz)::  The unit of measurement for the repetition of cyclic waveforms, in cycles per second. Named for Heinrich Hertz, a German pass:[<span class="keep-together">physicist.</span>]
+
+hi-Z::  Short for _high-impedance_. A condition where the output of a device or circuit is not being driven and which presents little or no load to other circuit components.
+
+host::  (USB) The master on a USB network. All other devices (or functions) respond to it.
+
+hub::  (USB) Used to expand the number of devices with which a USB host can communicate.
+
+HVAC::  An industry term for _heating, ventilation, and air conditioning_.
+
+IEEE::  Institute of Electrical and Electronics pass:[<span class="keep-together">Engineers.</span>]
+
+IERC::  International Electronic Research Corp.
+
+IGFET::  See _metal oxide field-effect transistor_.
+
+impedance::  Represented by the letter _Z_, a measure of the opposition to current flow and is measured in ohms. In a DC circuit, impedance and resistance are the same, whereas in an AC circuit, it is dependent on frequency and the capacitive and inductive elements in the circuit. See also _reactance_.
+
+impedance (Z)::  The opposition to current flow arising from the combined effects of resistance and reactance in a circuit, and measured in ohms. See also _reactance_.
+
+inductance (L)::  Can refer to opposition to a change in current flow due to a magnetic field, or the related ability to store and release energy in a magnetic field. See also _reactance_.
+
+inductive kickback::  A rapid release of energy in the form of an inverse voltage across an inductor when the initial current flow ceases and the magnetic field collapses.
+
+inductive reactance (XL)::  The opposition that an inductor presents to an alternating current in the form of a counter electromotive force (cemf) and expressed in ohms.
+
+inductor::  An electrical device, typically consisting of some type of coil, that is designed to provide a specific amount of inductance measured in henrys (H). A single length of wire or a PCB trace can also be an inductor due to the magnetic field that naturally occurs around a pass:[<span class="keep-together">conductor.</span>]
+
+input::  The source of a signal or data into a circuit.
+
+insulation::  An insulating material used with wire and various components to prevent short circuits and reduce shock hazard.
+
+insulator::  Any nonconductive material that exhibits a very high resistance to current flow.
+
+integrated circuit (IC)::  A solid-state device fabricated on the surface of a silicon wafer or similar semiconductor material that incorporates multiple microscopic components and associated conductive paths. See also _chip_.
+
+interface::  (USB) A set of endpoints in a device that act as either data sources or data sinks. An interface can have multiple endpoints acting as data sinks or data sources.
+
+internal resistance::  The resistance present within a power source, or within a switch or other pass:[<span class="keep-together">component.</span>]
+
+inverter::  A type of logic device that acts as a NOT function where the output is always the opposite of the input.
+
+IR::  _Infrared_ light that falls below the visible light spectrum. IR light has a lower frequency and longer wavelength than visible light. Radiated heat is also a form of IR.
+
+ISA::  Industry-Standard Architecture, a bus interconnection method used in older PCs prior to the introduction of PCI.
+
+ISO::  International Standards Organization.
+
+ITU::  International Telecommunication Union, a part of the UN that deals with all of the pass:[<span class="keep-together">telecommunications.</span>]
+
+JEDEC::  Joint Electron Device Engineering Council.
+
+JFET::  See _junction field-effect transistor_.
+
+joule::  A measure of energy or work, abbreviated J. For electrical power, 1 joule is 1 watt of power applied for 1 second (a watt-second). As a unit of electrical energy, it is defined as 1 coulomb of electrical charge raised to a potential of 1 volt. Named for James Joule, the British physicist who established the mechanical theory of heat and discovered the first law of thermodynamics.
+
+junction field-effect transistor (JFET)::  A type of FET made by diffusing a gate region into a channel region. Voltage applied to the gate controls current flow in the channel by either depleting or enhancing the charge carriers in the channel. See also _FET_ and _MOSFET_.
+
+k::  Kilo. A metric unit representing 1,000, and usually written in lowercase. For example, 4 kg means 4 kilograms.
+
+kb::  Kilobit(s).
+
+keep-out zone::  (PCB) The area on or near a component that the circuit board layout design cannot use due to thermal management and mounting constraints.
+
+kg::  Kilogram(s).
+
+kHz::  Kilohertz.
+
+kilo (k)::  The metric prefix for units of measurement equal to thousands (1,000 or 10^-3^).
+
+kilowatt-hour (kWh)::  Unit of energy consumption equal to 1,000 watt-hours, or the energy consumed at the rate to 1 kilowatt (kW) for a period of 1 hour.
+
+km::  Kilometer(s).
+
+kW::  Kilowatt(s).
+
+large-scale integration (LSI)::  Refers to an IC fabrication technology used to create ICs with very complex circuits and high active component counts. Applies to devices with thousands of component elements on the silicone chip. See also _very large-scale integration_.
+
+kWh::  See _kilowatt-hour_.
+
+latency::  The time interval between input and output events (stimulus and response). See also _propagation delay_.
+
+LCC::  (SMD) Abbreviation of _leadless chip carrier_, a type of IC package, usually ceramic, that has no leads (pins), but instead uses metal pads at its outer edge to make contact with the printed circuit board.
+
+LCD::  See _liquid-crystal display_.
+
+lead::  The electrical contacts for a component, typically wires or pins extending from the body of the part. Can also refer to the wires used to connect a meter or other instrument to a circuit.
+
+LED::  See _light-emitting diode_.
+
+light-emitting diode (LED)::  A semiconductor diode that emits light when forward-biased.
+
+linear::  Describes a circuit or component where the output is directly proportional to the input as a straight-line relationship.
+
+liquid-crystal display (LCD)::  A display type that employs electrically controlled changes in the reflectivity of a liquid crystal material.
+
+lithium batteries::  A battery with a chemistry based on the element lithium, typically used for low-power, high-reliability, long-life applications such as memory retention. See also _lithium-ion_ pass:[<span class="keep-together"><em>batteries</em>.</span>]
+
+lithium-ion batteries::  A battery with a chemistry based on the element lithium, typically used as power sources for portable equipment, and with larger sizes, as power for electric vehicles. They are usually rechargeable. See also _lithium_ pass:[<span class="keep-together"><em>batteries</em>.</span>]
+
+load::  A component, device, or apparatus that uses the electrical energy of a circuit to perform some form of work.
+
+LSB::  Least-significant bit. Binary numbers are usually written with the MSB in the left-most position, and the LSB (2^0^ place) in the furthest-right position.
+
+LSI::  See _large-scale integration_. 
+
+mA::  Milliampere, or milliamp. 1/1,000 of an ampere.
+
+mask::  (PCB) A chemical and heat-resistant material applied to a PCB by a silkscreen process that prevents etching, plating, or soldering in specific areas on a PCB.
+
+mega (M)::  Prefix for units of measurement equal to millions (1,000,000 or 10^6^).
+
+MESFET::  See _metal-semiconductor field-effect transistor_.
+
+metal-oxide field-effect transistor (MOSFET)::   A transistor type that uses an electric field across an oxide layer to control conduction. Also called _insulated gate field-effect transistor_ (IGFET).
+
+metal-oxide varistor (MOV)::  A discrete electronic component that can be used to divert excessive voltage to ground. Also known as a _surge suppressor_.
+
+metal-semiconductor field-effect transistor (MESFET)::   A transistor that uses a metal-semiconductor (Schottky) junction to create the conductive channel, rather than using a P-N junction as in a JFET or a metal-oxide semiconductor layer found in MOSFET devices.
+
+MHz::  Megahertz. One million hertz, or cycles per second.
+
+micro (u)::  Prefix for units of measurement equal to millionths (1/1,000,000  or 10^–6^).
+
+microcontroller::  A computer on a single integrated circuit (IC) with a core processor, memory, and programmable input/output functions.
+
+Microprocessor::  A complete computer CPU contained on a single integrated-circuit(IC) chip. Does not include memory or programmable I/O functions. See also _microcontroller_.
+
+milli (m)::  Prefix for units of measurement equal to thousandths (1/1,000 or 10^–3^).
+
+MISO::  SPI Signal: Master In, Slave Out.
+
+mm::  Millimeter(s)
+
+MOSFET::  See _metal-oxide field-effect transistor_.
+
+MOSI::  SPI Signal: Master Out, Slave In.
+
+MOV::  See _metal-oxide varistor_.
+
+MQFP::  (SMD) Metric quad flat pack.
+
+ms::  Millisecond(s).
+
+multi-layer board::  A type of PCB that consists of two or more thin PCBs, each with traces, ground planes, and perhaps power planes, that are assembled into a single board. Plated pads and vias make the connections between the layers.
+
+multimeter::  An instrument that can measure voltage, current, or resistance in various ranges. Can refer to an analog meter (VOM) or a digital meter (DMM).
+
+Murphy's Law::  "Anything that can go wrong, will go wrong." Attributed to Capt. Edward Murphy around 1948 during testing at what is now Edwards Air Force Base.
+
+mV::  Millivolt (mV). 1/1,000 of a volt.
+
+MW::  Megawatt(s).
+
+mW::  Milliwatt(s).
+
+n-channel metal-oxide semiconductor::  A type of transistor in which n-type dopants are used in the gate region (_channel_).  A positive voltage on the gate allows current flow.
+
+nA::  Nanoampere(s).
+
+NAND::  NOT-AND: A form of gate or logic circuit that gives the inverted output of AND logic. Returns true if any inputs are false.
+
+NC::  _Not connected_ or _normally closed_ (when used with switch contacts).
+
+negative::  An object (if referring to a static charge) or the terminal of a voltage source that has an excess of electrons, or the polarity of a point in a circuit with respect to some other point.
+
+NiCd::  See _nickel-cadmium battery_.
+
+nickel metal hydride::  A rechargeable-battery technology based on nickel-hydrogen chemistry that employs positive electrodes of nickel oxyhydroxide (NiOOH).
+
+nickel-cadmium battery::  A rechargeable-battery technology that employs nickel oxyhydroxide (NiOOH) and metallic cadmium electrodes. Now largely obsolete.
+
+NiMH::  See _nickel metal hydride_.
+
+nMOS::  See _n-channel metal-oxide semiconductor_.
+
+NO::  _Normally open_, used with switch and relay contacts.
+
+nonlinear::  A circuit or component whose output versus input is not a straight-line relationship.
+
+nonvolatile (NV)::  Refers to a form of memory that retains stored data when power is removed.
+
+NOR::  NOT-OR: A form of gate or logic circuit that gives the inverted output of OR logic (i.e., the output will be true only if all inputs are false).
+
+ns::  Nanosecond(s), one one-billionth of a second (10^–9^).
+
+Ohm::  The unit of measurement for resistance named for German physicist Georg Simon Ohm.
+
+Ohm's law::  A basic circuit law that defines the relationships between current, voltage, and resistance, usually written as _E_ = _IR_.
+
+ohmmeter::  An instrument for measuring resistance.
+
+OLED::  See _organic light-emitting diode_.
+
+op amp::  See _operational amplifier_.
+
+open-collector::  Refers to an IC pin connected to the collector terminal of an internal transistor. This is a current sink, and when the transistor is active, the pin will be pulled to ground.
+
+open-drain::  Refers to an IC pin connected to the drain terminal of an internal FET. This is a current sink, and when the transistor is active, the pin will be pulled to ground.
+
+operational amplifier (op amp)::  A type of amplification circuit or component particularly well suited to use with IC technology. The ideal op amp is an amplifier with infinite input impedance, infinite pass:[<span class="keep-together">open-loop</span>] gain, zero output impedance, infinite bandwidth, and zero noise. With the appropriate feedback, an op amp can perform a wide range of functions.
+
+OR::  A form of gate or logic circuit that will output a true value if any input is true. Multiple inputs may be true at the same time.
+
+organic light-emitting diode (OLED)::  An LED made with organic materials that emits light when a voltage is applied.
+
+oscillator::  A circuit or device that generates AC signals with a specific frequency.
+
+oscilloscope::  An instrument that displays a plot of voltage over time, either on a CRT (an analog instrument) or an LCD type display (a digital instrument). Also called a _scope_.
+
+p-channel metal-oxide semiconductor (pMOS)::  A semiconductor in which p-type dopants are used in the gate region. A negative voltage on the gate enables current flow.
+
+pad::  (PCB) For wires and through-hole parts, a pad comprises a hole large enough to accommodate the component lead or wire, surrounded by an annular ring of copper. For surface-mount parts, a pad is an area of bare conductor where the component lead will be soldered. Also referred to as a _land_.
+
+parallel interface::  Transfers whole sets of bits (e.g., bytes or words) at once using a set of wires.
+
+PCB::  See _printed circuit board_.
+
+PDIP::  See _plastic dual inline package_.
+
+peripheral::  (USB) Another name for a _device_ or _function_.
+
+permeability::  A measure of the ability of a magnetic material to conduct magnetic lines of force.
+
+pF::  Picofarad, 10^–12^ of a Farad.
+
+phase::  A time relationship between two electrical quantities such as current and voltage, or between two signals.
+
+photo-resist::  (PCB) A thin film of light-sensitive material applied directly to the bare copper laminate of a PCB. Once exposed to light and processed chemically, it will resist the etching acid, leaving only the desired circuit pattern.
+
+pipe::  (USB) A logical connection between a host and the interface endpoints of a device.
+
+pitch::  (General) Refers to the spacing between pins or leads of components and connectors.
+
+pitch::  (PCB) A term used to describe the nominal distance between the centers of adjacent features or traces on any layer of a printed circuit board. For example, a part with a 0.1-inch pitch will have leads spaced 0.1 inch center-to-center.
+
+plastic dual inline package (PDIP)::  A DIP with a molded plastic body.
+
+plating::  (PCB) A process that applies a thin layer of copper to inside of the hole drilled for a pad or via in a PCB substrate. A plated hole serves as a conducting path between sides or layers of a PCB.
+
+PLCC::  (SMD) Plastic leaded chip carrier. A square surface-mount chip package in plastic with leads (pins) on all four sides that bend under the package. A PLCC can be used with a socket.
+
+pMOS::  See _p-channel metal-oxide semiconductor_.
+
+polarity::  The positive or negative voltage (or charge) at a given point in a circuit, the orientation of a part (such as a polarized capacitor), or at the output of a device such as a power supply or battery.
+
+positive::  An object (if referring to a static charge) on the terminal of a voltage source that has a deficit of electrons, or the polarity of a point in a circuit in respect to some other point.
+
+potentiometer::  A three-terminal resistor with an adjustable center connection that behaves like a variable voltage divider.
+
+power supply::  A device or circuit used to convert one form of electrical current to another. A common type converts AC current to a DC output. Other types can convert one DC voltage level to another.
+
+primary cell::  A device that uses up its chemical ingredients to produce electrical energy and therefore can not be recharged.
+
+printed circuit board (PCB)::  A method for mounting electronic components that integrates the physical support in the form of a thin sheet of material with the necessary circuit wiring. See also _substrate_.
+
+PROM::  Programmable read-only memory. A form of read-only memory that can be electrically programmed once by disruption of internal connection points.
+
+propagation delay::  In logic devices, the amount of time between when the input is stable and valid to when the output is stable and valid. The smaller the propagation delay, the faster a logic device can respond to input changes. Also known as _gate delay_. See also _latency_.
+
+QFN::  (SMD) Quad, flat, no-lead package.
+
+QFP::  (SMD) Quad flat pack, a package type.
+
+QSOP::  (SMD) Quarter small-outline package.
+
+radio frequency (RF)::  Any AC signal used for wireless communications or inadvertently emitted by a circuit (see _radio frequency interference_).
+
+radio frequency interference (RFI)::  The unintentional generation of RF signals by a circuit or device that can interfere with the operation of another another circuit or device not physically connected to the source of the interference.
+
+RAM::  See _random access memory_.
+
+random access memory (RAM)::  A form of binary data read/write memory that allows date storage and data retrieval to or from any location (address) in the memory space in any order.
+
+RC::  See _resistor-capacitor network_.
+
+resistor-capacitor (RC) network::  Refers to a network comprising of resistors and capacitors whose values have been chosen for a particular RC time constant.
+
+reactance::  The opposition to current offered by a network of capacitors and inductors in the form of a counter-electromotive force. Reactance is expressed in ohms.
+
+read-only memory (ROM)::  A form of nonvolatile memory that only allows its contents to be read, not written. ROM types include the basic design wherein the contents are part of the IC fabrication, and variants that can be erased and reprogrammed by using UV light or a specific voltage on a certain pin of the device.
+
+rectifier::  A solid-state device that allows current to flow in only one direction. Typically used to convert alternating current to pulsed direct current. See also _diode_.
+
+relay::  An electromechanical device that is basically an electrically operated switch. A relay consists of an armature that is moved by an electromagnet to operate one or more switch contacts.
+
+request::  (USB) Sent by a host to a device to request data or have the device perform an action.
+
+resistance::  A measure of the opposition to electrical flow represented by the symbol _R_ and measured in ohms.
+
+resistor::  An electrical component used to restrict the amount of current that can flow through a circuit. Available in many formats, such as fixed, tapped, and variable.
+
+resonance::  A condition in an LC circuit that occurs when the inductive reactance (XL) equals the capacitive reactance (XC) at a particular frequency. See also _resonant circuit_.
+
+resonant circuit::  A resonant, or tuned, LC circuit that combines an inductor and capacitor to create a circuit that is responsive to a particular frequency. Depending on the configuration, the circuit can have a high or low impedance at the resonant frequency and either pass or block the input signal. If a resistive component is used, it is referred to as an _LRC_ pass:[<span class="keep-together"><em>circuit</em>.</span>]
+
+response time::  The time required for a sensor to respond to a step change in the input, or for a circuit to sense a step change and generate a response output.
+
+RF::  See _radio frequency_.
+
+RFI::  See _radio frequency interference_.
+
+rheostat::  A two-terminal resistor with an adjustable center connection and only one end connection. Similar to a potentiometer with the wiper terminal connected to one of the end terminals.
+
+RI::  RS-232 signal: Ring Indicator.
+
+ripple::  A small amount of residual AC voltage present in the output of a DC power supply. Most power supplies are rated for some maximum amount of residual ripple.
+
+RMS::  See _root mean square_.
+
+ROM::  See _read-only memory_.
+
+root mean square (RMS)::  The value of an AC sine wave that is equivalent to some DC value in terms of power. For a sine wave, the RMS value is 70.7% of the peak AC value.
+
+RTS::  RS-232 signal: Request to Send.
+
+RxD::  RS-232 signal: Received Data.
+
+SBGA::  (SMD) Super ball-grid array.
+
+Schottky diode::  A diode made using a Schottky-barrier junction, a type of metal-semiconductor junction, rather than the P-N junction used by conventional semiconductor diodes. Schottky diodes exhibit high switching speeds and a low forward voltage drop.
+
+SCLK::  SPI Signal: Serial Clock.
+
+SCR::  See _silicon-controlled rectifier_. See also pass:[<span class="keep-together"><em>thyristor</em>.</span>]
+
+secondary cell::  A device whose chemical ingredients convert chemical energy to electrical energy and in which the chemical reactions can be reversed when the device is recharged.
+
+semiconductor::  Solid crystalline substances that exhibit varying degrees of electrical conductivity depending on chemical alterations or external conditions. Examples include silicon, germanium, and gallium arsenide. These materials are the foundational material for diodes and transistors.
+
+serial::  A form of data transfer wherein bits are sent and received one at a time over a single conductor or channel. Can also refer to a sequence of action performed in a specific order with no other actions. See also _serial interface_.
+
+serial interface::  An interface in which data is sent in a single stream of bits, usually on a single wire-plus-ground, wire-pair, or single wireless channel. See also _serial_.
+
+serial peripheral interface (SPI)::  A three-wire serial interface developed by Motorola.
+
+series circuit::  A circuit with two or more loads (or sources) connected end to end, resulting in only one current path. All components in a series circuit have the same current but can have different voltages.
+
+short circuit::  An unintentional low-resistance conductive path between two points in a circuit.
+
+siemens (S)::  The unit of measurement for conductance. It is the inverse of ohms (S = 1/ohm). Named for German engineer Ernst Werner von pass:[<span class="keep-together">Siemens.</span>]
+
+signal generator::  An instrument that utilizes an oscillator to generate AC signals whose frequency and amplitude can be varied.
+
+signal-to-noise ratio (SNR)::  The ratio of the amplitude of a desired signal to the amplitude of unwanted spurious noise signals in communications channel. SNR is usually expressed in dB, and the larger the number (the greater the ratio), the better.
+
+silicon-controlled rectifier (SCR)::  A three-terminal type of semiconductor switch, controlled by a gate terminal. Once the device is placed into a conducting state, it will remain in that state until the voltage drop across the anode and cathode terminals reaches zero (or close to it). An SCR will conduct current in only one direction and can be modeled as a switched rectifier. See also TRIAC and _thyristor_.
+
+single-sided board::  A printed circuit board with a copper layer on only one side and (typically) no plated-through holes.
+
+SMD::  See _surface-mount device_.
+
+SMT::  See _surface-mount technology_.
+
+SNR::  See _signal-to-noise ratio_.
+
+snubber::  A circuit or device that is used to suppress voltage transients.
+
+SOIC::  (SMD) Small-outline integrated circuit.
+
+solar cell::  A photovoltaic device that converts light energy to electrical energy. Also called a _photovoltaic cell_.
+
+solder::  A low-melting-point metal alloy, often composed of tin and lead, that is used to join metallic parts such as the leads of electronic components. New formulations are becoming common that do not contain any lead, but are made from various ratios of tin, copper, silver, bismuth, indium, zinc, antimony, and traces of other metals.
+
+solder mask::  (PCB) A coating applied using a silkscreen process that prevents solder from flowing onto any areas where it's not desired and also prevents short-circuit _bridges_ from forming between closely spaced traces, pads, or vias.
+
+solenoid::  A device that uses electromagnetism to produce a linear (nonrotary) mechanical operation, typically involving a movable slug in the center of a coil of wire.
+
+solid state::  Refers to active components or circuits containing active components that use semiconductor materials in their fabrication and operation. See also _semiconductor_.
+
+SOT::  (SMD) Small-outline transistor.
+
+SPDT::  Single-pole/double-throw. A switch or relay with one conductor (the pole) and two possible positions (throw) for the conductor.
+
+SPI::  See _serial peripheral interface_.
+
+SPST::  Single-pole/single-throw. A switch or relay with one conductor (the pole) and one possible position (throw) for the conductor.
+
+SRAM::  Static RAM. A type of random-access memory that does not use a clocked signal to maintain its contents, instead relying only on voltage. See also _DRAM_.
+
+SS::  SPI Signal: Slave Select (active low).
+
+SSOP::  (SMD) Shrink small-outline package.
+
+static electricity::  A stationary electrical charge on an object created by some type of mechanical transfer (e.g., air movement, water vapor movement, suspended particles in the air, Wimshurst machine, Van de Graaff generator, removing a sweater, shuffling shoes on a carpet on a dry, cold day).
+
+substrate::  (PCB) A thin phenolic or fiberglass sheet of material on which a PCB is built.
+
+subtractive process::  A PCB fabrication process that involves removing unwanted copper laminate from a PCB substrate using either a silkscreen pattern mask or a photoresist material and acid etchant.
+
+surface-mount device (SMD)::  An electronic component that mounts on the surface of a printed circuit board without the need for leads protruding through the PCB.
+
+surface-mount technology (SMT)::  Refers to methods used to produce circuit boards that utilize surface-mounted devices. See also _surface-mount device_.
+
+terminal::  A connection point for electrical components, PCBs, connectors, or a device or instrument.
+
+through hole::  (PCB) A method for mounting components on a printed circuit board (PCB) in which the pins on the components are inserted through holes in the PCB and soldered in place on the opposite side.
+
+thyristor::  A general classification of semiconductor devices that behave as electronic switches, (e.g., DIACs, SCRs, and TRIACs).
+
+tin whiskers::  (PCB) Conductive microscopic, hair-like crystals that emanate spontaneously from pure tin surfaces. Tin whiskers are often found on electroplated tin surfaces, although a tin-lead (SnPb) alloy plating can reduce the occurrence of whiskers. Also called _metal whiskers_.
+
+tolerance::  The degree of deviation, expressed as a percentage, that defines the allowable variance in a measurement or the value of a pass:[<span class="keep-together">component.</span>]
+
+trace::  (PCB) The conductive path between two points on a PCB. Also called a _track_. See also _trace width_.
+
+trace width::  (PCB) Varies according to the desired current capacity and the thickness of the copper pass:[<span class="keep-together">laminate.</span>] It is somewhat analogous to the diameter of a wire in this respect.
+
+track::  (PCB) See _trace_.
+
+transducer::  A device used to convert input energy of one form into output energy of another form.
+
+transformer::  An electromagnetic device used to transfer electric energy from one circuit to another via inductively coupled wire coils. A transformer can be used to change the voltage of alternating current, by either increasing it (step-up) or decreasing it (step-down). Some transformers are designed as an isolation component to transfer current without a change in voltage.
+
+transistor::  A basic semiconductor (solid-state) device that modulates current flow between two terminals (collector and emitter) relative to the current applied to a third terminal (the base). See also _bipolar junction transistor_ and _field-effect transistor_.
+
+TRIAC::  Abbreviation for _triode for alternating current_. A type of thyristor that will conduct current in either direction. As with an SCR, once the device is placed into a conducting state, it will remain in that state until the voltage drop across the anode and cathode terminals reaches zero (or close to it).
+
+TSOC::  (SMD) Thin small-outline C-lead.
+
+TSOP::  (SMD) Thin small-outline package.
+
+TSSOP::  (SMD) Thin shrink small-outline package.
+
+TTL::  Transistor-transistor logic.
+
+TxD::  RS-232 signal: Transmitted Data.
+
+Universal Serial Bus (USB)::  A data-communication standard developed as a faster replacement for the RS-232 interface, to allow easy connection of peripheral devices (e.g., digital cameras, scanners, keyboards, and mice) to a host computer.
+
+upstream::  (USB) Looking back toward the host from the perspective of the hubs and devices in a USB network.
+
+USB::  See _Universal Serial Bus_.
+
+VA::  Volt ampere(s).
+
+Vcc::  Used to designate the V+ source for a BJT or BJT circuit. Also used with ICs. Can be used to distinguish between multiple voltage in a circuit (e.g., Vcc and Vdd are positive source voltages but may not be the same voltage).
+
+Vdd::  Used to designate the V+ source for a FET or FET circuit. Also used with ICs. Can be used to distinguish between multiple voltage in a circuit (e.g., Vcc and Vdd are positive source voltages but may not be the same voltage).
+
+very large-scale integration (VLSI)::  Refers to an IC fabrication technology used to create ICs with very complex circuits and high active component counts. Applies to devices with up to a million unique pass:[<span class="keep-together">transistors</span>] and other circuit elements. See also _large-scale integration_.
+
+via::  (PCB) A plated hole that is used to connect layers on a double-sided or multi-layer PCB.
+
+VLSI::  See _very large-scale integration_.
+
+volt::  The unit of measurement for electrical potential between two points in a circuit. Formally stated, an electrical potential of 1 volt will push 1 ampere of current through a 1-ohm resistive load. Named for Italian physicist Alessandro Volta, who invented one of the first batteries.
+
+volt-ampere (VA)::  The voltage times the current feeding into an electrical load. In a direct current system or for resistive loads, the wattage and the VA are the same. In a reactive circuit involving inductors and capacitors, the VA specification will be greater than the average wattage due to phase differences between voltage and current.
+
+volt-ohm meter (VOM)::  A (now mostly obsolete) type of passive or vacuum-tube instrument with the ability to measure both voltage and resistance. VOM devices have been largely replaced by DMM instruments.
+
+voltage::  The difference in the electrical potential between any two points in a circuit. See also _electromotive force_.
+
+voltage divider::  A series resistance circuit that presents a voltage at the junction of two resistors that is proportional to the ratio of the resistor pass:[<span class="keep-together">values.</span>]
+
+voltage drop::  The difference in potential between two points in a circuit as a result of current flow.
+
+voltage regulator::  A device or circuit that accepts input current with varying voltage or ripple, and generates an output current at a constant voltage. The voltage and current capability of the output may both be variable.
+
+voltmeter::  An instrument used to measure voltage.
+
+VOM::  See _volt-ohm meter_.
+
+Vss::  Sometimes used to designate the V- (ground) return for a circuit.
+
+watt (W)::  Unit of measurement for power, where 1 watt equals the work done when 1 joule is used per second. Named for British engineer and inventor James Watt.
+
+watt-hour (Wh)::  Unit of measurement defined as the energy consumed at the rate of 1 watt (W) over a period of 1 hour. Equivalent to 3,600 joules.
+
+Zener diode::  A semiconductor device that will conduct current when the reverse voltage across the device exceeds a specific level. A Zener diode is often used as simple voltage regulator, or as a reference source for a linear regulator.
+
+zero insertion force (ZIF)::  A type of IC socket that clamps the leads of an IC between thin metal fingers after insertion when a small lever is operated on the side of the socket. Primarily used when a part, such as an EPROM, must be removed and reinserted multiple times during development activities.
+
+ZIF::  See _zero insertion force_.

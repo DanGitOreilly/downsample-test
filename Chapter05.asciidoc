@@ -1,0 +1,1053 @@
+[[Chapter_5]] 
+== Power Sources
+
+All electronic or electrical and electronic((("power sources", id="ix_powersources"))) devices, from the simplest flashlight to
+the control systems on a modern aircraft, need one thing in common: power. Without
+a source of electrons, it's all just a pile of inert metal, plastic, and silicon
+(among other things).
+
+This chapter presents an overview of power sources for both DC and AC, ranging
+from batteries to linear and switching power supplies. Special attention will be given
+to batteries and inexpensive DC power supplies you can use to power your project that
+plug into a standard((("wall warts")))((("AC wall socket"))) AC wall socket (so-called _wall warts_).
+
+We'll wrap up the chapter with a look at fuses and circuit breakers, essential but
+often overlooked devices that can save the day if used correctly. To that end, there
+is a brief discussion of how to select an appropriate rating for these essential
+protection pass:[<span class="keep-together">devices</span>].
+
+=== Batteries
+
+Batteries are the simplest source of DC power, and they are essential when portability is((("batteries")))((("power sources", "batteries")))
+a major consideration. Unfortunately, a battery will last only so long before it must
+be either replaced or recharged.
+
+There are numerous types of batteries available, ranging from the tiny types used
+in things like hearing aids, all the way up to huge arrays that are found in solar
+power installations and in the back-up power systems for large computer installations.
+Some batteries are rechargeable, such as the types used in cell phones and automobiles,
+while others are single-use and must be disposed of when they are exhausted.
+
+==== Battery Packages
+
+[role="pagebreak-after"]
+Batteries for general-purpose consumer applications are available in a variety of package((("power sources", "batteries", "battery packages")))((("batteries", "battery packages")))
+styles, from the common cylindrical forms of AAA, AA, C, and D types used in portable
+devices, toys, and flashlights, to the square package used for 9V types. <<common_battery_sizes>> lists the five most
+common general-purpose battery sizes.((("batteries", "battery packages", "common battery sizes")))
+
+[[common_battery_sizes]]
+.Common battery sizes
+[width="100%",cols="<1,<1",frame="topbot",options="header"]
+|=========================================================
+|Type    |Dimensions (mm)
+|AAA     |10.5 &#215; 44.5 mm
+|AA      |14.5 &#215; 50 mm
+|C       |25.5 &#215; 50 mm
+|D       |34 &#215; 61 mm
+|9V      |48.5 &#215; 26.5 &#215; 17 mm
+|=========================================================
+
+<<standard_batteries>> shows a side-by-side comparison of the common battery sizes in the
+order listed in <<common_battery_sizes>>, from left to right.
+
+[[standard_batteries]]
+.A selection of common batteries
+image::images/pect_0501.png[width="400",align="center"]
+
+The so-called _coin_ or _button_ batteries((("button batteries")))((("coin batteries"))) found in some toys, watches, hearing aids, and
+other small devices do indeed look like small coins or buttons, and there are multiple
+sizes and ratings available for these, as well. <<coin_batteries_pic>> shows a sample of some
+of the available sizes.
+
+The batteries shown in <<coin_batteries_pic>> are, from left to right, LR41, LR44, CR2032,
+and CR2025. See <<coin_batteries>> for more details on the various types and
+sizes of coin-style batteries that are available.
+
+[[coin_batteries_pic]]
+.A selection of small "coin" batteries
+image::images/pect_0502.png[width="400",align="center"]
+
+Other package styles include the rectangular form used for ((("lead-acid batteries")))sealed lead-acid batteries,
+such as those found in things like emergency lights and the uninterruptible power supply
+(UPS) devices used to keep computers and other devices running when the lights go out.
+Rectangular 6V lantern batteries with spring contacts are still used for some types of
+camp flashlights and portable fluorescent lighting units. ((("lithium-ion batteries")))The lithium-ion batteries
+found in cell phones and tablets come in a range of shapes, most of which resemble flat
+rectangular wafers about 3 to 10 millimeters thick. And, of course, there are the large, heavy
+lead-acid batteries used to provide starting power for cars, trucks, and boats.
+
+In addition to the common sizes, batteries can be made in custom sizes for a particular
+product. Generally, however, it is a good idea to stick with something that is readily
+available at almost any grocery store if at all pass:[<span class="keep-together">possible</span>].
+
+==== Primary Batteries
+
+Batteries with nonreversible electro-chemical reactions((("primary batteries")))((("power sources", "batteries", "primary batteries")))((("batteries", "primary"))) are referred to as _primary batteries_.
+Primary batteries are usually alkaline types, but other types (such as lithium, silver-oxide,
+and zinc-air) are also common in the form of coin batteries (see <<coin_batteries>> for
+details about coin batteries). Large silver-oxide primary batteries have also been used
+in aircraft, submarines, and spacecraft.
+
+===== Alkaline Batteries
+
+The alkaline battery is the most common type of((("batteries", "alkaline")))((("alkaline batteries")))((("power sources", "batteries", "alkaline batteries"))) battery in use today. An alkaline battery
+is a chemical device that employs the reaction between zinc and manganese dioxide to create
+an electric current. Alkaline batteries are size interchangeable with the older zinc-carbon
+types.
+
+For the common sizes listed in <<common_battery_sizes>>, each type of alkaline battery has its((("voltage", "comparison for some battery types")))((("batteries", "comparison of voltages and capacities for some battery types")))
+own standard voltage and capacity, as shown in <<battery_comparison>>.
+
+Note that the capacity values shown in <<battery_comparison>> are conservative and
+are provided for reference only. The actual capacity of a particular battery will depend on
+the manufacturer's formulation and production pass:[<span class="keep-together">process</span>].
+
+A typical alkaline battery is a one-shot device. Once it is discharged, it is generally not
+a good idea to try to recharge it. There are some types of alkaline batteries that are
+somewhat rechargeable, but unless a battery specifically states that it is a rechargeable
+type, don't try it. There is a risk of a burst battery and possibly fire.
+
+While lightly loaded (low current drain), an alkaline battery will produce a relatively constant
+voltage at a constant current. This is the amp-hour rating mentioned in <<Chapter_1>> and shown
+as mAh (milliamp-hour) values((("milliamp-hour (mAh)")))((("mAh (milliamp-hour)"))) in <<battery_comparison>>. The battery's output is a function of
+the chemical reaction occurring inside the battery, which in turn is affected by the load on the
+battery. Over time, the battery loses its ability to react chemically, and the battery dies. When
+the battery starts to fail, its voltage will drop, and it will no longer be able to hold its rated
+voltage as it discharges. When heavily loaded, alkaline batteries start to fail much sooner than
+other types.
+
+The usable capacity of ((("alkaline batteries", "discharge curves for alkaline versus NiMH batteries")))an alkaline battery depends on the load on the battery. <<batt_discharge>>
+shows typical discharge curves for both an alkaline and a nickel-metal hydride (NiMH) battery under
+load.((("NiMH (nickel-metal hydride) batteries", "discharge curve for NiMH and alkaline batteries"))) Notice how the NiMH battery is able to maintain a voltage above the cut-off level for longer
+than an alkaline type when both are loaded equally. From this we can conclude (correctly) that the
+capacity rating for an alkaline battery is more applicable to low-current-drain pass:[<span class="keep-together">situations</span>].
+
+As you can see in <<batt_discharge>>, the output of an alkaline battery over time is not a flat
+line up to some point where it starts to drop. Rather, it is more like a gradual descent into
+darkness over time because an alkaline battery will develop an internal resistance when the
+current drain is high. It drops below the usable voltage cut-off limit much sooner than the
+NiMH battery, even though both have roughly the same rated capacity. The cut-off voltage shown
+in <<batt_discharge>> depends on the device the battery is powering. Some can operate down to
+1V, whereas others might give up at 1.2V (which means the use of an NiMH might not work out
+too well).
+
+[[battery_comparison]]
+[role="float-top wide"]
+.A comparison of voltages and capacities for common battery types
+image::images/pect_0503.png[]
+
+[[batt_discharge]]
+.Discharge curves for alkaline versus NiMH batteries
+image::images/pect_0504.png[width="500",align="center"]
+
+===== Silver-Oxide
+
+Silver-oxide batteries are primary cells((("batteries", "silver-oxide")))((("power sources", "batteries", "silver-oxide batteries")))((("silver-oxide batteries"))) typically found in the form of small button
+or coin-style batteries, ((("coin batteries", "silver-oxide cells in")))due to their high energy-to-weight ratio. A silver-oxide cell
+also has a flatter discharge curve than an equivalent alkaline battery, and the nominal
+voltage per cell is only slightly higher (1.5V for alkaline versus 1.55V for silver-oxide).
+
+Larger sizes are possible but limited in application due to the cost of silver. A button-style battery uses little silver, so it is not a major cost factor. Prior to the
+invention of lithium batteries, the silver-oxide battery had the highest energy-to-weight
+ratio (the energy density).((("energy density", "silver-oxide batteries"))) Originally developed for aircraft, these types of batteries
+have been used in spacecraft and on submarines.
+
+===== Lithium
+
+Not to be confused with the lithium-ion (Li-ion) secondary batteries found in cell phones ((("power sources", "batteries", "lithium batteries")))((("batteries", "lithium")))((("lithium batteries")))and
+other portable electronic devices, a lithium battery is a disposable primary battery type that
+uses some form of metallic lithium in the anode of the battery. A primary lithium battery has
+a high charge density, which equates to a long useful lifetime. Found mostly in the form of coin
+or button batteries, AAA, AA, and 9V sizes are available as well. They are also rather
+expensive, with a four-pack of AA-size lithium batteries going for around $15.
+
+Output voltages for lithium batteries (individual cells) range from 1.5V to 3.7V.((("voltage", "lithium battery output"))) The current
+capacity can be as high as 3,000 mAh for a single AA cell, and the discharge curve is virtually
+flat right up until the battery is exhausted.
+
+===== Zinc-Air
+
+Zinc-air primary batteries ((("power sources", "batteries", "zinc-air batteries")))((("batteries", "zinc-air")))((("zinc-air batteries")))are based on the oxidation of zinc when in contact with the air. For
+this reason, coin-type zinc-air batteries come with a seal that must be removed before the battery
+will produce any output.
+
+Zinc-air batteries have a high energy density and are relatively inexpensive to manufacture. They are
+mostly found in the form of coin cells in hearing aids, medical devices, and pagers, although they
+have also been used in film cameras and, in large forms, as the primary power for electric
+vehicles.
+
+==== Secondary Batteries
+
+Batteries that are rechargeable (meaning that the electro-chemical state of the battery
+can be reversed), are((("power sources", "batteries", "secondary batteries")))((("rechargeable batteries")))((("batteries", "secondary")))((("secondary batteries"))) referred to as _secondary batteries_. Secondary batteries include
+nickel-cadmium (NiCad), nickel-metal hydride (NiMH), lithium-ion (Li-ion) types, as well
+as the common lead-acid types found in vehicles and in large-scale power storage pass:[<span class="keep-together">applications</span>].
+
+The oldest example of a rechargeable battery is the lead-acid type often found in
+automotive applications. A more modern variant, the deep-cycle battery, is sometimes
+used in solar power installations. Other more recent types include nickel-cadmium (NiCad),
+nickel metal hydride (NiMH), and lithium-ion (Li-ion).
+
+===== NiCad: Nickel-Cadmium
+
+Created in the late 1800s in Sweden, the NiCad battery((("NiCad (nickel-cadmium) batteries")))((("power sources", "batteries", "NiCad (nickel-cadmium) batteries")))((("batteries", "NiCad (nickel-cadmium)"))) has been used in things
+like portable two-way radios, emergency lights, cordless power tools, and electric
+vehicles. Manufactured in a variety of sizes, including AAA, AA, C, D, and 9V, NiCad
+batteries are readily available and provide decent performance. NiCad batteries do
+have a tendency to develop a sort of memory with repeated charge-discharge cycles,
+which prevents them from taking a complete charge until they have been subject to
+a deep discharge cycle to reset the charge memory.
+
+NiCad batteries have a typical output voltage of 1.2V per cell, instead of 1.5V as
+found in alkaline batteries.((("voltage", "NiCad battery output"))) Although many devices will operate fine with the lower
+voltage, some will not.
+
+===== NiMH: Nickel-Metal Hydride
+
+Since their introduction in the late 1980s, ((("power sources", "batteries", "NiMH (nickel-metal hydride) batteries")))((("batteries", "NiMH (nickel-metal hydride)")))((("NiMH (nickel-metal hydride) batteries")))NiMH batteries have replaced NiCad
+in many applications. The charge capacity of NiMH is much better than NiCad, and
+NiMH batteries don't suffer from the charge memory effect that sometimes afflicts
+NiCad types. NiMH batteries do have a higher self-discharge rate than NiCad types,
+however, and like NiCad batteries, a NiMH cell output is typically 1.2V.
+
+<<nimh_pack>> shows the battery pack from a cordless telephone before and after the
+pack was opened to reveal its contents. This pack has an output voltage of 3.6V at
+500 mAh capacity, and it contains three 1.2V cells wired in series. Notice in
+<<nimh_pack>> that there is a fuse link incorporated into the battery pack, as indicated
+by the arrow.
+
+[[nimh_pack]]
+.Small NiMH battery pack for a cordless telephone
+image::images/pect_0505.png[width="500",align="center"]
+
+These types of battery packs are readily available from various online sources and
+sell for about $5.
+
+===== Li-ion: Lithium-Ion
+
+Lithium-ion batteries((("power sources", "batteries", "lithium-ion (Li-ion) batteries")))((("batteries", "lithium-ion (Li-ion)")))((("lithium-ion (Li-ion) batteries"))) have become common in consumer electronics such as cell
+phones, tablet computers, netbooks, and some types of electric tools and medical
+equipment. These batteries have good charge density and low self-discharge rates, and
+they do not suffer from memory effect.
+
+Li-ion packaging is varied, ranging from conventional tubular packages in the
+standard sizes to custom-made flat rectangles or even circular shapes. Be aware
+that the output voltages from Li-ion batteries in standard sizes may not be the
+1.5 or 1.2V you would expect. Some can range as high as 3.6V. It would be
+easy to damage an electronic device expecting, say, 6V (four alkaline batteries)
+but instead being supplied with almost 14.5V!
+
+The batteries found in things like MP3 players, cameras, and cell phones are often
+packaged in flat, rectangular shapes like the one shown in <<li-ion_battery>>.
+These typically have three or four terminals at one end that make contact with
+a matching number of spring-loaded pins or perhaps leaf contacts.
+
+[[li-ion_battery]]
+.A typical Li-ion battery from a portable device
+image::images/pect_0506.png[width="300",align="center"]
+
+Although most Li-ion batteries are custom-made for a specific application, if the
+correct fixture can be purchased or fabricated, they can be an excellent
+compact source of power for a project. An old cell phone can provide such a mount
+if it is removed carefully.
+
+You should be aware that Li-ion batteries can have a relatively high energy
+storage capacity for their size and will sometimes overheat if they're mistreated or
+happen to be defective. This is particularly true of the types used in mobile
+devices, and there have been reports of Li-ion batteries bursting into flames
+or even exploding. While not as big of a problem with more recent batteries as
+it once was with earlier types, it is still something to take into consideration.
+
+===== Lead-Acid
+
+Lead-acid batteries have been around for a long time, at least since the
+mid-1800s.((("power sources", "batteries", "lead-acid batteries")))((("lead-acid batteries")))((("batteries", "lead-acid"))) They have low energy density for their weight, but they are relatively
+inexpensive and have the ability to deliver large surge currents, which makes them
+ideal for applications such as turning the starter motor in an automobile.
+
+In the 1970s, the so-called _gel cell_ was created.((("gel cells"))) This is essentially a lead-acid
+battery with a silica gel mixed into the electrolyte. These types of batteries
+don't suffer from significant evaporation issues, and their larger usable temperature
+range makes them more suitable for extreme conditions. Due to the gel, these types
+of batteries do not have the same surge capability as a conventional lead-acid
+battery. So while a gel cell is great for energy storage applications, it is not
+a good choice as the starting battery for a vehicle.
+
+[[coin_batteries]]
+==== Miniature Button/Coin Batteries
+
+We wrap up our brief survey of batteries((("power sources", "batteries", "miniature button/coin batteries")))((("batteries", "miniature button/coin batteries")))((("coin batteries"))) with a look at coin or button types,
+such as the ones found in hearing aids, watches, laser pointers, miniature digital
+scales, and other small devices. They come in both primary and secondary forms,
+although we'll cover only the primary types in this section.
+
+International standard IEC 60086-3 defines an alphanumeric coding system for coin-style batteries, although some manufacturers have their own naming system.((("coin batteries", "alphanumeric coding system for")))((("IEC 60086-3 alphanumeric coding standard for coin-style batteries")))((("alphanumeric coding system for coin-style batteries"))) This can
+make things confusing, but fortunately you can usually identify a replacement
+battery by cross-referencing the manufacturer-specific ID number to an IEC equivalent.
+
+The full version of the coding scheme incorporates a letter code for the battery
+type followed by a letter code for the package type (which is always 'R' for _round_
+when referring to coin or button batteries). These two characters are followed by
+two, three, or four digits that encode the physical dimensions (diameter and height) of the
+battery. The full form contains both the diameter and the height, like this:
+
+++++
+  <ul xmlns="http://www.w3.org/1999/xhtml" class="simplelist">
+    <li>[type][package][diameter][height]</li>
+  </ul>
+++++
+
+For example, a CR2032 (one of which is shown in <<coin_batteries_pic>>) is a round lithium
+cell with a diameter of 20 mm and a height of 3.2 mm. Another example is the LR736, which
+is another round lithium cell with a 7.9 mm diameter and 3.6 mm thickness. The 7.9 mm
+diameter is indicated by the value 7; the fractional part of the diameter is not
+included in the identification code. The standard diameter values are defined in
+<<butt_bat_diameters>>.
+
+An alternative form of the coding system uses a numeric((("coin batteries", "alternative coding system for"))) value to specify the case size
+rather than the diameter and height:
+
+++++
+  <ul xmlns="http://www.w3.org/1999/xhtml" class="simplelist">
+    <li>[type][package][size code]</li>
+  </ul>
+++++
+
+LR41 is an example of this type of ID code. This would be a round lithium battery of size
+type 41, which is equivalent to an LR736. The size codes are listed in <<butt_bat_size_codes>>,
+which can be used as a cross-reference between the two types of codes.
+
+Lastly, some batteries have just a numeric identification number.((("coin batteries", "numeric IDs, manufacturer-assigned"))) This is not part of
+the IEC standard but is an example of a manufacturer-assigned ID code, some of which
+have become de facto standards over time. Fortunately, most manufacturers follow the IEC
+case size specifications, so many batteries with unique ID codes are largely interchangeable
+with other types that use the IEC identification system. For example, the ID numbers 186,
+301, 386, SR43, and SR1142 all refer to the same battery (a 1.55V silver-oxide type with
+a diameter of 11.6 mm and a height of 4.2 mm).
+
+The battery type code refers to the chemistry((("coin batteries", "type codes for"))) of a battery and can be one of C, L, P,
+or S. <<butt_bat_types>> defines these type codes, along with the nominal output
+voltage for each individual cell of that type.
+
+[[butt_bat_types]]
+.Button/coin battery types
+[width="100%",cols="^1,<1,<1",frame="topbot",options="header"]
+|=========================================================
+|Type code  | Chemistry     | Output (volts)
+|C          | Lithium       | 3
+|L          | Alkaline      | 1.5
+|P          | Zinc-air      | 1.4
+|S          | Silver-oxide  | 1.55
+|=========================================================
+
+The case dimensions or case code for a particular battery type follow the 'R' code (a round
+case). ((("coin batteries", "diameter values")))In the full-form numbering system, the diameter is specified with either a one- or two-digit value indicating the diameter of the case in whole millimeters (pass:[<span class="keep-together">rounded</span>] down). The
+height of the case is always a two-digit value that specifies the physical height in
+millimeters and tenths of a millimeter. <<butt_bat_diameters>> lists the diameter code
+values specified in the IEC standard.
+
+[[butt_bat_diameters]]
+.Button/coin battery diameter values
+[width="100%",cols="^1,<1",frame="topbot",options="header"]
+|=========================================================
+|Diameter code  | Nominal diameter (mm)
+|4              | 4.8
+|5              | 5.8
+|6              | 6.8
+|7              | 7.9
+|9              | 9.5
+|10             | 10.0
+|11             | 11.6
+|12             | 12.5
+|16             | 16
+|20             | 20
+|23             | 23
+|24             | 24.5
+|=========================================================
+
+With this coding system, the battery ID is sufficient to physically describe the battery. So,
+for example, if you encounter an SR926, you'll know that it's a silver-oxide button type that
+is 9.5 mm in diameter and 2.6 mm in height.
+
+The standard size-code system((("coin batteries", "size codes"))) is a more compact scheme used to identify a particular type of
+button battery not only in terms of physical size, but also in terms of current capacity.
+<<butt_bat_size_codes>> lists the size codes for alkaline and silver-oxide batteries
+and the typical capacity of each type. The capacity ratings are shown for both alkaline (L cap)((("alkaline batteries", "coin-style")))
+and silver-oxide (S cap) batteries.((("silver-oxide batteries", "coin-style"))) The 'x' in the IEC ID codes can be replaced with either
+an L or S, as appropriate. For the SR67 and SR68 types, no alkaline (L) equivalent is readily
+available.
+
+[[butt_bat_size_codes]]
+.Button/coin battery size codes (capacity in mAh, dimensions in mm)
+[width="100%",cols="^1,<1,<1,<1,<1,<1",frame="topbot",options="header"]
+|=========================================================
+|Code | IEC ID  | L cap   | S cap   | D    | H
+|41   | xR736   | 25–32   | 38–45   | 7.9  | 3.6
+|43   | xR1142  | 80      | 120–125 | 11.6 | 4.2
+|44   | xR1154  | 110–150 | 170–200 | 11.6 | 5.4
+|45   | xR936   | 48      | 55–70   | 9.5  | 3.6
+|48   | xR754   | 52      | 70      | 7.9  | 5.4
+|54   | xR1130  | 44–68   | 80–86   | 11.6 | 3.1
+|55   | xR1121  | 40–42   | 55–67   | 11.6 | 2.1
+|57   | xR926   | 46      | 55–67   | 9.5  | 2.6
+|58   | xR721   | 18–25   | 33–36   | 7.9  | 2.1
+|59   | xR726   | 26      | 30      | 7.9  | 2.6
+|60   | xR621   | 13      | 20      | 6.8  | 2.1
+|63   | xR521   | 10      | 18      | 5.8  | 2.1
+|64   | xR527   | 12      | 20      | 5.8  | 2.7
+|66   | xR626   | 12–18   | 26      | 6.8  | 2.6
+|67   | SR716   | n/a     | 21      | 7.9  | 1.65
+|68   | SR916   | n/a     | 26      | 9.5  | 1.6
+|69   | xR921   | 30      | 55      | 9.5  | 2.1
+|=========================================================
+
+Lithium coin-style batteries use ((("lithium batteries", "coin-style, size codes")))((("ANSI", "lithium coin-style batteries")))the full-form IEC ID numbers. <<lithium_butt_batts>> lists
+some of the more common types you might encounter in the wild. The ANSI designation is also
+given, where applicable.
+
+[[lithium_butt_batts]]
+.Lithium button/coin battery size codes (capacity in mAh, dimensions in mm)
+[width="100%",cols="^1,^1,<1,<1,<1",frame="topbot",options="header"]
+|=========================================================
+|IEC ID | ANSI   | Capacity | D    | H
+|CR927  |        | 30       | 9.5  | 2.7
+|CR1025 | 5033LC | 30       | 10   | 2.5
+|CR1216 | 5034LC | 25       | 12.5 | 1.6
+|CR1220 | 5012LC | 35–40    | 12.5 | 2.0
+|CR1225 | 5020LC | 50       | 12.5 | 2.5
+|CR1616 |        | 50–55    | 16   | 1.6
+|CR1620 | 5009LC | 75–78    | 16   | 2.0
+|CR1632 |        | 120–140  | 16   | 3.2
+|CR2012 |        | 55       | 20   | 1.2
+|CR2016 | 5000LC | 90       | 20   | 1.6
+|CR2025 | 5003LC | 160–165  | 20   | 2.5
+|CR2032 | 5004LC | 190–225  | 20   | 3.2
+|CR2330 |        | 255–265  | 23   | 3.0
+|CR2354 |        | 560      | 23   | 5.4
+|CR2430 | 5011LC | 270–290  | 24.5 | 3.0
+|CR2450 | 5029LC | 610–620  | 24.5 | 5.0
+|CR2477 |        | 1,000     | 24.5 | 7.7
+|CR3032 |        | 500–560  | 30.0 | 3.2
+|=========================================================
+
+==== Battery Storage Considerations
+
+Alkaline primary batteries typically have a longer shelf life than a secondary battery of((("power sources", "batteries", "storage considerations")))((("primary batteries", "shelf life")))((("shelf life of batteries")))((("batteries", "storage considerations")))
+the same physical form factor and rating. For this reason, they are a good choice when the
+battery must sit for extended periods of time. The downside is that they cannot be recharged
+(in most cases, that is), and all primary batteries eventually deteriorate, so you will need
+a replacement schedule in place to install fresh batteries.
+
+Three to four years is typical, with some types capable of a shelf life in excess of six years.
+The time interval depends on the chemistry of the particular battery and the thermal environment
+(a battery in a hot environment will tend to degrade faster than one kept in a cool location).((("storage of batteries")))
+Some people put batteries in the refrigerator, but there is no solid evidence that this will
+help extend their shelf life. It can, however, help prevent premature deterioration due to
+overheating. I would not recommended putting batteries of any type in a freezer. Overall,
+keeping spare batteries in the door of a refrigerator is not a bad idea, particularly if
+you happen to live in a hot environment. Just don't expect the batteries to last any longer
+than normal.
+
+Primary batteries in coin cell form have shelf life((("coin batteries", "shelf life"))) durations from 1.5 to 10 years, depending
+on the chemistry of the battery. A lithium coin cell can have a shelf life of up to 10 years.
+A silver-oxide coin cell can hold out for about 1.5 to 2 years, and an older style mercury cell
+(now obsolete) can last for up to 3 years. A zinc-air type can stay viable for up to 6 years,
+so long as the seal remains in place (they are activated when a seal is removed and air can
+enter the battery).
+
+A secondary battery has the advantage of being rechargeable, but it has a relatively short((("secondary batteries", "shelf life"))) shelf
+life due to internal leakage currents (self-discharge). A secondary battery will significantly
+outlast a primary type if it can be recharged periodically. They are good choices when a
+reliable power source is available, such as a floor-sweeping robot that can be recharged from
+a wall outlet, or a device that uses a solar cell to keep its battery (or batteries) charged.
+
+Storage of secondary batteries can be somewhat((("secondary batteries", "storage of"))) more involved than with a primary pass:[<span class="keep-together">battery</span>]. For
+example, a lead-acid or Li-ion secondary battery((("lead-acid batteries", "secondary, storage of")))((("lithium-ion (Li-ion) batteries", "storage of"))) needs to be stored with a minimum charge to
+prevent internal deterioration and possible damage. In the case of a lead-acid battery, it can
+accumulate lead sulphate crystals on the plates, which renders the battery useless. This is
+why the battery in a vehicle in storage should be charged periodically and why the batteries
+purchased from an auto parts supplier are already charged when you buy one. Lithium-ion
+batteries can also suffer internal damage if left in a completely discharged (0V) state for
+extended periods of time. Some sources recommend maintaining a minimum of 2 volts per cell by
+periodically "topping off" the battery. Ideally, a Li-ion battery should be stored with a partial
+charge of between 30% to 50%.
+
+NiCd and NiMH batteries are somewhat more ((("NiCad (nickel cadmium) batteries", "storage of")))((("NiMH (nickel-metal hydrite) batteries", "storage of")))forgiving when it comes to storage, but they too have
+their own unique issues. NiCd batteries can be stored in discharged state, but they might require
+multiple deep discharge cycles to restore them to full capacity (this is the same technique
+used to erase the so-called _charge memory_ effect found with NiCd batteries). NiMH batteries
+don't suffer from the charge memory of NiCd types, but they will self-discharge more rapidly.
+
+Most manufacturers recommend storing secondary batteries in a 15°C to 20°C (59°F to 68°F)
+environment. It can be colder than this, with some types rated for storage down to &#8211;20°C. A
+fully charged lead-acid battery can withstand &#8211;35°C, but a fully discharged lead-acid battery
+will freeze at 0°C.
+
+In summary, you can see that a primary battery is a relatively low-maintenance device that can
+be stored for extended periods of time before use, but it's a one-shot thing. It will need to
+be discarded and replaced at some point and, if in continuous use, that time will come sooner
+rather than later. A secondary battery, on the other hand, will last in continuous use for
+a considerably longer time than a primary type, provided that it can be recharged routinely. A
+secondary battery is much more particular about storage conditions and, in general, secondary
+types involve more storage maintenance considerations than primary batteries.
+
+==== Using Batteries
+
+Batteries require some form of fixture to hold them, unless they happen to have
+terminals like those found on automobile batteries and some gel cells.((("power sources", "batteries", "using")))((("batteries", "using"))) Battery
+holders are available in a variety of configurations, from a single AAA or
+button cell to fixtures capable of holding multiple D size cells. <<battery_holders>>
+shows a sample of some of the types of ((("batteries", "using", "battery holders")))battery holders that are available.
+
+The standard 9V battery package has a pair of contacts at one end that are designed
+to mate with a set on either a snap-connector or a plastic holder. <<a9v_clip>> shows
+a snap-on connector with flexible wire leads.
+
+[[battery_holders]]
+.A selection of various types of battery holders
+image::images/pect_0507.png[width="500",align="center"]
+
+[WARNING]
+=====================================================================
+Avoid soldering wires directly to a battery unless the battery was specifically
+made to be soldered.((("soldering", "of wires to batteries")))((("batteries", "soldering wires to"))) Some of the small batteries found on computer motherboards
+have solder tabs. They are intended to be soldered into place once and then
+left in place to provide memory retention power for things like the real-time
+clock and configuration memory. Attempting to solder a wire to a conventional
+battery of any type that is not intended to be soldered can damage the battery,
+and it often requires the use of an acid-based flux (if the metal used for the
+battery's end caps will even bond with the solder in the first place).
+=====================================================================
+
+[[a9v_clip]]
+.A snap-on connector for a 9V-style battery
+image::images/pect_0508.png[width="300",align="center"]
+
+<<a9v_holder>> shows a plastic holder made specifically for a standard 9V type of battery.
+This holder is intended to be attached to a flat surface using the four holes in the
+bottom of the plastic shell.
+
+[[a9v_holder]]
+.Battery holder for a conventional 9V battery
+image::images/pect_0509.png[width="300",align="center"]
+
+If you elect to use the snap-on connector, you'll also need to work out a way to
+keep the battery secure. Otherwise, it can float around inside an enclosure and do some
+physical damage to other components. <<strapped_batt_holder>> shows one way to secure
+a battery holder. In this case, it's a holder for two AA cells that has a 9V snap-on
+connector. It could just as easily have been a bare 9V pass:[<span class="keep-together">battery</span>].
+
+[[strapped_batt_holder]]
+.A battery holder secured with plastic pass:[<span class="keep-together">zip ties</span>]
+image::images/pect_0510.png[width="400",align="center"]
+
+The secret to <<strapped_batt_holder>> is revealed in <<unstrapped_batt_holder>>. A stick-on
+zip-tie anchor, like the one shown in <<zip-tie_anchor>>, has been affixed to the bottom of
+the enclosure.((("zip-tie anchors", "using with battery holders"))) These plastic parts are typically used to secure and route bundles of wires and cables through
+a chassis, but they also work very well as an anchor point for situations like this.
+
+[[zip-tie_anchor]]
+.A common plastic zip-tie anchor with adhesive backing
+image::images/pect_0511.png[width="200",align="center"]
+
+[[unstrapped_batt_holder]]
+.A zip-tie anchor used to secure a battery holder
+image::images/pect_0512.png[width="400",align="center"]
+
+In case you're curious, the device (i.e., gadget) shown in the preceding images is supposed to
+be an audio mosquito repeller. Its effectiveness is still in question, but it was fun for
+the kids to build and test it.
+
+==== Battery Circuits
+
+Batteries can be connected in series or parallel to achieve voltages or capacities((("power sources", "batteries", "battery circuits")))((("circuits", "battery")))((("batteries", "circuits")))
+greater than what can be obtained from a single cell. Batteries in series are
+commonly used to increase the voltage, such as might be found in a large
+flashlight with multiple C or D size batteries. In other cases, you might want
+to increase the available current, and connecting batteries in parallel will
+achieve this, as shown in <<batts_in_series_parallel>>.
+
+[[batts_in_series_parallel]]
+.Series and parallel battery circuits
+image::images/pect_0513.png[align="center"]
+
+Of course, it is also possible to build a combination of series and parallel
+circuits to achieve both a desired voltage and current capacity. It just depends
+on how many batteries you are willing to use and how much space is available
+for the battery holders.
+
+==== Selecting Batteries
+
+When selecting a battery ((("power sources", "batteries", "selecting batteries")))((("batteries", "selecting, criteria for")))for a given application, most people look first
+at the voltage and the physical size, but there are other factors to take into
+consideration, as well:
+
+Physical size::
+ How large is the available space for a battery? This includes not only the battery
+itself, but also the holder (if one is used, a PCB-mounted battery doesn't need
+a holder, just sufficient room for the battery package). If there isn't a lot of room
+available for something like a AA size battery, a smaller type could be used (an
+LR41 button type, for example), but the trade-off is battery capacity versus size, and
+a reduced battery capacity means that the circuit will not be able to operate for the
+same amount of time as would be the case with a larger battery.
+
+Voltage::
+ If a circuit uses 5V DC, you can use four alkaline or silver-oxide batteries to
+get 6V.((("voltage", "for batteries"))) Five NiCad or NiMH batteries will also provide 6V. If there is sufficient
+space available, a single lantern-type battery will provide 6V. In each case, the
+circuit will need a voltage regulator to provide the necessary 5V power.
+
+Capacity::
+ The capacity rating ((("capacity (batteries)")))of a battery will determine how long the battery can supply a
+circuit with current at a constant discharge rate before the battery is exhausted.
+For small batteries, capacity is specified in mAh (milliamp-hours).
+
+Environment::
+ Many battery types do not handle heat or extreme cold very well, and their performance
+can suffer if operated outside of their rated temperature range. If a circuit will be
+used in an environment where the temperature of a particular battery type might exceed
+its range, then either select a different battery, or make provisions to keep the battery's
+immediate environment within its operating range.
+
+Replacement::
+ Will the batteries need to be replaced at some point? If so, then selecting a battery
+that can be easily removed is better than one that must be unbolted or desoldered. This
+depends, of course, on the size of the battery itself and its operating environment. Large
+batteries, such as some sealed lead-acid types, need to be physically secured with straps or
+brackets, and the terminals might employ screws or bolts.
+
+Shelf life::
+ It is important to bear in mind that an alkaline battery has a considerably longer((("shelf life of batteries"))) shelf
+life than a rechargeable type. If the battery will sit for an extended period before it is
+used (such as an emergency flashlight in a wall-mounted bracket), it should be an
+alkaline type. If it will be used routinely, and it can be recharged routinely, then a
+NiMH rechargeable type might be a better choice.
+
+The best source of information for a particular battery is, of course, the manufacturer.
+The reference data will (usually) specify the nominal capacity, output voltage, maximum
+suggested discharge rate, and environmental constraints. Some manufacturers also provide
+useful reference materials for download or as web pages. There are also many other sources
+of information available on the Internet. For example, the MIT electric vehicle team has
+created http://bit.ly/battery-spec["A Guide to Understanding Battery Specifications"].
+
+[[linear_supply]]
+[role="float-bottom wide"]
+.Linear power supply block diagram
+image::images/pect_0514.png[align="center"]
+
+=== Power Supply Technology
+
+The purpose of a power supply is to provide electrical power in a usable form through a
+conversion of some sort.((("power sources", "power supply technology"))) In most cases, this involves converting AC at a high voltage
+(110 or 220 volts) to a much lower DC voltage.((("AC (alternating current)", "conversion to DC by power supplies")))((("DC (direct current)", "power supplies"))) In other situations, there might be a need
+to convert from one DC voltage to another--say, from 5V to 3.3V. Conversely, some types of
+LCD displays use a high-voltage backlight, so a low-level DC input needs to be "stepped up"
+to a much higher voltage.
+
+There are two basic technologies used in DC power supplies: linear and switching.
+The linear type((("linear power supplies"))) is the oldest, dating back to the time of vacuum types (which used
+high-voltage DC). A linear power supply takes the output of a step-down (or step-up,
+in some cases) transformer, rectifies it to convert the AC to DC, filters it to
+remove as much leftover ripple from the original AC source as possible, and
+sometimes regulates it to provide a constant voltage or current (or both) output.
+Linear power supplies are simple to understand and build, but they tend to be
+bulky and inefficient, particularly if they need to supply a substantial amount
+of current. <<linear_supply>> shows a block diagram of a basic linear power
+supply.
+
+A complete linear voltage regulator is available as an IC in a TO-92,
+TO-220, SOT-89, SOT-223, or similar type of package. These devices can
+be used to build a modular or bench type power supply, or they can be
+included into a circuit on a PCB to set the voltage level for the entire
+circuit or just a some portion of it. These devices are covered in more
+detail in Chapter 9.
+
+The block labeled "Regulator" in <<linear_supply>> could be single IC voltage
+regulator, or it might be a high-power transistor circuit. It depends on
+the application, how much adjustability is desired, and the amount of
+current the power supply can provide.
+
+A switching power supply((("switching power supplies"))) is much more efficient than the earlier linear type,
+and it is also much smaller for an equivalent power output rating. Most of the
+plug-in supplies used with things like notebook computers, DVD players, and
+external hard drives use switching power supply technology to keep the cost and
+size to a minimum. The power supply in a desktop PC is a switching supply.
+
+Internally, a switching power supply works by directly rectifying the AC's main
+input, and then chopping it into pulses at a high frequency. The high-frequency
+pulses are applied to a small transformer and then converted to DC on the other
+side. Because a high frequency is used, the transformer can be very small, but
+the trade-off comes in terms of circuit complexity. A switching power supply
+is typically more complex internally than a linear supply, with isolated control
+and feedback circuits to regulate the output voltage and current. <<switching_supply>>
+shows a block diagram for a simple switching power supply.
+
+[[switching_supply]]
+[role="float-top wide"]
+.Switching power supply block diagram
+image::images/pect_0515.png[align="center"]
+
+[WARNING]
+=====================================================================
+The high-voltage side of a switching power supply might have voltages
+as high as 165V if it connects directly to the AC line voltage (and even higher if the mains are 220-230V AC). This is a definite shock hazard.
+=====================================================================
+
+Although it is inefficient, a linear power supply does have the advantage of an
+adjustable output, in terms of both voltage and current. A switching power supply
+is not as easily adjustable. There are switching power supplies available with
+variable outputs, and as the technology improves, they are becoming more common.
+
+==== Wall Plug-in DC Power Supplies
+
+A simple wall plug-in power supply((("power sources", "power supply technology", "wall plug-in DC power supplies")))((("DC (direct current)", "power supplies", "wall plug-in power supplies"))) (also known as a _wall wart_) is an easy and
+convenient way to provide DC power. These units are typically already UL and
+CSA approved, so that's a hurdle that doesn't need to be overcome if your
+project becomes a commercial product. <<typical_wall_wart>>
+shows a typical wall plug-in supply.
+
+[[typical_wall_wart]]
+.A typical wall plug-in power supply
+image::images/pect_0516.png[width="250",align="center"]
+
+These devices some in a variety of voltage and current ratings. Some provide only
+a few hundred milliamps of current, while others are fairly substantial with up
+to 3 or more amps of available current. Many of these types of power supplies
+use a circular coaxial connector((("coaxial DC power connectors"))) like the ones shown in <<pwr_connectors>>, which
+shows four different sizes.((("connectors", "coaxial DC power connectors")))
+
+[[pwr_connectors]]
+.Coaxial DC power connectors
+image::images/pect_0517.png[width="400",align="center"]
+
+Two popular sizes are 2.5 mm diameter by 5.5 mm length, and 2.1 mm diameter by 5.5 mm
+length. There are other sizes in use in various types of consumer electronics and,
+unfortunately, there isn't a whole lot of standardization. A retail electronics outlet
+like Radio Shack will often have a large display of various shapes and sizes of replacement
+power connectors.
+
+Be sure to read the output voltage specification on the power supply before you connect it
+to anything. There's nothing obvious to differentiate a 5V DC supply from a 24V AC supply
+with the same size of connector, except what is printed on (or molded into) the case. Also
+be sure to check the polarity of the connector. Some have the positive on the inner
+connector and ground on the outer ring. Others do it the opposite way. Checking a power
+supply with a ((("digital multimeter (DMM)", "checking a power supply prior to use")))digital multimeter (DMM; see <<Chapter_17>>) before using it is a prudent step.
+
+There's nothing that says you have to use the connector already attached to a wall power
+supply. You can cut it off and replace it with your own, or use no connector at all. The
+one thing you should do, however, is determine which of the wires is positive and then
+mark it. I like to use either a dab of white paint or a small 1/4-inch section of red heat-shrink
+tubing. I would not recommend using a 3.5-millimeter phone plug, like the types used for audio input
+and output. These can momentarily short while being removed or inserted.
+
+It's also prudent to check the output of the wall supply to see how "clean" the output is.
+It may claim to be 5V DC, but there might also be a lot of "ripple" on the output if
+it's not well filtered. This didn't matter for some applications, because the device it
+was originally used with might have incorporated some type of internal filtering.
+
+The frequency of the extraneous signal might be anywhere from 60 Hz up to several thousand
+(if it's a switching power supply). You can test for this by measuring the output of the power
+supply while connected to a load (something like a 100-ohm resistor will do; see <<Chapter_8>>
+for information about resistors) and using the AC scale of a DMM or an oscilloscope (see
+<<Chapter_17>>). You shouldn't see any more than about 10 or 20 millivolts of ripple on the
+DC output. Any more than that and it might need some filtering.
+
+If the output is "dirty," you'll need to((("RC (resistor-capacitor) filters"))) use an RC (resistor-capacitor) filter to clean it
+up. Or, if you need 5V you can use a 9V or 12V DC supply and a voltage regulator IC to produce
+a clean 5V output. See <<Chapter_9>> for more on voltage regulators.
+
+==== Bench DC Power Supplies
+
+As the name implies, a bench DC power supply is intended for use on a workbench
+or in a test setup.((("power sources", "power supply technology", "bench DC power supply")))((("DC (direct current)", "power supplies", "bench DC power supply"))) Most of these types of supplies, such as the one shown in <<bench_dc_supply>>, feature variable voltage and
+current control, and some come with fancy digital readouts, as well.
+
+[[bench_dc_supply]]
+.Variable-output bench DC power supply
+image::images/pect_0518.png[width="400",align="center"]
+
+You'd typically use a bench supply while testing a new device or circuit, before
+committing it to a final packaged form. You can also use it to power sections
+of an existing device in order to probe its inner workings. Most bench supplies
+don't provide a lot of current, and most of them are linear power supplies. A
+linear supply is easier to control than a switching supply and allows the voltage
+and/or current to be adjusted from zero to whatever the maximum rating happens
+to be for the supply.
+
+==== Modular and Internal DC Power Supplies
+
+The power supply in a typical desktop PC is an example of an integrated modular DC power
+supply. ((("power sources", "power supply technology", "modular and internal DC power supplies")))((("DC (direct current)", "power supplies", "modular and internal")))((("internal power supplies")))These types of power supplies are intended for use within another device
+or system, and they usually don't have convenient terminals like the bench supply
+shown in <<bench_dc_supply>>. In some cases, they don't have terminals at all but
+instead have connection points on a PCB to attach wires.
+
+<<int_power_supply>> shows a modular power supply.((("modular power supplies")))((("switching power supplies", "modular DC power supply"))) Modular power supplies
+similar to this one come in both closed and open frame styles. This one happens to
+be a closed-chassis type with an integral fan. It is a switching supply rated for
+12V DC at 35 amps. An open-frame type would have just a simple metal frame, no
+cover, and holes in the frame for mounting hardware. Modular and open-frame power
+supplies are available as both switching and linear types.
+
+[[int_power_supply]]
+.Modular 12V DC switching power supply
+image::images/pect_0519.png[width="400",align="center"]
+
+The power supply shown in <<a5v_int_supply>> is also a switching unit, rated for 5V DC
+at 30 amps. Power supplies like the ones shown in Figures pass:[<a href="int_power_supply">5-19</a>] and pass:[<a href="a5v_int_supply">5-20</a>] are not adjustable, except by a small amount for fine-tuning the output voltage.
+
+[[a5v_int_supply]]
+.Modular 5V DC switching power supply
+image::images/pect_0520.png[width="400",align="center"]
+
+An important thing to note about a power supply of this type is that there are often
+two terminals labeled +S and &#8211;S. These are the _sense_ inputs,((("sense inputs"))) and they are used to
+compensate for voltage drop over an extended wire between the supply and the load. In
+many cases, the power wires are short and the drop isn't a major concern, so a simple
+jumper is placed between +S and the positive output terminal, and between &#8211;S and the
+negative output terminal. But, in any case, unless the supply is designed to operate
+with the +S and &#8211;S inputs disconnected, these terminals must be connected back to
+the + and &#8211; output terminals at some point.
+
+These are rugged, high-current power supplies intended to be integrated into a larger system.
+They are definitely not something you would want running around loose on a workbench, but
+they can be safely tucked away inside some type of enclosure. This type of power supply
+can be found in surplus shops and inside discarded medical, industrial, and scientific
+equipment. The downside is that, as mentioned earlier, they are not adjustable. Unless
+you add an adjustable regulator to the output, you get whatever the supply was designed
+to deliver.
+
+Another thing to consider is the amount of current these types of power supplies can
+deliver. Unlike a low-current bench power supply with an adjustable current limit, some
+of these heavy-duty switching power supplies will just keep on pumping out the current,
+even into a short circuit (they go into a constant-current mode of operation that can
+tolerate a short circuit). Keep in mind that 30 amps can do a lot of damage, so it is essential to have
+a fuse or circuit breaker on the output of a high-current power supply.
+
+=== Photovoltaic Power Sources
+
+A photovoltaic cell (or _solar cell_), is a semiconductor device that converts the((("photovoltaic power sources")))((("solar cells")))((("power sources", "photovoltaic"))) energy
+of photons to electric current by means of the photovoltaic effect. Primitive forms of
+photovoltaic cells existed in the early to mid-1800s, but it wasn't until the middle of
+the 20th century that these devices started to become efficient enough to make the
+transition from laboratory curiosity to usable pass:[<span class="keep-together">devices</span>].
+
+On a sunny day with clear skies, up to around 1,000 W of solar energy falls on a square
+meter of the earth's surface, depending on the distance from the equator. If that energy
+could be converted directly into electricity with 100% efficiency, we would be able to power
+many of our homes and cities with it. Sunlight is, after all, essentially free, which is a
+major source of its appeal. Unfortunately, modern solar cells are not that efficient, and
+not everyone lives where there is intense sunlight for most of the year.
+
+Today's commercial-grade solar cells are between 15 and 25% efficient, depending on how
+much you are willing to pay. New technologies either in research or entering production
+are boasting efficiencies of better than 40%, and hopefully it won't be long until these
+become cost-effective alternatives to conventional power sources. But even in their current
+form, solar cells are very useful for providing power where there are no outlets and
+routinely changing batteries is not an option.
+
+Solar cells are rated by voltage output and available current for a given size (area) of
+a cell.((("solar cells", "efficiency"))) These characteristics are in turn determined in large part by the efficiency of the
+cell. Basically, the efficiency of a solar cell is the measure of how well it can convert
+the light energy impinging on it into usable electric current. The higher the efficiency
+rating, the better the cell is at the conversion.
+
+By itself, a solar cell is useful only when there is light falling on it, so it is useless
+at night. For this reason, solar cells are often used in conjunction with rechargeable batteries
+to provide power during darkness.((("rechargeable batteries", "use with solar cells"))) You may have seen the emergency telephones alongside some
+major freeways, each with a small array of solar cells on the top of the pole to which the
+phone box is mounted. Inside the phone box is a radio transceiver, a charging controller circuit,
+and a rechargeable battery pack of some type.
+
+Solar cells, like batteries, can be connected ((("series", "connection in series or parallel")))in series and parallel configurations, as shown in
+<<batts_in_series_parallel>>. Solar cells connected in series will produce a higher output voltage,
+and when connected in parallel, the current output increases. Some solar cells have a built-in
+diode (called a _bypass diode_) to((("bypass diodes"))) prevent reverse current flow when one cell is shaded and others
+aren't. The reason for this is that unshaded cells can drive reverse current through a shaded cell
+and possibly damage it. If the individual cells in an array do not have bypass diodes, they
+should be added. <<bypass_diodes>> shows how bypass diodes are incorporated into a series array
+of solar cells.
+
+<<solar_cell>> shows an example of a low-cost solar-cell module.((("solar cells", "small, low-cost solar cell module"))) This is a Parallax
+750-00030 rated for a maximum of 6V output at 1 watt, which is about 160 mA of current (0.167 A).
+This may not seem like much, but if the solar panel can produce 160 mA of current for six hours
+a day, it can be used to charge a battery during daylight hours.
+
+Charging a battery from a solar-cell module like the one shown in <<solar_cell>> might((("batteries", "charging from a solar cell module"))) be as
+simple as placing a resistor in series with the solar cell to limit the current to the battery,
+or it might involve using a regulator of some sort if an array of solar cells is used that will
+produce more voltage or current than the battery can accept during charging.
+
+[[bypass_diodes]]
+.Bypass diodes in a series array of solar cells
+image::images/pect_0521.png[width="250",align="center"]
+
+[[solar_cell]]
+.A small solar-cell module
+image::images/pect_0522.png[width="400",align="center"]
+
+If a large enough array of solar cells is used, it might be possible to power a device and charge
+a battery for nighttime use at the same time, similar to what occurs when a tablet or notebook PC
+is connected to its charger but it's still completely usable. When this isn't feasible, for
+whatever reasons, a charging control system might employ two batteries. The batteries alternate
+between charging and active use to ensure that the solar-cell module doesn't have to work to charge
+a battery that is also being used to power the electronics at the same time.
+
+For any battery-assisted solar-powered system to work reliably, the current draw of the((("batteries", "battery-assisted solar power systems")))
+device using the battery must be low enough that it won't discharge the battery faster than
+the solar cell can charge it. This is a balancing act that requires careful consideration of
+things like the output current of the solar cell, the current consumed by the device, and the
+average number of days with enough sunlight to produce sufficient charging current.
+
+For systems that don't need to operate at night, just a solar-cell array might suffice.
+Solar-powered calculators are an example of this approach.
+
+=== Fuses and Circuit Breakers
+
+Connecting anything that could be damaged or cause a fire hazard to a source of
+electrical power without ((("power sources", "fuses and circuit breakers")))some kind of protection is never a good idea. Fuses and
+circuit breakers exist to help prevent problems from pass:[<span class="keep-together">occurring</span>].
+
+==== Fuses
+
+Fuses are sacrificial devices with a low internal resistance.((("fuses"))) When the current
+flowing through the device exceeds a certain level for a specific period of time,
+the device will open (or _blow_) by melting the internal connection, called the
+_link_. In some cases this is gradual, and the link simply opens up, but other times
+it can be violent, leaving the inside of the fuse tube coated with vaporized
+metal.
+
+Fuses come in various sizes and ratings, from ((("fuses", "sizes and ratings")))tiny surface-mounted devices on a
+circuit board, to huge tubular objects with solid copper end tabs used in AC power
+distribution applications. Most glass cylinder fuses encountered in electronics fall
+into the AGW or AGC size category. In addition to standard fast-acting fuses, there
+are _slow-blow_, or _time-lag_ types.((("time-lag fuses")))((("slow-blow fuses"))) A time-lag fuse is designed to withstand an
+over-current condition for a short period of time before it opens. <<fuse_types>>
+shows the AGA-, AGW-, and AGC-type fuses, along with a GMA metric dimension fuse.
+
+[[fuse_types]]
+.Common fuse types
+image::images/pect_0523.png[width="500",align="center"]
+
+Even though size is an important design consideration, it is also important to understand the
+differences between fuse types.((("fuses", "differences between types"))) A fast-blow fuse might not allow current spikes such
+as those encountered with electrical motors, whereas a slow-blow type will. Circuits
+that exhibit high current draw during turn-on (high inrush current) for more than a
+few milliseconds might need a time-lag type of fuse. With these types, the fuse will
+hold some percentage of current over its rated maximum for a specific period of time
+(which depends on the amount of current involved) before it opens the circuit.
+
+AGC-type fuses, and similar styles, can be used with a fuse holder that is designed
+to mount through a hole in a panel, or with a fuse clip holder that has two metal
+clips to capture and retain the fuse. These tend to be large, bulky parts and are
+found mainly in large pieces of equipment. <<fuse_clip>> shows a clip-type fuse
+holder for an AGC-type fuse.
+
+[[fuse_clip]]
+.AGC clip-type fuse holder
+image::images/pect_0524.png[width="300",align="center"]
+
+PCB-mounted fuses ((("printed circuit boards (PCBs)", "PCB-mounted fuses")))((("fuses", "printed circuit board-mounted")))are available with axial leads in conventional glass tube bodies
+similar to the AGC type, and as sealed components that resemble resistors.
+<<pcb_fuses>> shows an example of a PCB-mounted fuse.
+
+[[pcb_fuses]]
+.Printed circuit board-mounted fuses
+image::images/pect_0525.png[width="300",align="center"]
+
+Surface-mount types are also available in various sizes and ratings. Note that
+while it is easy to change out a blown fuse if it is mounted in a fuse clip or in a
+fuse holder, changing out a PCB-mounted fuse can be a bit of hassle for through-hole
+parts with leads and a downright pain for surface-mounted parts.
+
+Fuse selection can be a complex process,((("fuses", "selecting"))) involving things like inrush current
+profile curves, temperature derating, and surge duration. However, for most small
+solid-state DC circuits, a standard fast-blow fuse will suffice. Pick a fast fuse
+with the appropriate voltage rating; that is, rated to blow at approximately 30% to 50%
+greater current than the circuit will ever use. So, if you have a circuit that
+should never draw more than 750 mA at 5V, a low-voltage 1A fast-blow fuse would not
+be an unreasonable choice.
+
+Note that this is simplistic in the extreme and does not take into account what
+might cause the circuit to draw more than 750 mA. Perhaps it's not a good idea to
+allow anything over the maximum. In that case, you would want to use a fuse with
+a lower current rating.
+
+Selecting a fuse involves doing some research to determine the best type and
+rating for your application, and that's well beyond the scope of this book. There
+are numerous resources online, and most fuse manufacturers publish selection
+handbooks for their products.
+
+==== Circuit Breakers
+
+As with fuses, circuit breakers come((("circuit breakers"))) in a variety of shapes and sizes. The basic
+mechanism of a conventional circuit breaker relies on current flow to release a
+spring-loaded mechanical switch of some sort. This might be the result of electromagnetism, in
+the form of a solenoid, or it might also have a thermal component in the form of a
+bimetallic strip. A circuit breaker that relies solely on a solenoid is referred to
+as a _magnetic breaker_; one((("magnetic circuit breakers"))) that uses only a bimetallic strip is ((("thermal circuit breakers")))a _thermal breaker_;
+and one that includes both a solenoid and a bimetallic strip is called a
+_thermal-magnetic breaker_. <<circuit_breaker>> shows a small circuit breaker that((("thermal-magnetic circuit breakers")))
+operates on the thermal principle.
+
+[[circuit_breaker]]
+.Small thermal circuit breaker
+image::images/pect_0526.png[width="300",align="center"]
+
+Inside a typical circuit breaker, the internal contacts are held closed by a spring-operated
+mechanism. When the solenoid is activated or the bimetallic strip deforms, a release is
+engaged and the spring pulls the contacts apart, thus opening the circuit. The breaker
+is reset manually with a button or a toggle-like handle.
+
+Although not unheard of, electromagnetic or thermal-magnetic circuit breakers
+aren't often found in low-voltage DC electronic circuits, with the exception of
+some aerospace applications. They are more often encountered in AC power
+distribution and control systems, such as the breaker panel in a house. Many utility
+output strips also have a small thermal breaker built into the housing.
+
+[[summary_ch05]]
+=== Summary
+
+As discussed in <<Chapter_1>>, electrical current flow arises as a result of energy expended as a
+form of work to create an electrical potential. This chapter looked at three common sources
+for electrical potential: primary batteries (conversion of chemical energy to electromotive force),
+power supplies (conversion of mechanical energy via a generator somewhere to electromotive
+force), and photovoltaic cells (conversion of photon energy to electromotive force). The
+chapter wrapped up with a high-level tour of fuses and circuit breakers. All of these subjects
+are much deeper than what has been discussed here, but to do them full justice would
+require each to have its own book. For additional information, check out the books listed in <<Appendix_D>>.
+
+Batteries were examined from the perspective of type, physical form factor, and capacity, with
+an emphasis on those types most likely to be used or encountered in small electronic devices.
+Batteries come in a wide range of sizes, capacities, and voltages. The internal chemistry can
+utilize elements such as lithium, nickel, silver, and zinc, each with its own unique set of
+characteristics.
+
+When you are selecting a battery, the primary characteristics to consider are size, voltage, capacity,
+and environment. There are potential trade-off decisions to be made between size and capacity,
+or between size and voltage. The environment the battery will operate within can also constrain
+the available choices, or it might require some clever solutions to keep the battery within its
+rated temperature range.
+
+Power supplies are available with linear or switching modes of operation, with sizes and styles
+ranging from the common plug-in types for consumer electronics to modular units capable of
+delivering considerable amounts of current. For linear power supplies, the inherent inefficiency
+of the voltage regulation is compensated by the ability to easily incorporate a continuously
+adjustable output, which is why many workbench supplies are linear types. We also looked at the
+basic operating principles of a switching power supply, which boasts much better conversion efficiency
+than a linear type, but can be technically challenging to incorporate a variable output. For
+this reason, most low-cost switching power supplies have fixed output voltage and current ratings.
+
+Photovoltaic solar cells are based on an old technology that is just now starting to come
+of age. For some applications, such as remote sensing or control, a solar cell is an ideal way
+to provide power during daylight hours. When coupled with a rechargeable secondary battery, solar
+cells can extend the useful life of a device to the service life limit of the battery, and
+possibly beyond.
+
+If you plan on eventually making your creation widely available to others, or perhaps even
+commercializing it, it would be a good idea to do some further research on batteries and other
+power sources. Based on what was covered in this chapter, you should now have a good working
+idea of what is available in terms of batteries, power supplies, and solar cells and how they
+are used. Depending on what type of device you need to power, you should now have enough
+information to make an informed initial decision.((("power sources", startref ="ix_powersources")))

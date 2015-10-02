@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/*--------Put Your Custom CSS Rules Below--------*/
+
+p.no-justify {
+  text-align: left;
+}
+
+/*Custom styles for Appendix F single column*/
+section[data-type="appendix"].onecolumn section[data-type="sect2"] {
+  column-span: all;
+}
+
+.colbreak-before { break-before: column }
+
+.wide td {
+ page-break-inside: auto;
+}
+
+/*Figure border box padding*/
+figure div.border-box { padding: 2pt }
+
+/*moving the TOC header up a little to fix widow*/
+  nav[data-type="toc"] > h1 {
+  padding-top: 0.05in;
+  margin: 0.25in 0 0.5in 0;
+}
+
+
+section[data-type="glossary"] { 
+  column-count: 2;
+  column-gap: 0.25in;
+  -ah-column-fill: balance;
+}
+
+section[data-type="glossary"] > h1 {
+	text-align: left;
+	margin-bottom: 1.1in;
+	column-span: all;
+	width: 5.5in;}
+
+section[data-type="glossary"] dl { 
+  column-count: 1;
+  display: block;
+}
+
+section[data-type="index"] {
+  bookmark-level: 1;
+  bookmark-state: closed;
+  bookmark-label: "Index";
+}
+
+table {width: 2.57in;}
+
+div[data-type="example"].wide {
+	width: 5.5in;
+		float: bottom multicol;
+	-ah-float-margin-y: 13.5pt;
+}
+
+
+/*custom class to handle AH bug in chapter 9*/
+div.chapter9 p span.chapter9_caps {
+ font-family: "Scala-Caps";
+  font-size: 10.25pt;
+}
+
+div.chapter9 p {
+ 	font-family: "ScalaPro-Regular";
+}
+
+/*---------- Custom handling for App sections with  ----------*/
+/*--------- Lots of wide tables that shouldnt float  ---------*/
+
+/* Custom class to set whole section to span columns */
+section[data-type="sect1"].wide-tables { column-span: all }
+
+/* Turn off table floats and adjust spacing */
+section[data-type="sect1"].wide-tables table.wide {
+	float: none;
+	column-span: all;
+	margin-top: 5pt;
+	margin-bottom: 18pt;
+}
+
+
+/*----Uncomment to turn OFF automatic code wrapping (it's on by default in the new toolchain)
+
+pre {
+  white-space: pre;
+}
+----*/
+
+/*----Uncomment to change the TOC start page (set 
+the number to one page _after_ the one you want; 
+so 6 to start on v, 8 to start on vii, etc.)
+
+@page toc:first {
+  counter-reset: page 6;
+}
+----*/
+
+/*----Uncomment to fix a bad break in the title 
+      (increase padding value to push down, decrease 
+      value to pull up)
+
+section[data-type="titlepage"] h1 {
+  padding-left: 1.5in;
+}
+----*/
+
+/*----Uncomment to fix a bad break in the subtitle
+      (increase padding value to push down, decrease
+      value to pull up)
+
+section[data-type="titlepage"] h2 {
+  padding-left: 1in;
+}
+----*/
+
+/*----Uncomment to fix a bad break in the author names 
+      (increase padding value to push down, decrease 
+      value to pull up)
+
+section[data-type="titlepage"] p.author {
+  padding-left: 3in;
+}
+----*/

@@ -1,0 +1,70 @@
+{
+  "branch": "master",
+  "files": [
+    "cover.html",
+    "titlepage.html",
+    "copyright.html",
+    "toc.html",
+    "Preface.asciidoc",
+    "Chapter01.asciidoc",
+    "Chapter02.asciidoc",
+    "Chapter03.asciidoc",
+    "Chapter04.asciidoc",
+    "Chapter05.asciidoc",
+    "Chapter06.asciidoc",
+    "Chapter07.asciidoc",
+    "Chapter08.asciidoc",
+    "Chapter09.asciidoc",
+    "Chapter10.asciidoc",
+    "Chapter11.asciidoc",
+    "Chapter12.asciidoc",
+    "Chapter13.asciidoc",
+    "Chapter14.asciidoc",
+    "Chapter15.asciidoc",
+    "Chapter16.asciidoc",
+    "Chapter17.asciidoc",
+    "Appendix_A.asciidoc",
+    "Appendix_B.asciidoc",
+    "Appendix_D.asciidoc",
+    "Appendix_E.asciidoc",
+    "Appendix_F.asciidoc",
+    "Appendix_C.asciidoc",
+    "ix.html",
+    "author_bio.html",
+    "colo.html"
+  ],
+  "formats": {
+    "pdf": {
+      "version": "web",
+      "index": true,
+      "toc": true,
+      "syntaxhighlighting": false,
+      "show_comments": false,
+      "antennahouse_version": "AHFormatterV62_64-MR3"
+    },
+    "epub": {
+      "index": true,
+      "toc": true,
+      "epubcheck": true,
+      "syntaxhighlighting": true,
+      "show_comments": false
+    },
+    "mobi": {
+      "index": true,
+      "toc": true,
+      "syntaxhighlighting": true,
+      "show_comments": false
+    },
+    "html": {
+      "index": true,
+      "toc": true,
+      "syntaxhighlighting": false,
+      "show_comments": false,
+      "consolidate": false,
+      "consolidated": true
+    }
+  },
+  "theme": "oreillymedia/oreilly_diy2column_theme",
+  "title": "Practical Electronics: Components and Techniques",
+  "templating": false
+}

@@ -1,0 +1,449 @@
+[[Appendix_F]]
+[appendix] 
+== Components Lists
+
+This appendix lists ((("components lists", id="ix_components", range="startofrange")))almost all of the IC components and modules mentioned in this book. While
+this collection is by no means comprehensive, it does contain enough representative parts
+from each category to provide a solid starting point for a new design.
+
+The tables are organized into six categories as follows:
+
+Control::
+    8-, 16-, and 32-bit microcontrollers
+Memory::
+    SRAM, Flash, and EEPROM devices
+Logic::
+    4000 series CMOS and 7400 series TTL
+Interface::
+    ADCs, DACs, I/O expanders, relay drivers, and various assorted functions
+Translation::
+    Discrete I/O level translator ICs
+Data Communications Components::
+    RS-232, RS-485, USB, Ethernet, Bluetooth, and ZigBee
+
+Some parts, such as the 4000 series CMOS logic and 7400 series TTL logic, are available from
+multiple sources. See <<Appendix_E>> for web URLs for the manufacturers listed here, and be
+sure to check the various distributors for availability and possible alternate parts.
+
+[role="wide-tables"]
+=== Controllers
+
+==== 8-Bit Microcontrollers
+
+[role="wide"]
+[cols="^1,<2,<2",frame="topbot",options="header",align="center"]
+|============================================
+|Part number     | Manufacturer    | Comment
+|AT89     | Atmel     | 8051 compatible
+|AVR      | Atmel     | Unique
+|CY83xxxx | Cypress   | 8051 compatible
+|68HC08   | Freescale | Descended from 6800
+|68HC11   | Freescale | Descended from 6800
+|PIC16    | Microchip | Unique
+|PIC18    | Microchip | Unique
+|LPC700   | NXP       | 8051 compatible
+|LPC900   | NXP       | 8051 compatible
+|eZ80     | Zilog     | Descended from Z80
+|============================================
+
+==== 16-Bit Microcontrollers
+
+[role="wide"]
+[cols="^1,<2,<2",frame="topbot",options="header",align="center"]
+|============================================
+|Part number     | Manufacturer      | Comment
+|PIC24    | Microchip         | Unique
+|MSP430   | Texas Instruments | Unique
+|============================================
+
+==== 32-Bit Microcontrollers
+
+[role="wide"]
+[cols="^1,<2,<2",frame="topbot",options="header",align="center"]
+|============================================
+|Part number     | Manufacturer   | Comment
+|AT915AM  | Atmel       | ARM IP core
+|AVR32    | Atmel       | 32-bit AVR
+|CY8C5xxxx| Cypress     | ARM IP core
+|PIC32MX  | Microchip   | MIPS IP core
+|LPC1800  | NXP         | ARM IP core
+|STM32    | STMicroelectronics | ARM IP core
+|============================================
+
+[[memory_appf]]
+[role="wide-tables"]
+=== Memory
+
+==== Serial Interface EEPROM ICs
+
+[role="wide"]
+[width "100%",cols="^2,<2,<1,<1,<1",frame="topbot",options="header",align="center"]
+|============================================
+|Part number      | Manufacturer  | Size (bits) | Organization | Interface
+|AT25010B    | ATMEL         | 1Kb         | 128 &#x00D7; 8      | SPI
+|AT24C01D    | ATMEL         | 1Kb         | 128 &#x00D7; 8      | I2C
+|AT25020B    | ATMEL         | 2Kb         | 256 &#x00D7; 8      | SPI
+|AT24C02D    | ATMEL         | 2Kb         | 256 &#x00D7; 8      | I2C
+|PCF85103C-2 | NXP           | 2Kb         | 256 &#x00D7; 8      | I2C
+|PCF8582C-2  | NXP           | 2Kb         | 256 &#x00D7; 8      | I2C
+|AT25040B    | ATMEL         | 4Kb         | 512 &#x00D7; 8      | SPI
+|AT24C04C    | ATMEL         | 4Kb         | 512 &#x00D7; 8      | I2C
+|PCF8594C-2  | NXP           | 4Kb         | 512 &#x00D7; 8      | I2C
+|AT25080B    | ATMEL         | 8Kb         | 1,024 &#x00D7; 8     | SPI
+|AT24C08D    | ATMEL         | 8Kb         | 1,024 &#x00D7; 8     | I2C
+|PCA24S08A   | NXP           | 8Kb         | 1,024 &#x00D7; 8     | I2C
+|PCF8598C-2  | NXP           | 8Kb         | 1,024 &#x00D7; 8     | I2C
+|AT25160B    | ATMEL         | 16Kb        | 2,048 &#x00D7; 8     | SPI
+|AT24C16D    | ATMEL         | 16Kb        | 2,048 &#x00D7; 8     | I2C
+|AT25320B    | ATMEL         | 32Kb        | 4,096 &#x00D7; 8     | SPI
+|AT24C32D    | ATMEL         | 32Kb        | 4,096 &#x00D7; 8     | I2C
+|AT25640B    | ATMEL         | 64Kb        | 8,192 &#x00D7; 8     | SPI
+|AT24C64B    | ATMEL         | 64Kb        | 8,192 &#x00D7; 8     | I2C
+|AT25128B    | ATMEL         | 128Kb       | 16K &#x00D7; 8      | SPI
+|AT24C128C   | ATMEL         | 128Kb       | 16K &#x00D7; 8      | I2C
+|AT25256B    | ATMEL         | 256Kb       | 32K &#x00D7; 8      | SPI
+|AT24C256C   | ATMEL         | 256Kb       | 32K &#x00D7; 8      | I2C
+|AT25512     | ATMEL         | 512Kb       | 64K &#x00D7; 8      | SPI
+|AT24C512C   | ATMEL         | 512Kb       | 64K &#x00D7; 8      | I2C
+|AT25M01     | ATMEL         | 1Mb         | 128K &#x00D7; 8     | SPI
+|AT24CM01    | ATMEL         | 1Mb         | 125K &#x00D7; 8     | I2C
+|============================================
+
+==== Serial Interface SRAM ICs
+
+[role="wide"]
+[cols="^2,<2,<1,<1,<1",frame="topbot",options="header",align="center"]
+|============================================
+|Part number        | Manufacturer     | Size (bits) | Organization | Interface
+|23A512        | Microchip        | 512 Kb    | 64K &#x00D7; 8      | SPI
+|23A1024       | Microchip        | 1 Mb      | 128K &#x00D7; 8     | SPI
+|N01S830HAT22I | ON Semiconductor | 1 Mb      | 128K &#x00D7; 8     | SPI
+|FM25H20       | Cypress          | 2 Mb      | 256K &#x00D7; 8     | SPI
+|PCF8570       | NXP              | 2 Mb      | 256K &#x00D7; 8     | I2C
+|============================================
+
+==== Serial Interface Flash ICs
+
+[role="wide"]
+[cols="^2,<2,<1,<1,<1",frame="topbot",options="header",align="center"]
+|============================================
+|Part number     | Manufacturer  | Bits   | Channels  | Interface
+|M25P10       | Micron        |1 Mb   |125K &#x00D7; 8   |SPI
+|SST25VF010A  | Microchip     |1 Mb  |128K &#x00D7; 8   |SPI
+|SST25VF020B  | Microchip     |2 Mb  |256K &#x00D7; 8   |SPI
+|SST25VF040B  | Microchip     |4 Mb  |512K &#x00D7; 8   |SPI
+|SST25VF080B  | Microchip     |8 Mb  |1Mb &#x00D7; 8    |SPI
+|SST25VF016B  | Microchip     |16 Mb |2Mb &#x00D7; 8    |SPI
+|M25P16       | Micron        |16 Mb  |2Mb &#x00D7; 8    |SPI
+|N25Q00AA11G  | Micron        |1 Gb  |128M &#x00D7; 8   |SPI
+|============================================
+
+[role="wide-tables"]
+=== Logic
+
+==== 4000 Series CMOS Logic
+
+[role="wide"]
+[cols="^1,<3",frame="topbot",options="header",align="center"]
+|============================================
+|Part number | Description
+|4000 | Dual three-input NOR gate and inverter
+|4001 | Quad two-input NOR gate
+|4002 | Dual four-input NOR gate OR gate
+|4008 | Four-bit full adder
+|4010 | Hex noninverting buffer
+|4011 | Quad two-input NAND gate
+|4012 | Dual four-input NAND gate
+|4013 | Dual D-type flip-flop
+|4014 | Eight-stage shift register
+|4015 | Dual four-stage shift register
+|4016 | Quad bilateral switch
+|4017 | Decade counter/Johnson counter
+|4018 | Presettable divide-by-N counter
+|4027 | Dual J-K master-slave flip-flop
+|4049 | Hex inverter
+|4050 | Hex buffer/converter (noninverting)
+|4070 | Quad XOR gate
+|4071 | Quad two-input OR gate
+|4072 | Dual four-input OR gate
+|4073 | Triple three-input AND gate
+|4075 | Triple three-input OR gate
+|4076 | Quad D-type register with tristate outputs
+|4077 | Quad two-input XNOR gate
+|4078 | Eight-input NOR gate
+|4081 | Quad two-input AND gate
+|4082 | Dual four-input AND gate
+|============================================
+
+==== 7400 Series TTL Logic
+
+[role="wide"]
+[cols="^1,<3",frame="topbot",options="header",align="center"]
+|============================================
+|Part number | Description
+|7400   | Quad two-input NAND gates
+|7402   | Quad two-input NOR gates
+|7404   | Hex inverters
+|7408   | Quad two-input AND gates
+|7410   | Triple three-input NAND gates
+|7411   | Triple three-input AND gates
+|7420   | Dual four-input NAND gates
+|7421   | Dual four-input AND gates
+|7427   | Triple three-input NOR gates
+|7430   | Eight-input NAND gate
+|7432   | Quad two-input OR gates
+|7442   | BCD-to-decimal decoder (or three-line to eight-line decoder with enable)
+|7474A  | Dual edge-triggered D flip-flop
+|7485   | Four-bit binary magnitude comparator
+|7486   | Quad two-input exclusive-OR (XOR) gates
+|74109A | Dual edge-triggered J-K flip-flop
+|74125A | Quad bus-buffer gates with three-state outputs
+|74139  | Dual two-line to four-line decoders/demultiplexers
+|74153  | Dual four-line to one-line data selectors/multiplexers
+|74157  | Quad two-line to one-line data selectors/multiplexers
+|74158  | Quad two-line to one-line MUX with inverted outputs
+|74161A | Synchronous four-bit binary counter
+|74164  | Eight-bit serial-to-parallel shift register
+|74166  | Eight-bit parallel-to-serial shift register
+|74174  | Hex edge-triggered D flip-flops
+|74175  | Quad edge-triggered D flip-flops
+|74240  | Octal inverting three-state driver
+|74244  | Octal noninverting three-state driver
+|74273  | Octal edge-triggered D flip-flops
+|74374  | Octal three-state edge-triggered D flip-flops
+|============================================
+
+[role="wide-tables"]
+=== Interface Components
+
+==== Serial Interface ADC Devices
+
+[role="wide"]
+[cols="^1,<2,<1,<1,<1",frame="topbot",options="header",align="center"]
+|============================================
+|Part number | Manufacturer      | Bits | Channels | Interface
+| MCP3008 | Microchip         | 10   | 8        | SPI
+| AD7997  | Analog Devices    | 10   | 8        | I2C
+| TLV1548 | Texas Instruments | 10   | 8        | SPI
+| MCP3201 | Microchip         | 12   | 1        | SPI
+| AD7091  | Analog Devices    | 12   | 4        | SPI
+| MX7705  | Maxim             | 16   | 2        | SPI
+| ADS1115 | Texas Instruments | 16   | 4        | I2C
+| MAX1270 | Maxim             | 12   | 8        | SPI
+|============================================
+
+==== Serial Interface DAC Devices
+
+[role="wide"]
+[cols="^1,<2,<1,<1,<1",frame="topbot",options="header",align="center"]
+|============================================
+|Part number | Manufacturer      | Bits | Channels | Interface
+| MCP7406 | Microchip         | 8    | 1        | I2C
+| AD5316  | Analog Devices    | 10   | 4        | I2C
+| DAC104  | Texas Instrument  | 10   | 4        | SPI
+| MCP4725 | Microchip         | 12   | 1        | I2C
+| AD5696  | Analog Devices    | 16   | 4        | I2C
+|============================================
+
+==== Serial Interface Discrete I/O Expansion ICs
+
+[role="wide"]
+[cols="^1,<2,<1,<1",frame="topbot",options="header",align="center"]
+|============================================
+| Part number | Manufacturer      | Ports | Interface
+| PCF8574  | Texas Instruments | 8     | I2C
+| MAX7317  | Maxim             | 10    | SPI
+| MCP23017 | Microchip         | 16    | I2C
+|============================================
+
+==== Relay Drivers
+
+[role="wide"]
+[cols="^1,<1,<1,<2",frame="topbot",options="header",align="center"]
+|============================================
+|Part number     | Manufacturer       | Internal logic   | Drive current
+|CS1107       | ON Semiconductor   | Single driver    | 350 mA
+|MAX4896      | Maxim              | Eight-channel driver | 410 mA single, 200 mA all
+|SN75451B     | Texas Instruments  | Dual AND driver  | 300 mA
+|SN75452B     | Texas Instruments  | Dual NAND driver | 300 mA
+|SN75453B     | Texas Instruments  | Dual OR driver   | 300 mA
+|SN75454B     | Texas Instruments  | Dual NOR driver  | 300 mA
+|TDE1747      | STMicroelectronics | Single driver    | 1A
+|UDN2981A     | Allegro            | Eight-channel driver | 500 mA max, 120 mA/channel
+|============================================
+
+==== SPI Display Modules
+
+[role="wide"]
+[cols="<2,^1,^1,^1",frame="topbot",options="header",align="center"]
+|============================================
+|Product                             | Vendor/manufacturer | URL                      | Interface
+|1.8-inch color LCD display              |Adafruit             | http://www.adafruit.com  | SPI
+|2.8-inch touchscreen color LCD display |Haoyu Electronics    | http://www.hotmcu.com    | SPI
+|3.2-inch touchscreen color LCD display |SainMart             | http://www.sainsmart.com | SPI
+|============================================
+
+==== Various SPI/I2C Peripheral Devices
+
+[role="wide"]
+[cols="^1,<1,<3,<1",frame="topbot",options="header",align="center"]
+|============================================
+|Part number   | Manufacturer   | Description                                      | Interface
+|ADG714     | Analog Devices | Eight-channel analog switch bank                     | SPI
+|ADXXRS450  | Analog Devices | Single-axis MEMS angular rate sensor (gyroscope) | SPI
+|ADXL345    | Analog Devices | Three-axis accelerometer                             | I2C/SPI
+|LIS3LV02DL | STI            | Three-axis accelerometer                             | I2C/SPI
+|PCF8583    | NXP            | Clock and calendar with 240 bytes of RAM         | I2C
+|SAA1064    | NXP            | Four-digit LED driver                               | I2C
+|TDA1551Q   | NXP            | Two &#x00D7; 22W audio power amplifier                    | I2C
+|============================================
+
+[role="wide-tables"]
+=== Translation
+
+==== Interface-Level Translators
+
+[role="wide"]
+[cols="^1,<2,<2,<1",frame="topbot",options="header",align="center"]
+|============================================
+|Part number    | Manufacturer      | Circuit type      | Package
+|BSS138         | Fairchild         | N-channel MOSFET  | SOT-23 SMD
+|TXB0108        | Texas Instruments | PMOS/NMOS logic   | SMD
+|NTB0101        | NXP               | Auto-sense logic  | SMD
+|============================================
+
+[role="wide-tables"]
+=== Data Communications Components
+
+==== RS-232 Interface ICs
+
+[role="wide"]
+[cols="^1,<1,<1,<1",frame="topbot",options="header",align="center"]
+|============================================
+|Part number    | Manufacturer      | Transmitters | Receivers
+|LTC2801     | Linear Technology | 1            | 1
+|LTC2803     | Linear Technology | 2            | 2
+|MAX232      | Maxim             | 2            | 2
+|MAX232      | Texas Instruments | 2            | 2
+|MC1488      | ON Semiconductor  | 4            | 4
+|MC1489      | ON Semiconductor  | 0            | 4
+|SN75188     | Texas Instruments | 4            | 0
+|SN75189     | Texas Instruments | 0            | 4
+|============================================
+
+==== RS-232 UART ICs
+
+[role="wide"]
+[cols="<1,^1,^1",frame="topbot",options="header",align="center"]
+|============================================
+|Part number    |Manufacturer        |Interface
+|MAX3100     |Maxim               |SPI
+|MAX3107     |Maxim               |I2C/SPI
+|PC16550D    |Texas Instruments   |Address/data bus
+|SC16IS740   |NXP                 |I2C/SPI
+|TL16C752B   |Texas Instruments   |Address/data bus
+|============================================
+
+==== RS-485 Transceiver ICs
+
+[role="wide"]
+[cols="^1,<1,<1",frame="topbot",options="header",align="center"]
+|============================================
+|Part number      | Manufacturer       | Transceivers
+|SN65HVD11DR   | Texas Instruments  | 1
+|MAX13430      | Maxim              | 1
+|MAX13442E     | Maxim              | 1
+|SN75ALS1177N  | Texas Instruments  | 2
+|SN65LBC173AD  | Texas Instruments  | 4
+|============================================
+
+==== USB Interface ICs
+
+[role="wide"]
+[cols="^1,<1,<2,<1",frame="topbot",options="header",align="center"]
+|============================================
+|Part number    | Manufacturer | Function                   | Interface
+|CP2102      | Silicon Labs | USB-to-serial UART bridge  | RS-232
+|CP2112      | Silicon Labs | HID USB-to-I2C bridge     | I2C
+|FT232R      | FTDI         | USB-to-serial UART bridge  | RS-232
+|MAX3421E    | Maxim        | Peripheral/host controller | SPI
+|MAX3420E    | Maxim        | Peripheral controller      | SPI
+|============================================
+
+==== Ethernet Interface ICs
+
+[role="wide"]
+[cols="^1,<1,<2,<1,<1",frame="topbot",options="header",align="center"]
+|============================================
+|Part number    | Manufacturer       | Function                | Speed   | Interface
+|AX88796C    | ASIX               | Ethernet controller     | 10/100  | SPI
+|KSZ8851SNL  | Micrel             | Ethernet controller     | 10/100  | SPI
+|LAN9512     | Microchip          | USB-Ethernet interface  | 10/100  | USB
+|ENC28J60    | Microchip          | Ethernet controller     | 10      | SPI
+|W5100       | WIZnet             | Ethernet controller     | 10/100  | SPI
+|============================================
+
+==== 802.11b/g Ethernet Interface Modules
+
+[role="wide"]
+[cols="^1,<1,<1,<1",frame="topbot",options="header",align="center"]
+|============================================
+|Part number    | Manufacturer       | Internal controller | Interface
+|MRF24WB0MA  | Microchip          | Proprietary   | SPI
+|SPWF01SA    | STMicroelectronics | ARM Cortex-M3 | SPI, I2C, UART
+|CC3000      | Texas Instruments  | Proprietary   | SPI
+|WizFi210    | WIZnet             | Proprietary   | SPI, I2C, UART
+|============================================
+
+==== Bluetooth Modules
+
+[role="wide"]
+[cols="^1,<1,<1, <1",frame="topbot",options="header",align="center"]
+|============================================
+|Part number    | Manufacturer      | Interface | Class
+|BLE112-A-V1 | Bluegiga          | USB       | 2
+|RN41        | Microchip         | UART/USB  | 1
+|RN42        | Microchip         | UART/USB  | 2
+|RN52        | Microchip         | UART/USB  | 3
+|PAN1315A    | Panasonic         | UART      | 1 and 2
+|SPBT2632C1A | STMicrotechnology | UART      | 3
+|============================================
+
+==== Bluetooth Low-Energy Components
+
+[role="wide"]
+[cols="<1,<1,<1, <1",frame="topbot",options="header"]
+|============================================
+|Part number |   Source              | Interface |  MCU/controller
+|CC2541   |   Texas Instruments   | I2C       |  8051-based
+|CSR1010  |   CSR                 | UART/SPI  |  Proprietary
+|EM9301   |   EM Microelectronics | UART/SPI  |  Proprietary
+|nRF8001  |   Nordic Semiconductor| SPI       |  Proprietary
+|============================================
+
+==== Bluetooth Low-Energy Modules
+
+[role="wide"]
+[cols="<1,<1,<1",frame="topbot",options="header"]
+|============================================
+|Part number      | Manufacturer      | Interface
+|ABBTM-NVC-MDCS71 |Abracon            | UART/I2C/SPI
+|BLE112           |BlueGiga           | UART/USB
+|PAN1720          |Panasonic          | UART/SPI
+|============================================
+
+==== ZigBee Modules
+
+[role="wide"]
+[cols="^1,<1,<1,<1",frame="topbot",options="header",align="center"]
+|============================================
+|Part number     | Manufacturer       | ISM band    | Interface
+|ATZB-24-B0R  | Atmel              | 2.45 GHz    | I2C, SPI, UART
+|XB24-AWI-001 | Digi International | 2.45 GHz    | UART
+|MRF24J40     | Microchip          | 2.45 GHz    | SPI
+|CC2420       | Texas Instruments  | 2.45 GHz    | SPI
+|CC1120       | Texas Instruments  | 868/915 MHz | SPI
+|============================================
+
+((("components lists", range="endofrange", startref ="ix_components")))
+
